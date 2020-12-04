@@ -1,0 +1,12 @@
+{
+    "projects": ["vscode", "komodo", "npp"],
+    "dataPath": "./Data/",
+    "dataTypes": ["UserManual", "IssueReport"],
+    "embeddingTypes": ["EmbeddingLayer", "W2V", "Glove", "FastText"],
+    "embeddingSizes": [100, 300, 500],
+    "modelTypes": ["cnn", "rnn"],
+    "epochs": [50, 100, 150, 200, 250, 300, 350, 400, 450, 500],
+    "numCells": [100, 200, 300, 400, 500],
+    "batchSizes": [16, 32, 64, 128, 256],
+    "dropouts": [0.1, 0.15, 0.2, 0.25, 0.3]
+}
