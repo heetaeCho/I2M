@@ -3,8 +3,9 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 class TextPreprocessor:
-    wordSet = set()
     def __init__(self, dataType):
+        self.wordSet = set()
+        self.maxLen = 0
         self.dataType = dataType
         try:
             self.stopwords = list(set(stopwords.words('english')))
@@ -25,6 +26,8 @@ class TextPreprocessor:
             for line in lines:
                 tokens = self._run(line)
                 if tokens and len(tokens) >= 3:
+                    if len(tokens) > self.maxLen:
+                        self.maxLen = len(tokens)
                     processed.append(self._run(line))
                 else:
                     continue
@@ -84,6 +87,6 @@ class TextPreprocessor:
         lemedTokens = []
         for token in tokens:
             lemedTokens.append(token)
-            if self.dataType == 'UserManual' and token not in TextPreprocessor.wordSet:
-                TextPreprocessor.wordSet.add(token)
+            if token not in self.wordSet:
+                self.wordSet.add(token)
         return lemedTokens

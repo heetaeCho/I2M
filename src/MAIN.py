@@ -1,4 +1,5 @@
 import argparse
+import numpy as np
 from collections import Counter
 import json
 
@@ -17,7 +18,6 @@ class MAIN:
 
     def run(self, project, dataPath, dataTypes, embeddingType, embeddingSize,\
             modelType, epoch, numCell, batchSize, dropout):
-        print('main.run()')
         um = dataTypes[0]
         ir = dataTypes[1]
         trainData = self._readData('{}{}/{}/'.format(dataPath, um, project))
@@ -30,17 +30,27 @@ class MAIN:
         # print(len(trainData[0]))
         # print(len(testData[0]))
 
-        trainData = self._preprocess(project, trainData, um)
-        wordSet = list(sorted(TextPreprocessor(um).wordSet))
-        testData = self._preprocess(project, testData, ir)
+        trainData, trainWordSet, trainMaxLen = self._preprocess(project, trainData, um)
+        testData, testWordSet, testMaxLen = self._preprocess(project, testData, ir)
+        wordSet = trainWordSet
+        wordSet.extend(testWordSet)
+        maxLen = max(trainMaxLen, testMaxLen)
         # print(trainData[0])
         # print(testData[0])
         # print(len(wordSet))
+        # print(wordSet)
+        # print(maxLen)
 
-        trainData = self._embedding(trainData, embeddingType, embeddingSize)
-        testData = self._embedding(testData, embeddingType, embeddingSize)
-        # # print(trainData[0])
-        # # print(testData[0])
+        testDataTitle = np.asarray(testData)[:, 0].reshape(1, -1)
+        testDataLables = np.asarray(testData)[:, 1]
+        testDataBody = np.asarray(testData)[:, 2]
+
+        trainData = self._embedding(trainData, embeddingType, embeddingSize, wordSet, maxLen)
+        testDataTitle = self._embedding(testDataTitle, embeddingType, embeddingSize, wordSet, maxLen)
+        testDataBody = self._embedding(testDataBody, embeddingType, embeddingSize, wordSet, maxLen)
+        # print('trainData=>\n{}'.format(trainData))
+        # print('testDataTitle=>\n{}'.format(testDataTitle))
+        # print('testDataBody=>\n{}'.format(testDataBody))
 
         # model = self._train(trainData, modelType, epoch, numCell, batchSize, dropout)
         # # print(model)
@@ -56,7 +66,7 @@ class MAIN:
         numOfFiles = dataReader.getNumberOfFiles()
         data = []
         # for i in range(numOfFiles):
-        for i in range(2):
+        for i in range(1):
             data.append(dataReader.readData(i))
         return data
 
@@ -72,10 +82,10 @@ class MAIN:
         preprocessor = TextPreprocessor(dataType)
         for i in range(len(data)):
             processedData.append(preprocessor.pp(data[i]))
-        return processedData
+        return processedData, list(sorted(preprocessor.wordSet)), preprocessor.maxLen
 
-    def _embedding(self, data, embeddingType, embeddingSize):
-        embedder = WordEmbedder(embeddingType, embeddingSize)
+    def _embedding(self, data, embeddingType, embeddingSize, wordSet, maxLen):
+        embedder = WordEmbedder(embeddingType, embeddingSize, wordSet, maxLen)
         embeddedData = []
         for i in range(len(data)):
             embeddedData.append(embedder.embedding(data[i]))
