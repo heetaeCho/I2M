@@ -79,7 +79,7 @@ class issueParser:
             for x in temp:
                 while len(x) > 0:
                     context.append(x.pop())
-            context = ' '.join(context)
+            context = '\n'.join(context)
         except AttributeError:
             context = ''
         return title, labels, context

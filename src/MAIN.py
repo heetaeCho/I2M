@@ -9,6 +9,7 @@ from WordEmbedder import WordEmbedder
 from Trainer import Trainer
 from Classifier import Classifier
 from Evaluator import Evaluator
+from Logger import Logger
 
 class MAIN:
     def __init__(self):
@@ -26,16 +27,18 @@ class MAIN:
 
         trainData = self._parse(project, trainData, um)
         testData = self._parse(project, testData, ir)
+        # print(len(trainData[0]))
+        # print(len(testData[0]))
+
+        trainData = self._preprocess(project, trainData, um)
+        wordSet = list(sorted(TextPreprocessor(um).wordSet))
+        testData = self._preprocess(project, testData, ir)
         # print(trainData[0])
         # print(testData[0])
+        # print(len(wordSet))
 
-        trainData = self._preprocess(trainData)
-        testData = self._preprocess(testData)
-        # print(trainData[0])
-        # print(testData[0])
-
-        # trainData = self._embedding(trainData, embeddingType, embeddingSize)
-        # testData = self._embedding(testData, embeddingType, embeddingSize)
+        trainData = self._embedding(trainData, embeddingType, embeddingSize)
+        testData = self._embedding(testData, embeddingType, embeddingSize)
         # # print(trainData[0])
         # # print(testData[0])
 
@@ -64,10 +67,11 @@ class MAIN:
             parsedData.append(parser.parse(data[i]))
         return parsedData
 
-    def _preprocess(self, data):
+    def _preprocess(self, project, data, dataType):
         processedData = []
+        preprocessor = TextPreprocessor(dataType)
         for i in range(len(data)):
-            processedData.append(TextPreprocessor().pp(data[i]))
+            processedData.append(preprocessor.pp(data[i]))
         return processedData
 
     def _embedding(self, data, embeddingType, embeddingSize):
@@ -142,7 +146,7 @@ if __name__ == '__main__':
         main.run(project, dataPath, dataTypes, embeddingType, embeddingSize,\
                 modelType, epoch, numCell, batchSize, dropout)
     else:
-        informationJson = json.loads(open('./Information.json', 'r', encoding='utf-8').read())
+        informationJson = json.loads(open('./I2F-Information.json', 'r', encoding='utf-8').read())
         projects = informationJson["projects"]
         dataPath = informationJson["dataPath"]
         dataTypes = informationJson["dataTypes"]
