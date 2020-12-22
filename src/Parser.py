@@ -10,4 +10,4 @@ class Parser:
 
     def _parse(self, data):
         parser = Parsers().getParser(self.project, self.dataType)
-        return "parser.parse(data)"
+        return parser.parse(data)

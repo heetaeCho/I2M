@@ -1,11 +1,12 @@
 # My Policy
 # venv
-IST/ 
+CIF/ 
 # IDE
 .vscode/ 
 # Data
 Data/
 AnswerSet/
+*.pptx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

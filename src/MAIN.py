@@ -16,7 +16,7 @@ class MAIN:
 
     def run(self, project, dataPath, dataTypes, embeddingType, embeddingSize,\
             modelType, epoch, numCell, batchSize, dropout):
-        print('main run')
+        print('main.run()')
         um = dataTypes[0]
         ir = dataTypes[1]
         trainData = self._readData('{}{}/{}/'.format(dataPath, um, project))
@@ -34,25 +34,26 @@ class MAIN:
         # print(trainData[0])
         # print(testData[0])
 
-        trainData = self._embedding(trainData, embeddingType, embeddingSize)
-        testData = self._embedding(testData, embeddingType, embeddingSize)
-        # print(trainData[0])
-        # print(testData[0])
+        # trainData = self._embedding(trainData, embeddingType, embeddingSize)
+        # testData = self._embedding(testData, embeddingType, embeddingSize)
+        # # print(trainData[0])
+        # # print(testData[0])
 
-        model = self._train(trainData, modelType, epoch, numCell, batchSize, dropout)
-        # print(model)
+        # model = self._train(trainData, modelType, epoch, numCell, batchSize, dropout)
+        # # print(model)
 
-        predicted = self._classify(model, testData)
-        # print(predicted)
+        # predicted = self._classify(model, testData)
+        # # print(predicted)
 
-        result = self._evaluate(testData, predicted)
-        # print(result)
+        # result = self._evaluate(testData, predicted)
+        # # print(result)
 
     def _readData(self, dataPath):
         dataReader = DataReader(dataPath)
         numOfFiles = dataReader.getNumberOfFiles()
         data = []
-        for i in range(numOfFiles):
+        # for i in range(numOfFiles):
+        for i in range(2):
             data.append(dataReader.readData(i))
         return data
 
@@ -141,7 +142,7 @@ if __name__ == '__main__':
         main.run(project, dataPath, dataTypes, embeddingType, embeddingSize,\
                 modelType, epoch, numCell, batchSize, dropout)
     else:
-        informationJson = json.loads(open('./Information.json', 'r', encoding='utf-8').read(), encoding='utf-8')
+        informationJson = json.loads(open('./Information.json', 'r', encoding='utf-8').read())
         projects = informationJson["projects"]
         dataPath = informationJson["dataPath"]
         dataTypes = informationJson["dataTypes"]
@@ -162,6 +163,7 @@ if __name__ == '__main__':
                                 for embeddingType in embeddingTypes:
                                     WordEmbedder.embedder = None
                                     for project in projects:
+                                        print('--------------------------{}----------------------------'.format(project))
                                         main.run(project, dataPath, dataTypes, embeddingType, embeddingSize,\
                                             modelType, epoch, numCell, batchSize, dropout)
-                                        exit()
+                                    exit()
