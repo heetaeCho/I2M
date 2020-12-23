@@ -6,7 +6,12 @@ CIF/
 # Data
 Data/
 AnswerSet/
+EmbeddingModel/
+#Design
 *.pptx
+#Test
+*.ipynb
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

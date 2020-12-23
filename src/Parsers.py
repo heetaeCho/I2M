@@ -69,7 +69,7 @@ class issueParser:
 
         soup = BeautifulSoup(text, 'html.parser')
 
-        title = soup.find(title_block).string.split('·')[0].strip()
+        title = soup.select_one(title_block).text.split('·')[0].strip()
         temp = [x.string for x in soup.select(labels_block)]
         labels = ' '.join(temp) if temp else None
 

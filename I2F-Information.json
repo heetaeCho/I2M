@@ -3,7 +3,7 @@
     "dataPath": "./Data/",
     "dataTypes": ["UserManual", "IssueReport"],
     "embeddingTypes": ["EmbeddingLayer", "W2V", "Glove", "FastText"],
-    "embeddingSizes": [100, 300, 500],
+    "embeddingSizes": [300],
     "modelTypes": ["cnn", "rnn"],
     "epochs": [1000],
     "numCells": [100, 200, 300, 400, 500],

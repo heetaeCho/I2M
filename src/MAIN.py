@@ -18,6 +18,7 @@ class MAIN:
 
     def run(self, project, dataPath, dataTypes, embeddingType, embeddingSize,\
             modelType, epoch, numCell, batchSize, dropout):
+        print("main.run()")
         um = dataTypes[0]
         ir = dataTypes[1]
         trainData = self._readData('{}{}/{}/'.format(dataPath, um, project))
@@ -45,15 +46,15 @@ class MAIN:
         testDataLables = np.asarray(testData)[:, 1]
         testDataBody = np.asarray(testData)[:, 2]
 
-        trainData = self._embedding(trainData, embeddingType, embeddingSize, wordSet, maxLen)
-        testDataTitle = self._embedding(testDataTitle, embeddingType, embeddingSize, wordSet, maxLen)
-        testDataBody = self._embedding(testDataBody, embeddingType, embeddingSize, wordSet, maxLen)
-        # print('trainData=>\n{}'.format(trainData))
-        # print('testDataTitle=>\n{}'.format(testDataTitle))
-        # print('testDataBody=>\n{}'.format(testDataBody))
+        trainData = self._embedding(project, trainData, embeddingType, embeddingSize, wordSet, maxLen)
+        testDataTitle = self._embedding(project, testDataTitle, embeddingType, embeddingSize, wordSet, maxLen)
+        testDataBody = self._embedding(project, testDataBody, embeddingType, embeddingSize, wordSet, maxLen)
+        # print('trainData=> {}, {}'.format(trainData[0].size(), len(trainData)))
+        # print('testDataTitle=>\n{}'.format(testDataTitle.size()))
+        # print('testDataBody=> {}'.format(testDataBody[0].size()))
 
         # model = self._train(trainData, modelType, epoch, numCell, batchSize, dropout)
-        # # print(model)
+        # print(model)
 
         # predicted = self._classify(model, testData)
         # # print(predicted)
@@ -65,8 +66,8 @@ class MAIN:
         dataReader = DataReader(dataPath)
         numOfFiles = dataReader.getNumberOfFiles()
         data = []
-        # for i in range(numOfFiles):
-        for i in range(1):
+        for i in range(numOfFiles):
+        # for i in range(1):
             data.append(dataReader.readData(i))
         return data
 
@@ -74,7 +75,11 @@ class MAIN:
         parser = Parser(project, dataType)
         parsedData = []
         for i in range(len(data)):
-            parsedData.append(parser.parse(data[i]))
+            try:
+                parsedData.append(parser.parse(data[i]))
+            except AttributeError:
+                print(i)
+                print(data[i])
         return parsedData
 
     def _preprocess(self, project, data, dataType):
@@ -84,11 +89,9 @@ class MAIN:
             processedData.append(preprocessor.pp(data[i]))
         return processedData, list(sorted(preprocessor.wordSet)), preprocessor.maxLen
 
-    def _embedding(self, data, embeddingType, embeddingSize, wordSet, maxLen):
-        embedder = WordEmbedder(embeddingType, embeddingSize, wordSet, maxLen)
-        embeddedData = []
-        for i in range(len(data)):
-            embeddedData.append(embedder.embedding(data[i]))
+    def _embedding(self, project, data, embeddingType, embeddingSize, wordSet, maxLen):
+        embedder = WordEmbedder(project, embeddingType, embeddingSize, wordSet, maxLen)
+        embeddedData = embedder.embedding(data)
         return embeddedData
 
     def _train(self, data, modelType, epoch, numCell, batchSize, dropout):
@@ -177,7 +180,7 @@ if __name__ == '__main__':
                                 for embeddingType in embeddingTypes:
                                     WordEmbedder.embedder = None
                                     for project in projects:
-                                        print('--------------------------{}----------------------------'.format(project))
+                                        print('----------------------{}-{}------------------------'.format(project, embeddingType))
                                         main.run(project, dataPath, dataTypes, embeddingType, embeddingSize,\
                                             modelType, epoch, numCell, batchSize, dropout)
                                     exit()
