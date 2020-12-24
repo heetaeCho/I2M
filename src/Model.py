@@ -14,10 +14,10 @@ class Model:
         loss = self.criterion(pred, y)
         loss.backward(retain_graph=True)
         self.optimizer.step()
-        print(loss)
+        return loss
 
     def predict(self, x):
-        return self.model(data)
+        return self.model(x)
 
     def save(self, path):
         torch.save(self.model, path)

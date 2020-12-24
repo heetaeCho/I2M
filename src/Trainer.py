@@ -17,13 +17,14 @@ class Trainer:
         loader = DataLoader(dataset, batch_size=self.batchSize, shuffle=True)
         model = Model(self.modelType, numClass, self.numCell, self.dropout, self.maxLen)
 
+        loss = 0
         for e in range(epoch+1):
             for idx, samples in enumerate(loader):
                 x, y = samples
                 x = torch.flip(x, dims=[1]).cuda()
                 y = y.view(-1).cuda()
-                model.fit(x, y)
-            # if (e+1)%50 == 0:
+                loss += model.fit(x, y)
+            if (e+1)%50 == 0:
                 model.save('./Model/{}-{}-{}.pt'.format(project, self.modelType, e+1))
-                exit()
+            print(loss)
         return model

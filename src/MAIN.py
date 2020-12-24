@@ -56,7 +56,8 @@ class MAIN:
 
         model = self._train(project, trainData, trainY, numClass, modelType, epoch, numCell, batchSize, dropout, maxLen)
 
-        # titlePrediction = self._classify(model, testDataTitle)
+        titlePrediction = self._classify(modelType, model, testDataTitle)
+        print(titlePrediction)
         # bodyPrediction = self._classify(model, testDataBody)
 
         # result = self._evaluate(testData, predicted)
@@ -99,9 +100,9 @@ class MAIN:
         model = trainer.fit(project, epoch, data, trainY, numClass)
         return model
 
-    def _classify(self, model, data):
+    def _classify(self, modelType, model, data):
         classifier = Classifier()
-        res = classifier.classify(model, data)
+        res = classifier.classify(modelType, model, data)
         return res
 
     def _evaluate(self, realData, predictedData):
