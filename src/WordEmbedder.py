@@ -1,3 +1,4 @@
+import torch
 from Embedders import Embedders
 
 class WordEmbedder:
@@ -14,7 +15,16 @@ class WordEmbedder:
         Embedders.wordSet = self.wordSet
         WordEmbedder.embedder = embedder.getEmbedder(self.project, self.embeddingType, self.embeddingSize)
         
-        embeddedData = []
+        embeddedData = None
+        trainY = None
         for i in range(len(data)):
-            embeddedData.append(WordEmbedder.embedder.embedding(data[i], self.maxLen))
-        return embeddedData
+            embedded = WordEmbedder.embedder.embedding(data[i], self.maxLen)
+            if embedded is None:
+                continue
+            if i == 0:
+                embeddedData = embedded
+                trainY = torch.tensor(i).repeat(embedded.size(0))
+            else:
+                embeddedData = torch.cat((embeddedData, embedded))
+                trainY = torch.cat((trainY, torch.tensor(i).repeat(embedded.size(0))))
+        return embeddedData, trainY

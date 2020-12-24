@@ -22,6 +22,7 @@ class MAIN:
         um = dataTypes[0]
         ir = dataTypes[1]
         trainData = self._readData('{}{}/{}/'.format(dataPath, um, project))
+        numClass = len(trainData)
         testData = self._readData('{}{}/{}/'.format(dataPath, ir, project))
         # print(len(trainData))
         # print(len(testData))
@@ -46,18 +47,17 @@ class MAIN:
         testDataLables = np.asarray(testData)[:, 1]
         testDataBody = np.asarray(testData)[:, 2]
 
-        trainData = self._embedding(project, trainData, embeddingType, embeddingSize, wordSet, maxLen)
-        testDataTitle = self._embedding(project, testDataTitle, embeddingType, embeddingSize, wordSet, maxLen)
-        testDataBody = self._embedding(project, testDataBody, embeddingType, embeddingSize, wordSet, maxLen)
+        trainData, trainY = self._embedding(project, trainData, embeddingType, embeddingSize, wordSet, maxLen)
+        testDataTitle, _ = self._embedding(project, testDataTitle, embeddingType, embeddingSize, wordSet, maxLen)
+        testDataBody, _ = self._embedding(project, testDataBody, embeddingType, embeddingSize, wordSet, maxLen)
         # print('trainData=> {}, {}'.format(trainData[0].size(), len(trainData)))
         # print('testDataTitle=>\n{}'.format(testDataTitle.size()))
         # print('testDataBody=> {}'.format(testDataBody[0].size()))
 
-        # model = self._train(trainData, modelType, epoch, numCell, batchSize, dropout)
-        # print(model)
+        model = self._train(project, trainData, trainY, numClass, modelType, epoch, numCell, batchSize, dropout, maxLen)
 
-        # predicted = self._classify(model, testData)
-        # # print(predicted)
+        # titlePrediction = self._classify(model, testDataTitle)
+        # bodyPrediction = self._classify(model, testDataBody)
 
         # result = self._evaluate(testData, predicted)
         # # print(result)
@@ -66,8 +66,8 @@ class MAIN:
         dataReader = DataReader(dataPath)
         numOfFiles = dataReader.getNumberOfFiles()
         data = []
-        for i in range(numOfFiles):
-        # for i in range(1):
+        # for i in range(numOfFiles):
+        for i in range(3):
             data.append(dataReader.readData(i))
         return data
 
@@ -91,12 +91,12 @@ class MAIN:
 
     def _embedding(self, project, data, embeddingType, embeddingSize, wordSet, maxLen):
         embedder = WordEmbedder(project, embeddingType, embeddingSize, wordSet, maxLen)
-        embeddedData = embedder.embedding(data)
-        return embeddedData
+        embeddedData, trainY = embedder.embedding(data)
+        return embeddedData, trainY
 
-    def _train(self, data, modelType, epoch, numCell, batchSize, dropout):
-        trainer = Trainer(modelType, numCell, batchSize, dropout)
-        model = trainer.fit(epoch, data)
+    def _train(self, project, data, trainY, numClass, modelType, epoch, numCell, batchSize, dropout, maxLen):
+        trainer = Trainer(modelType, numCell, batchSize, dropout, maxLen)
+        model = trainer.fit(project, epoch, data, trainY, numClass)
         return model
 
     def _classify(self, model, data):

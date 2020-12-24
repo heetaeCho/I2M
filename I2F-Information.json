@@ -4,9 +4,9 @@
     "dataTypes": ["UserManual", "IssueReport"],
     "embeddingTypes": ["EmbeddingLayer", "W2V", "Glove", "FastText"],
     "embeddingSizes": [300],
-    "modelTypes": ["cnn", "rnn"],
+    "modelTypes": ["cnn", "rnn"], 
     "epochs": [1000],
-    "numCells": [100, 200, 300, 400, 500],
-    "batchSizes": [16, 32, 64, 128, 256],
+    "numCells": [300],
+    "batchSizes": [64, 128, 256],
     "dropouts": [0.1, 0.15, 0.2, 0.25, 0.3]
 }
