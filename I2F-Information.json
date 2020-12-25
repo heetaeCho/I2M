@@ -8,7 +8,7 @@
     "embeddingTypes": ["EmbeddingLayer", "W2V", "Glove", "FastText"],
     "embeddingSize": 300,
     "modelTypes": ["rnn", "cnn"], 
-    "epoch": 1,
+    "epoch": 1000,
     "numCell": 300,
     "batchSize": 256
 }
