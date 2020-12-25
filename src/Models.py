@@ -21,7 +21,7 @@ class LSTM(nn.Module):
         out, (hid, cell) = self.lstm(x)
         out = hid[0]
         out = self.out(out)
-        return F.log_softmax(out)
+        return F.log_softmax(out, dim=1)
 
 class CNN(nn.Module):
     def __init__(self, maxLen, numClass, numCell, dropout):
@@ -61,4 +61,4 @@ class CNN(nn.Module):
 
         out = torch.cat((out2, out3, out4, out5), dim=1)
         out = self.out(F.relu(out))
-        return F.log_softmax(out)
+        return F.log_softmax(out, dim=1)

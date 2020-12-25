@@ -26,5 +26,5 @@ class Trainer:
                 loss += model.fit(x, y)
             if (e+1)%50 == 0:
                 model.save('./Model/{}-{}-{}.pt'.format(project, self.modelType, e+1))
-            print(loss)
+            # print(loss)
         return model

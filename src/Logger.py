@@ -4,6 +4,7 @@ class Logger:
 
     def log(self, data):
         self.logger.write(data)
+        self.logger.flush()
     
     def __del__(self):
         self.logger.close()

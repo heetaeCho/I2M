@@ -12,6 +12,5 @@ class Classifier:
         
         res = model.predict(data)
 
-        print(res)
         res = torch.argmax(res, dim=1)
         return res

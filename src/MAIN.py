@@ -21,10 +21,14 @@ class MAIN:
         print("main.run()")
         um = dataTypes[0]
         ir = dataTypes[1]
-        trainData = self._readData('{}{}/{}/'.format(dataPath, um, project))
+        trainData = self._readData('{}{}/{}/'.format(dataPath, um, project), um)
+        testData = self._readData('{}{}/{}/'.format(dataPath, ir, project), ir)
+
         numClass = len(trainData)
-        testData = self._readData('{}{}/{}/'.format(dataPath, ir, project))
+        issueNumbers = list(np.asarray(testData)[:, 0])
+        testData = list(np.asarray(testData)[:, 1])
         # print(len(trainData))
+        # print(issueNumbers)
         # print(len(testData))
 
         trainData = self._parse(project, trainData, um)
@@ -57,18 +61,23 @@ class MAIN:
         model = self._train(project, trainData, trainY, numClass, modelType, epoch, numCell, batchSize, dropout, maxLen)
 
         titlePrediction = self._classify(modelType, model, testDataTitle)
-        print(titlePrediction)
-        # bodyPrediction = self._classify(model, testDataBody)
+        titlePrediction = titlePrediction.detach().cpu().numpy()
+        titlePrediction = list(np.asarray(titlePrediction, dtype=np.str))
+        logger = Logger('./Result/{}-{}-{}.txt'.format(project, modelType, 'title'))
+        logger.log(','.join(issueNumbers)+'\n')
+        logger.log(','.join(list(titlePrediction)))
 
-        # result = self._evaluate(testData, predicted)
-        # # print(result)
+        # print(titlePrediction)
+        # # bodyPrediction = self._classify(model, testDataBody)
 
-    def _readData(self, dataPath):
-        dataReader = DataReader(dataPath)
+        # result = self._evaluate(issueNumbers, titlePrediction)
+        # print(result)
+
+    def _readData(self, dataPath, dataType):
+        dataReader = DataReader(dataPath, dataType)
         numOfFiles = dataReader.getNumberOfFiles()
         data = []
-        # for i in range(numOfFiles):
-        for i in range(3):
+        for i in range(numOfFiles):
             data.append(dataReader.readData(i))
         return data
 
@@ -105,9 +114,9 @@ class MAIN:
         res = classifier.classify(modelType, model, data)
         return res
 
-    def _evaluate(self, realData, predictedData):
+    def _evaluate(self, issueNumbers, titlePrediction):
         evaluator = Evaluator()
-        res = evaluator.evaluate(realData, predictedData)
+        res = evaluator.evaluate(issueNumbers, titlePrediction)
         return res
 
 def add_arg2parser():

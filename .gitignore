@@ -6,6 +6,7 @@ CIF/
 # Data
 Data/
 AnswerSet/
+Result/
 #Design
 *.pptx
 #Test

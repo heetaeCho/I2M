@@ -73,7 +73,7 @@ class EmbeddingLayer(Embedders):
         return emWords
 
 class W2V(Embedders):
-    # embedder = KeyedVectors.load_word2vec_format('./EmbeddingModel/Word2Vec.bin', binary=True)
+    embedder = KeyedVectors.load_word2vec_format('./EmbeddingModel/Word2Vec.bin', binary=True)
     def __init__(self, project, embeddingSize):
         self.embeddingSize = embeddingSize
         try:
@@ -109,7 +109,7 @@ class W2V(Embedders):
         return emWords
 
 class GloVe(Embedders):
-    # embedder = convertModel()
+    embedder = convertModel()
     def __init__(self, project, embeddingSize):
         self.embeddingSize = embeddingSize
         try:
@@ -145,7 +145,7 @@ class GloVe(Embedders):
         return emWords
 
 class FastText(Embedders):
-    # embedder = FT.load_fasttext_format('./EmbeddingModel/fastText.bin')
+    embedder = FT.load_fasttext_format('./EmbeddingModel/fastText.bin')
     def __init__(self, project, embeddingSize):
         self.embeddingSize = embeddingSize
         try:
