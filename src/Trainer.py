@@ -24,7 +24,7 @@ class Trainer:
                 x = torch.flip(x, dims=[1]).cuda()
                 y = y.view(-1).cuda()
                 loss += model.fit(x, y)
-            if (e+1)%50 == 0:
-                model.save('./Model/{}-{}-{}.pt'.format(project, self.modelType, e+1))
-            # print(loss)
-        return model
+            # if (e+1)%50 == 0:
+                model.save('./Model/{}/{}-{}.pt'.format(project, self.modelType, e+1))
+                break
+        print(loss)

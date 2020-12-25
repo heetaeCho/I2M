@@ -1,3 +1,4 @@
+import os
 import argparse
 import numpy as np
 from collections import Counter
@@ -18,7 +19,7 @@ class MAIN:
 
     def run(self, project, dataPath, dataTypes, embeddingType, embeddingSize,\
             modelType, epoch, numCell, batchSize, dropout):
-        print("main.run()")
+        print("---------main.run()---------{}---------".format(project))
         um = dataTypes[0]
         ir = dataTypes[1]
         trainData = self._readData('{}{}/{}/'.format(dataPath, um, project), um)
@@ -27,57 +28,41 @@ class MAIN:
         numClass = len(trainData)
         issueNumbers = list(np.asarray(testData)[:, 0])
         testData = list(np.asarray(testData)[:, 1])
-        # print(len(trainData))
-        # print(issueNumbers)
-        # print(len(testData))
 
         trainData = self._parse(project, trainData, um)
         testData = self._parse(project, testData, ir)
-        # print(len(trainData[0]))
-        # print(len(testData[0]))
 
         trainData, trainWordSet, trainMaxLen = self._preprocess(project, trainData, um)
         testData, testWordSet, testMaxLen = self._preprocess(project, testData, ir)
         wordSet = trainWordSet
         wordSet.extend(testWordSet)
         maxLen = max(trainMaxLen, testMaxLen)
-        # print(trainData[0])
-        # print(testData[0])
-        # print(len(wordSet))
-        # print(wordSet)
-        # print(maxLen)
+        
+        self.train(project, trainData, wordSet, maxLen, numClass, modelType, epoch, numCell, batchSize, dropout)
+        self.test(project, testData, wordSet, maxLen, modelType)
 
+    def train(self, project, trainData, wordSet, maxLen, numClass, modelType, epoch, numCell, batchSize, dropout):
+        trainData, trainY = self._embedding(project, trainData, embeddingType, embeddingSize, wordSet, maxLen)
+        self._train(project, trainData, trainY, numClass, modelType, epoch, numCell, batchSize, dropout, maxLen)
+
+    def test(self,  project, testData, wordSet, maxLen, modelType):
         testDataTitle = np.asarray(testData)[:, 0].reshape(1, -1)
         testDataLables = np.asarray(testData)[:, 1]
         testDataBody = np.asarray(testData)[:, 2]
 
-        trainData, trainY = self._embedding(project, trainData, embeddingType, embeddingSize, wordSet, maxLen)
         testDataTitle, _ = self._embedding(project, testDataTitle, embeddingType, embeddingSize, wordSet, maxLen)
         testDataBody, _ = self._embedding(project, testDataBody, embeddingType, embeddingSize, wordSet, maxLen)
-        # print('trainData=> {}, {}'.format(trainData[0].size(), len(trainData)))
-        # print('testDataTitle=>\n{}'.format(testDataTitle.size()))
-        # print('testDataBody=> {}'.format(testDataBody[0].size()))
 
-        model = self._train(project, trainData, trainY, numClass, modelType, epoch, numCell, batchSize, dropout, maxLen)
-
-        titlePrediction = self._classify(modelType, model, testDataTitle)
-        titlePrediction = titlePrediction.detach().cpu().numpy()
-        titlePrediction = list(np.asarray(titlePrediction, dtype=np.str))
-        logger = Logger('./Result/{}-{}-{}.txt'.format(project, modelType, 'title'))
-        logger.log(','.join(issueNumbers)+'\n')
-        logger.log(','.join(list(titlePrediction)))
-
-        # print(titlePrediction)
-        # # bodyPrediction = self._classify(model, testDataBody)
-
-        # result = self._evaluate(issueNumbers, titlePrediction)
-        # print(result)
+        for model in os.listdir('./Model/{}'.format(project)):
+            res = self._classify(project, modelType, model, testDataTitle)
+            print(res)
 
     def _readData(self, dataPath, dataType):
         dataReader = DataReader(dataPath, dataType)
         numOfFiles = dataReader.getNumberOfFiles()
         data = []
-        for i in range(numOfFiles):
+        # for i in range(numOfFiles):
+        for i in range(2):
             data.append(dataReader.readData(i))
         return data
 
@@ -106,12 +91,11 @@ class MAIN:
 
     def _train(self, project, data, trainY, numClass, modelType, epoch, numCell, batchSize, dropout, maxLen):
         trainer = Trainer(modelType, numCell, batchSize, dropout, maxLen)
-        model = trainer.fit(project, epoch, data, trainY, numClass)
-        return model
+        trainer.fit(project, epoch, data, trainY, numClass)
 
-    def _classify(self, modelType, model, data):
+    def _classify(self, project, modelType, modelName, data):
         classifier = Classifier()
-        res = classifier.classify(modelType, model, data)
+        res = classifier.classify(project, modelType, modelName, data)
         return res
 
     def _evaluate(self, issueNumbers, titlePrediction):

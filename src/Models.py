@@ -26,28 +26,29 @@ class LSTM(nn.Module):
 class CNN(nn.Module):
     def __init__(self, maxLen, numClass, numCell, dropout):
         super(CNN, self).__init__()
+        self.maxLen = maxLen
         self.conv2d_filter2 = nn.Conv2d(1, 64, (2, numCell))
         self.conv2d_filter3 = nn.Conv2d(1, 64, (3, numCell))
         self.conv2d_filter4 = nn.Conv2d(1, 64, (4, numCell))
         self.conv2d_filter5 = nn.Conv2d(1, 64, (5, numCell))
 
-        self.maxpool_filter2 = nn.MaxPool1d(maxLen - 2 + 1)
-        self.maxpool_filter3 = nn.MaxPool1d(maxLen - 3 + 1)
-        self.maxpool_filter4 = nn.MaxPool1d(maxLen - 4 + 1)
-        self.maxpool_filter5 = nn.MaxPool1d(maxLen - 5 + 1)
-        self.out = nn.Linear(64 * 4, numClass)
+        self.maxpool_filter2 = nn.MaxPool1d(maxLen-1)
+        self.maxpool_filter3 = nn.MaxPool1d(maxLen-2)
+        self.maxpool_filter4 = nn.MaxPool1d(maxLen-3)
+        self.maxpool_filter5 = nn.MaxPool1d(maxLen-4)
+        self.out = nn.Linear(64*4, numClass)
 
     def forward(self, x):
-        x = x.view(x.size(0), -1, x.size(1), x.size(2))
+        x = x.view(x.size(0), 1, x.size(1), x.size(2))
         out2 = self.conv2d_filter2(x)
         out3 = self.conv2d_filter3(x)
         out4 = self.conv2d_filter4(x)
         out5 = self.conv2d_filter5(x)
 
-        out2 = torch.squeeze(out2)
-        out3 = torch.squeeze(out3)
-        out4 = torch.squeeze(out4)
-        out5 = torch.squeeze(out5)
+        out2 = out2.view(out2.size(0), out2.size(1), -1)
+        out3 = out3.view(out3.size(0), out3.size(1), -1)
+        out4 = out4.view(out4.size(0), out4.size(1), -1)
+        out5 = out5.view(out5.size(0), out5.size(1), -1)
 
         out2 = self.maxpool_filter2(out2)
         out3 = self.maxpool_filter3(out3)
@@ -60,5 +61,6 @@ class CNN(nn.Module):
         out5 = out5.view(x.size()[0], -1)
 
         out = torch.cat((out2, out3, out4, out5), dim=1)
-        out = self.out(F.relu(out))
+        out = F.relu(out)
+        out = self.out(out)
         return F.log_softmax(out, dim=1)
