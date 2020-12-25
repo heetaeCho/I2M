@@ -31,6 +31,6 @@ class Trainer:
                     x = torch.flip(x, dims=[1])
                 y = y.view(-1)
                 loss += self.model.fit(x, y)
-            # if e%50 == 0:
-            self.model.save('{}{}/{}-{}-{}.pt'.format(self.modelPath, self.project, self.modelType, self.embeddingType, e+1))
+            if e%50 == 0:
+                self.model.save('{}{}/{}-{}-{}.pt'.format(self.modelPath, self.project, self.modelType, self.embeddingType, e+1))
         print(loss)

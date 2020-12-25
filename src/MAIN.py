@@ -62,15 +62,14 @@ class MAIN:
             logger.log('maxSeqLen => {}\n'.format(maxLen))
 
             for modelType in modelTypes:
-                print('-------------------{}-------------------'.format(modelType))
                 for embeddingType in embeddingTypes:
+                    print('-----------{}----{}-----------'.format(modelType, embeddingType))
                     logger.log('-----------{}----{}-----------\n'.format(modelType, embeddingType))
                     logger.log('-------start-at----{}---------\n'.format('-'.join(time.ctime().replace(':',';').split(' '))))
                     self.train(project, um, classifierPath, modelType, embeddingType, embeddingSize,\
                         epoch, numCell, batchSize, wordSet, maxLen, numClass)
 
             self.test(project, classifierPath, ir, embeddingSize, wordSet, maxLen, resultPath)
-            
 
     def train(self, project, dataType, classifierPath, modelType, embeddingType, embeddingSize,\
         epoch, numCell, batchSize, wordSet, maxLen, numClass):
@@ -139,7 +138,7 @@ class MAIN:
         else:
             data = self.issues
 
-        for ix, d in enumerate(data):
+        for d in data:
             if dataType == 'UserManual':
                 d.vectors = embedder.embedding(d.sentences)
             else:
@@ -150,7 +149,7 @@ class MAIN:
         trainer = Trainer(project, classifierPath, modelType, epoch, numCell, batchSize, maxLen, numClass, embeddingType)
 
         X, Y = None, None
-        for ix, manual in enumerate(self.manuals):
+        for manual in self.manuals:
             x = manual.vectors
             if x is None:
                 continue
