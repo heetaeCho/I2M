@@ -34,13 +34,13 @@ class TextPreprocessor:
             return processed
         else:
             title, _, body = data
-            title = self._run(title.lower())
+            title = [self._run(title.lower())]
             processedBody = []
             for line in body.split('\n'):
                 tokens = self._run(line.lower())
                 if tokens and len(tokens) >= 3:
                     processedBody.append(tokens)
-            return [title, _, processedBody]
+            return title, _, processedBody
 
     def _run(self, line):
         tokens = self._tokenize(line)

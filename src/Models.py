@@ -4,14 +4,14 @@ import torch.nn.functional as F
 
 class Models:
     @staticmethod
-    def getModel(modelType, numClass, numCell, dropout, maxLen):
+    def getModel(modelType, numClass, numCell, maxLen):
         if modelType == 'rnn':
-            return LSTM(numClass, numCell, dropout)
+            return LSTM(numClass, numCell)
         elif modelType == 'cnn':
-            return CNN(maxLen, numClass, numCell, dropout)
+            return CNN(maxLen, numClass, numCell)
 
 class LSTM(nn.Module):
-    def __init__(self, outputSize, inputSize, dropout):
+    def __init__(self, outputSize, inputSize):
         super(LSTM, self).__init__()
         self.lstm = nn.LSTM(input_size=inputSize, hidden_size=inputSize, \
             batch_first=True, bidirectional=False)
@@ -24,7 +24,7 @@ class LSTM(nn.Module):
         return F.log_softmax(out, dim=1)
 
 class CNN(nn.Module):
-    def __init__(self, maxLen, numClass, numCell, dropout):
+    def __init__(self, maxLen, numClass, numCell):
         super(CNN, self).__init__()
         self.maxLen = maxLen
         self.conv2d_filter2 = nn.Conv2d(1, 64, (2, numCell))

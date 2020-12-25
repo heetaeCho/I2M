@@ -5,26 +5,32 @@ from torch.utils.data import DataLoader
 from Model import Model
 
 class Trainer:
-    def __init__(self, modelType, numCell, batchSize, dropout, maxLen):
+    def __init__(self, project, classifierPath, modelType, epoch, numCell, batchSize, maxLen, numClass, embeddingType):
+        self.project = project
+        self.modelPath = classifierPath
         self.modelType = modelType
+        self.epoch = epoch
         self.numCell = numCell
         self.batchSize = batchSize
-        self.dropout = dropout
         self.maxLen = maxLen
+        self.numClass = numClass
+        self.embeddingType = embeddingType
+        self.model = Model(modelType, numClass, numCell, maxLen)
 
-    def fit(self, project, epoch, data, trainY, numClass):
-        dataset = TensorDataset(data, trainY)
+    def fit(self, X, Y):
+        X = X.cuda()
+        Y = Y.cuda()
+        dataset = TensorDataset(X, Y)
         loader = DataLoader(dataset, batch_size=self.batchSize, shuffle=True)
-        model = Model(self.modelType, numClass, self.numCell, self.dropout, self.maxLen)
 
         loss = 0
-        for e in range(epoch+1):
+        for e in range(1, self.epoch+1):
             for idx, samples in enumerate(loader):
                 x, y = samples
-                x = torch.flip(x, dims=[1]).cuda()
-                y = y.view(-1).cuda()
-                loss += model.fit(x, y)
-            # if (e+1)%50 == 0:
-                model.save('./Model/{}/{}-{}.pt'.format(project, self.modelType, e+1))
-                break
+                if self.modelType == 'rnn':
+                    x = torch.flip(x, dims=[1])
+                y = y.view(-1)
+                loss += self.model.fit(x, y)
+            # if e%50 == 0:
+            self.model.save('{}{}/{}-{}-{}.pt'.format(self.modelPath, self.project, self.modelType, self.embeddingType, e+1))
         print(loss)

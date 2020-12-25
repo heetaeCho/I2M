@@ -3,9 +3,9 @@ import torch.nn as nn
 from Models import Models
 
 class Model:
-    def __init__(self, modelType=None, numClass=None, numCell=None, dropout=None, maxLen=None, test=False):
+    def __init__(self, modelType=None, numClass=None, numCell=None, maxLen=None, test=False):
         if not test:
-            self.model = Models.getModel(modelType, numClass, numCell, dropout, maxLen).cuda()
+            self.model = Models.getModel(modelType, numClass, numCell, maxLen).cuda()
             self.criterion = nn.CrossEntropyLoss()
             self.optimizer = torch.optim.Adam(self.model.parameters(), lr=0.0001)
         else:

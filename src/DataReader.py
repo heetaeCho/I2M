@@ -12,11 +12,11 @@ class DataReader:
 
     def _readFile(self, i):
         if self.dataType == 'UserManual':
-            file = sorted(os.listdir(self.dataPath))[i]
-            return open(self.dataPath+'/{}'.format(file), 'r', encoding='utf-8').read()
+            _file = sorted(os.listdir(self.dataPath))[i]
+            return _file.split('.')[0], open(self.dataPath+'/{}'.format(_file), 'r', encoding='utf-8').read()
         else:
-            file = sorted(os.listdir(self.dataPath))[i]
-            return (file.replace('.txt', ''), open(self.dataPath+'/{}'.format(file), 'r', encoding='utf-8').read())
+            _file = sorted(os.listdir(self.dataPath))[i]
+            return _file.replace('.txt', ''), open(self.dataPath+'/{}'.format(_file), 'r', encoding='utf-8').read()
 
     def _isURL(self):
         if self.dataPath.startswith('http'):
