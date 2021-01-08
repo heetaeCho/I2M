@@ -16,12 +16,14 @@ class LSTM(nn.Module):
         self.lstm = nn.LSTM(input_size=inputSize, hidden_size=inputSize, \
             batch_first=True, bidirectional=False)
         self.out = nn.Linear(inputSize, outputSize)
+        self.sf = nn.LogSoftmax(dim=1)
 
     def forward(self, x):
         out, (hid, cell) = self.lstm(x)
-        out = hid[0]
+        out = out[:,-1]
         out = self.out(out)
-        return F.log_softmax(out, dim=1)
+        out = self.sf(out)
+        return out
 
 class CNN(nn.Module):
     def __init__(self, maxLen, numClass, numCell):

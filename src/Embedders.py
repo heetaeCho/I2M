@@ -55,15 +55,17 @@ class EmbeddingLayer(Embedders):
             for i in range(maxLen):
                 try:
                     word = line[i]
-                    try:
-                        idx = torch.tensor(super().wordSet.index(word))
-                        temp.append(idx)
-                    except ValueError:
-                        continue
+                    with torch.no_grad():
+                        try:
+                            idx = torch.tensor(super().wordSet.index(word))
+                            temp.append(idx)
+                        except ValueError:
+                            continue
                 except IndexError:
                     continue
             if len(temp)>3:
-                temp = self.embedder(torch.tensor(temp))
+                with torch.no_grad():
+                    temp = self.embedder(torch.tensor(temp))
                 for i in range(maxLen-len(temp)):
                     temp = torch.cat((temp, torch.zeros(1, self.embeddingSize)), axis=0)
                 if emWords is None:
@@ -89,10 +91,11 @@ class W2V(Embedders):
             for i in range(maxLen):
                 try:
                     word = line[i]
-                    try:
-                        res = torch.tensor(W2V.embedder[word], dtype=torch.float).view(1, -1)
-                    except KeyError:
-                        res = self.embedder(torch.tensor(super().wordSet.index(word))).view(1, -1)
+                    with torch.no_grad():
+                        try:
+                            res = torch.tensor(W2V.embedder[word], dtype=torch.float).view(1, -1)
+                        except KeyError:
+                            res = self.embedder(torch.tensor(super().wordSet.index(word))).view(1, -1)
                     if i == 0:
                         temp = res
                     else:
@@ -125,10 +128,11 @@ class GloVe(Embedders):
             for i in range(maxLen):
                 try:
                     word = line[i]
-                    try:
-                        res = torch.tensor(GloVe.embedder[word], dtype=torch.float).view(1, -1)
-                    except KeyError:
-                        res = self.embedder(torch.tensor(super().wordSet.index(word))).view(1, -1)
+                    with torch.no_grad():
+                        try:
+                            res = torch.tensor(GloVe.embedder[word], dtype=torch.float).view(1, -1)
+                        except KeyError:
+                            res = self.embedder(torch.tensor(super().wordSet.index(word))).view(1, -1)
                     if i == 0:
                         temp = res
                     else:

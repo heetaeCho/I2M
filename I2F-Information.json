@@ -1,13 +1,12 @@
 {
     "projects": ["npp", "komodo", "vscode"],
     "dataPath": "./Data/",
-    "embeddingModelPath": "./EmbeddingModel/",
     "classifierPath": "./Model/",
     "resultPath": "./Result/",
     "dataTypes": ["UserManual", "IssueReport"],
     "embeddingTypes": ["EmbeddingLayer", "W2V", "Glove", "FastText"],
     "embeddingSize": 300,
-    "modelTypes": ["rnn", "cnn"], 
+    "modelTypes": ["rnn", "cnn"],
     "epoch": 1000,
     "numCell": 300,
     "batchSize": 256

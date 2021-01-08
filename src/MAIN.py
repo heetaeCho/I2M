@@ -24,7 +24,6 @@ class MAIN:
         logger = Logger('./Log/log_{}.txt'.format('-'.join(time.ctime().replace(':',';').split(' '))))
         projects = informationJson["projects"]
         dataPath = informationJson["dataPath"]
-        embeddingModelPath = informationJson["embeddingModelPath"]
         classifierPath = informationJson["classifierPath"]
         resultPath = informationJson["resultPath"]
 
@@ -69,21 +68,21 @@ class MAIN:
                     self.train(project, um, classifierPath, modelType, embeddingType, embeddingSize,\
                         epoch, numCell, batchSize, wordSet, maxLen, numClass)
 
-            self.test(project, classifierPath, ir, embeddingSize, wordSet, maxLen, resultPath)
+            self.test(project, classifierPath, ir, embeddingSize, wordSet, maxLen, resultPath, numClass)
 
     def train(self, project, dataType, classifierPath, modelType, embeddingType, embeddingSize,\
         epoch, numCell, batchSize, wordSet, maxLen, numClass):
         self._embedding(project, dataType, embeddingType, embeddingSize, wordSet, maxLen)
         self._train(project, classifierPath, modelType, epoch, numCell, batchSize, maxLen, numClass, embeddingType)
 
-    def test(self, project, classifierPath, dataType, embeddingSize, wordSet, maxLen, resultPath):
+    def test(self, project, classifierPath, dataType, embeddingSize, wordSet, maxLen, resultPath, numClass):
         for modelName in os.listdir('{}{}'.format(classifierPath, project)):
             embeddingType = modelName.split('-')[1]
             self._embedding(project, dataType, embeddingType, embeddingSize, wordSet, maxLen)
             self._classify(project, classifierPath, modelName)
-            self._evaluate(project, modelName, resultPath)
+            self._evaluate(project, modelName, resultPath, numClass)
 
-    def _readData(self, dataPath, dataType):
+    def _readData(self, dataPath, dataType): 
         dataReader = DataReader(dataPath, dataType)
         numOfFiles = dataReader.getNumberOfFiles()
         
@@ -92,7 +91,7 @@ class MAIN:
             if dataType == 'UserManual':
                 manual = Manual()
                 manual.id = i
-                manual.name = _file.lower()
+                manual.name = _file.split('.')[0].lower()
                 manual.sentences = context
                 self.manuals.append(manual)
             elif dataType == 'IssueReport':
@@ -184,8 +183,8 @@ class MAIN:
                 issue.titlePredictedClass = prediction[idx]
                 idx += 1
 
-    def _evaluate(self, project, modelName, resultPath):
-        evaluator = Evaluator(project, modelName, resultPath, self.manuals, self.issues)
+    def _evaluate(self, project, modelName, resultPath, numClass):
+        evaluator = Evaluator(project, modelName, resultPath, self.manuals, self.issues, numClass)
         evaluator.evaluate()
 
 if __name__ == '__main__':

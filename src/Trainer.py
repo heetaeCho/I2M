@@ -21,16 +21,19 @@ class Trainer:
         X = X.cuda()
         Y = Y.cuda()
         dataset = TensorDataset(X, Y)
-        loader = DataLoader(dataset, batch_size=self.batchSize, shuffle=True)
+        loader = DataLoader(dataset, batch_size=self.batchSize, shuffle=False)
 
-        loss = 0
         for e in range(1, self.epoch+1):
+            print('{}/{}, '.format(e, self.epoch))
+            _last = False
             for idx, samples in enumerate(loader):
+                if idx+1 == len(loader):
+                    _last = True
+                print('{}/{}'.format(idx+1, len(loader)), end='\r')
                 x, y = samples
                 if self.modelType == 'rnn':
                     x = torch.flip(x, dims=[1])
                 y = y.view(-1)
-                loss += self.model.fit(x, y)
+                self.model.fit(x, y, _last)
             if e%50 == 0:
-                self.model.save('{}{}/{}-{}-{}.pt'.format(self.modelPath, self.project, self.modelType, self.embeddingType, e+1))
-        print(loss)
+                self.model.save('{}{}/{}-{}-{}.pt'.format(self.modelPath, self.project, self.modelType, self.embeddingType, e))

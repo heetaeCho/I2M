@@ -7,28 +7,32 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 
 class Evaluator:
-    def __init__(self, project, modelName, resultPath, manuals, issues):
+    def __init__(self, project, modelName, resultPath, manuals, issues, numClass):
         self.project = project
         self.manuals = manuals
         self.issues = issues
         self.logger = Logger('{}{}-{}.txt'.format(resultPath, project, modelName.split('.')[0]))
         self._prepare()
+        self.numClass = numClass
 
     def _prepare(self):
-        docs = [manual.name for manual in self.manuals]
+        docs = [manual.name.lower() for manual in self.manuals]
         ansPath = './AnswerSet/'
         df = pd.read_csv(ansPath+self.project+'.csv', encoding='cp949')
         df = df[['Document Files', 'Issue Number']]
         for issue in self.issues:
             idx = df[df['Issue Number'] == int(issue.number)].index
-            doc = df.iloc[idx]['Document Files'].values[0].split('.')[0].lower()
-            issue.realClass = docs.index(doc)
+            try:
+                doc = df.iloc[idx]['Document Files'].values[0].split('.')[0].strip().lower()
+                issue.realClass = docs.index(doc)
+            except IndexError:
+                del issue
 
     def evaluate(self):
         real = []
         predicted = []
         for issue in self.issues:
-            if issue.titleVectors is not None:
+            if issue.titleVectors is not None and issue.realClass is not None:
                 real.append(issue.realClass)    
                 predicted.append(issue.titlePredictedClass)
 

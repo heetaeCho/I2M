@@ -11,13 +11,14 @@ class Model:
         else:
             self.model = None
     
-    def fit(self, x, y):
+    def fit(self, x, y, last):
         pred = self.model(x)
-        self.optimizer.zero_grad()
         loss = self.criterion(pred, y)
+        self.optimizer.zero_grad()
         loss.backward(retain_graph=True)
         self.optimizer.step()
-        return loss
+        if last:
+            loss = None
 
     def predict(self, x):
         return self.model(x)
