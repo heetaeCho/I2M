@@ -8,10 +8,13 @@ class Classifier:
         self.model = Model(test=True)
         self.model.load('{}{}/{}'.format(classifierPath, project, modelName))
 
-    def classify(self, data):
+    def classify(self, data, tp='title'):
         if self.modelName.startswith('rnn'):
             data = torch.flip(data, dims=[1]).cuda()
         else:
             data = data.cuda()
-        prediction = torch.argmax(self.model.predict(data), dim=1)
+        if tp=='title':
+            prediction = torch.argmax(self.model.predict(data), dim=1)
+        else:
+            prediction = self.model.predict(data)
         return prediction

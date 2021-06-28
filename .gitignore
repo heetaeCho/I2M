@@ -1,20 +1,20 @@
 # My Policy
 # venv
-CIF/ 
+venv/ 
 # IDE
 .vscode/ 
-# Data
-Data/
-AnswerSet/
-Result/
-Log/
 #Design
 *.pptx
 #Test
 *.ipynb
+prev_*/
+Result_*/
+Log/
 #Model
 EmbeddingModel/
-Model/
+Model*/
+#Data
+Data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,521 @@
+Labels,Document Files,Issue Number,Title,Contributor1,Contributor2
+Feature-request,keybindings.md,92233,Alias keybindings in command palette,Park,Cho
+Feature-request,nodejs-tutorial.md,92220,launch.json - allow serveReadyAction to launch another configuration,Park,Cho
+Feature-request,csharp.md,92200,"""Unable to delete folder"" improvement",Park,Cho
+Feature-request,themes.md,92191,Indicate active UI compoment in the workbench that has focus,Park,Cho
+Feature-request,codebasics.md,92185,[folding] command that adds folding markers,Park,Cho
+Feature-request,settings-sync.md,92166,Time line provider for sync resources,Park,Cho
+Feature-request,themes.md,92111,Add Vintage cursorShape From Windows Terminal to editor.cursorStyle,Park,Cho
+Feature-request,debugging.md,92102,Show scopes errors in variables view rather than notification,Park,Cho
+Feature-request,userinterface.md,92076,Command Palette should return focus to terminal pane,Park,Cho
+Feature-request,json.md,92042,"[json] support ""$id"" references.",Park,Cho
+Feature-request,windows.md,92003,Show parent folder for recent workspaces in taskbar icon context menu,Park,Cho
+Feature-request,themes.md,92079,Diff editor style: gutter markers instead of background color,Park,Cho
+Feature-request,themes.md,91973,Use codicons in file icons,Park,Cho
+Feature-request,userinterface.md,91967,Ability to filter user-made variables,Park,Cho
+Feature-request,themes.md,91935,Customize search results colors,Park,Cho
+Feature-request,settings-sync.md,91764,"Save in User/settings.json ""Don't ask about .[extension]""",Park,Cho
+Feature-request,themes.md,91699,Allow to set background color for active panel title,Park,Cho
+Feature-request,settings.md,91601,Add an entry point for sync from the settings ui,Park,Cho
+Feature-request,intellisense.md,91657,Suggest: Insert with Enter and Replace with Tab,Park,Cho
+Feature-request,command-line.md,91108,Add a command to file an issue (bug) with relevant info,Park,Cho
+Feature-request,html.md,91074,Layout problems with bidirectional text lines,Park,Cho
+Feature-request,editingevolved.md,91023,[folding] Command to jump to previous/next fold,Park,Cho
+Feature-request,settings-sync.md,91011,Settings sync should support user tasks,Park,Cho
+Feature-request,themes.md,90911,Adopt codicons for bundled extensions,Park,Cho
+Feature-request,userinterface.md,90936,"Hard to click ""Quick Fix"" button",Park,Cho
+Feature-request,userdefinedsnippets.md,90262,Allow empty string for snippet formating,Park,Cho
+Feature-request,extension-gallery.md,90110,Allow custom editors to hook into Edit menu actions such as copy undo redo ¡¦,Park,Cho
+Feature-request,tasks.md,90125,Add a task instancePolicy to task runOptions.,Park,Cho
+Feature-request,tasks.md,90055,Variable substitution in task detail property,Park,Cho
+Feature-request,userinterface.md,89998,show status bar problems count for current file only,Park,Cho
+Feature-request,debugging.md,89825,launch.json: values from envFile not substituted in args,Park,Cho
+Feature-request,themes.md,89779,Suggestion: highlight focused problem in panel,Park,Cho
+Feature-request,themes.md,89710,Change the default Korean font,Park,Cho
+Feature-request,debugging.md,89703,Global input variables between tasks.json and launch.json,Park,Cho
+Feature-request,settings-sync.md,89595,Sync Settings UI: Quickpick UI comes at its limits...,Park,Cho
+Feature-request,userinterface.md,89487,Search editor: should ask user to confirm overwrite when dirty,Park,Cho
+Feature-request,themes.md,89470,Search editor: highlights should not hide when search viewlet is hidden,Park,Cho
+Feature-request,telemetry.md,89301,Enable telemetry for Auth,Park,Cho
+Feature-request,userinterface.md,89243,Expose a dropdown on the sidebar for extensions,Park,Cho
+Feature-request,debugging.md,89179,"Allow ""files.associations"" as a resource setting",Park,Cho
+Feature-request,json.md,89120,Soft-wrap JSON following a newline \n in a string,Park,Cho
+Feature-request,userinterface.md,89048,Seeding Search view from Find Widget,Park,Cho
+Feature-request,themes.md,89044,Highlighting text should also highlight its counterpart in Watch dropdown,Park,Cho
+Feature-request,integrated-terminal.md,88942,"Integrated terminal not triggering zsh's ""alt"" bindkeys?",Park,Cho
+Feature-request,userinterface.md,88925,provider UI for launch.json and task.json,Park,Cho
+Feature-request,extension-gallery.md,88885,Readonly ranges/lines in the editors,Park,Cho
+Feature-request,javascript.md,88844,Disable editor.acceptSuggestionOnCommitCharacter by default,Park,Cho
+Feature-request,userinterface.md,88802,Improve UI view for arguments in settings,Park,Cho
+Feature-request,userinterface.md,88749,Consider adding a status bar for suggest widget,Park,Cho
+Feature-request,accessibility.md,88695,Using the file compare tool with screen readers needs some attention,Park,Cho
+Feature-request,codebasics.md,88627,[folding] seperate color for line numbers at collapsed row,Park,Cho
+Feature-request,settings-sync.md,88625,Settings Sync: No way to specify a platform specific extension,Park,Cho
+Feature-request,command-line.md,88504,Launch vscode from cli with custom variables for extension,Park,Cho
+Feature-request,tasks.md,88471,Auto run task on file open/focus,Park,Cho
+Feature-request,keybindings.md,88323,Make it easier to define platform-specific keybindings,Park,Cho
+Feature-request,settings-sync.md,88291,Handle default platform settings while syncing,Park,Cho
+Feature-request,debugging.md,88230,Allow debug extensions to provide configurations to display in Select and Start Debugging,Park,Cho
+Feature-request,codebasics.md,88151,[folding] markdown Folding and Surrounding config issues,Park,Cho
+Feature-request,userinterface.md,88118,Support follow-mode editor layout,Park,Cho
+Feature-request,userdefinedsnippets.md,88104,Quick suggestions for snippet prefixes that aren't word characters,Park,Cho
+Feature-request,keybindings.md,87964,A setting to disable all default keybindings.,Park,Cho
+Feature-request,versioncontrol.md,87944,Diff editor: Differentiate unimportant differences,Park,Cho
+Feature-request,intellisense.md,87895,Add custom character for auto bracket matching.,Park,Cho
+Feature-request,userinterface.md,87887,Repo grouping (folders) in Workspace,Park,Cho
+Feature-request,debugging.md,87845,Improve task debugging by giving more context,Park,Cho
+Feature-request,userinterface.md,87724,"Add ""Compare with Saved"" to context menu of tabs",Park,Cho
+Feature-request,codebasics.md,87702,[folding] Allow folding controls to be themeable,Park,Cho
+Feature-request,themes.md,87475,Option to hide setting icon in sidebar,Park,Cho
+Feature-request,userinterface.md,87362,Add a setting or command to split editor groups and not move focus,Park,Cho
+Feature-request,debugging.md,87317,Show debug controls panel on sidebar,Park,Cho
+Feature-request,userinterface.md,87280,Single area layout with tabbed Editor Side Bar and Panels.,Park,Cho
+Feature-request,versioncontrol.md,87278,[feature] different list styling for quickinput,Park,Cho
+Feature-request,codebasics.md,87204,Add a command to add multicursors to all Highlight Occurences,Park,Cho
+Feature-request,json.md,1272,[json] json.schemas setting has no scheme / code complete,Chang,Cho
+Feature-request,json.md,4630,[json] provide intellisense for version in bower.json dependencies,Chang,Cho
+Feature-request,markdown.md,5047,Support to scroll markdown preview with source scrolling,Chang,Cho
+Feature-request,markdown.md,7638,No markdown preview button when a file is not named ending with .md,Chang,Cho
+Feature-request,json.md,7730,[json] Referencing **local** JSON schema from another local schema,Chang,Cho
+Feature-request,markdown.md,11851,Embedded language support in Markdown,Chang,Cho
+Feature-request,typescript.md,13039,No div completion on Template literals inside of ES6/TS files,Chang,Cho
+Feature-request,markdown.md,14538,Allow saving markdown preview as an HTML document,Chang,Cho
+Feature-request,html.md,14920,[html] intellisense in style attributes,Chang,Cho
+Feature-request,markdown.md,20804,Can markdown preview support UML graph £¿,Chang,Cho
+Feature-request,json.md,24321,[json] IntelliSense don't work for @angular in package.json,Chang,Cho
+Feature-request,userdefinedsnippets.md,25173,feature request: add a TM_FILENAME_BASE and TM_FILENAME_EXT or similar variables for snippets,Chang,Cho
+Feature-request,markdown.md,28297,Implement download button for the MarkDown preview HTML,Chang,Cho
+Feature-request,markdown.md,28916,Feature Request: render emoji in Markdown Preview,Chang,Cho
+Feature-request,json.md,33083,[json] Provide a flag in json schema to ignore a property in proposals,Chang,Cho
+Feature-request,markdown.md,33714,Detect Markdown references links,Chang,Cho
+Feature-request,intellisense.md,35732,Support import intellisense in <script> tags in .html files,Chang,Cho
+Feature-request,intellisense.md,37284,Auto imports: not suggested if local type exists,Chang,Cho
+Feature-request,javascript.md,38087,"[angular] CTRL+click to open link & data-ng-include=""""",Chang,Cho
+Feature-request,userdefinedsnippets.md,38459,Feature request: More snippet options,Chang,Cho
+Feature-request,userdefinedsnippets.md,43140,Additional date-based snippet variables,Chang,Cho
+Feature-request,typescript.md,44111,[Typescript][Feature] Automatically add inferred types to code,Chang,Cho
+Feature-request,json.md,46322,[json] support JSON schema draft 7,Chang,Cho
+Feature-request,typescript.md,47727,Typescript: sort auto-complete results by priority,Chang,Cho
+Feature-request,typescript.md,52499,Support TypeScript CompletionInfo,Chang,Cho
+Feature-request,typescript.md,54215,Allow click on tsconfig references paths,Chang,Cho
+Feature-request,html.md,55213,Support underscore in html attribute names,Chang,Cho
+Feature-request,json.md,56079,[json] add setting `json.validation.enable`,Chang,Cho
+Feature-request,markdown.md,57104,Add code folding in markdown based on bullet point hierarchy level,Chang,Cho
+Feature-request,html.md,69318,Show description for HTML event and aria attributes,Chang,Cho
+Feature-request,settings.md,58385,Clean up JavaScript and TypeScript suggest settings,Chang,Cho
+Feature-request,userinterface.md,58503,"Have a ""Copy Relative Path"" in the context menu (explorer tab)",Chang,Cho
+Feature-request,themes.md,59567,Syntax highlighting for json5 in markdown,Chang,Cho
+Feature-request,keybindings.md,60276,Add keybinding commands to open files in preview or non-preview mode,Chang,Cho
+Feature-request,tasks.md,62728,Option to run tasks without problem matchers or tasks.json,Chang,Cho
+Feature-request,userinterface.md,63892,"[Feature Request] Add ""rename this file"" to right-click menu of tab bar and explorer bar",Chang,Cho
+Feature-request,html.md,66230,HTML attribute completion description,Chang,Cho
+Feature-request,tasks.md,64385,Should task user input be shell escaped?,Chang,Cho
+Feature-request,userdefinedsnippets.md,65145,File \ Preferences \ User Snippets gets confused if workspace uses a FileSystemProvider,Chang,Cho
+Feature-request,typescript.md,65195,[TypeScript] Required properties should be on top of suggest,Chang,Cho
+Feature-request,integrated-terminal.md,65710,Find in Terminal: Allow finding multiple instances on the same line,Chang,Cho
+Feature-request,markdown.md,65780,Add option to disable markdown highlighting in JSDoc comments,Chang,Cho
+Feature-request,userinterface.md,66497,Explorer: support filtering,Chang,Cho
+Feature-request,typescript.md,67847,`<` and `>` are not matched in TypeScript,Chang,Cho
+Feature-request,userinterface.md,71239,Allow to drop a folder into the explorer to copy it in,Chang,Cho
+Feature-request,intellisense.md,72423,Support smart select for JavaScript and TypeScript,Chang,Cho
+Feature-request,intellisense.md,74798,Intellisense Add an option to delay validation (and thus wavy lines in code).,Chang,Cho
+Feature-request,integrated-terminal.md,76175,Terminal: Ctrl/Cmd + Click does not trigger port forwarding,Chang,Cho
+Feature-request,userinterface.md,76264,Pasting a file into a folder via the explorer should expand the folder,Chang,Cho
+Feature-request,tasks.md,76518,Implement resolveTask in grunt extension,Chang,Cho
+Feature-request,javascript.md,76592,proper JSDocs for function signatures using destructuring,Chang,Cho
+Feature-request,userinterface.md,76752,Broken workflow: return to the old incremental numbering behaviour when pasting files,Chang,Cho
+Feature-request,intellisense.md,76771,[config] `markdownDescription` is missing from autocomplete for nested properties,Chang,Cho
+Feature-request,tasks.md,78147,Configure task action should reveal the newly added task and position the cursor there,Chang,Cho
+Feature-request,userinterface.md,79205,Explorer tree does not show correct content when connected to case sensitive file system on a case insensitive platform,Chang,Cho
+Feature-request,integrated-terminal.md,79572,bash.exe / zsh.exe on Windows should `--login` arg defaultly.,Chang,Cho
+Feature-request,integrated-terminal.md,81447,Feature: paste on right click regardless of selection,Chang,Cho
+Feature-request,userinterface.md,83396,Move Folder Prompt,Chang,Cho
+Feature-request,userdefinedsnippets.md,83834,Adopt insert&replace range for snippet completions,Chang,Cho
+Feature-request,integrated-terminal.md,84949,WebGL Terminal Renderer,Chang,Cho
+Feature-request,json.md,85383,Allow json edit to support inserting in array at a given index,Chang,Cho
+Feature-request,settings-sync.md,85618,Settings sync disable and delete data command,Chang,Cho
+Feature-request,keybindings.md,86065,Tunnels view: keyboard shortcuts missing,Chang,Cho
+Feature-request,settings-sync.md,86069,sync settings: resolve conflict complete button is too hidden,Chang,Cho
+Feature-request,settings-sync.md,86917,Ignore machine scoped settings while syncing,Chang,Cho
+Feature-request,javascript.md,86985,"[Feature Request] Allow ""jsconfig.json"" within "".vscode"" directory",Chang,Cho
+Feature-request,html.md,88838,[html] Mirror cursor doesn't work inside a script tag where type is set to text/html,Chang,Cho
+Feature-request,tasks.md,89273,$tsc-watch pattern is too strict,Chang,Cho
+Feature-request,intellisense.md,89303,Remove vertical line/cursor after using auto-completion in html file,Chang,Cho
+Feature-request,settings-sync.md,90088,Move sync configuration from settings to storage,Chang,Cho
+Feature-request,settings-sync.md,90218,Improve error handling in settings sync,Chang,Cho
+Feature-request,userinterface.md,90533,"Improve ""Open editors"" Feature View",Chang,Cho
+Feature-request,settings-sync.md,91078,Enable local backups for all resource,Chang,Cho
+Feature-request,javascript.md,92074,[JS] Expose JSDoc creation as a command,Chang,Cho
+Feature-request,userinterface.md,92090,Explorer should show hidden files and their path if they are opened,Chang,Cho
+Bug,debugging.md,91499,Debug start view: Not shown after deleting launch.json,Eun,Cho
+Bug,themes.md,92245,A Font issue,Eun,Cho
+Bug,userinterface.md,92384,SearchEditor does not respect `search.useIgnoreFiles`,Eun,Cho
+Bug,userinterface.md,91478,"Search Editor peek say ""Definitions ()""",Eun,Cho
+Bug,userinterface.md,91287,Panel read only indicator doesn't display correctly for first line,Eun,Cho
+Bug,integrated-terminal.md,91233,Follow link doesn't work for local file in terminal,Eun,Cho
+Bug,integrated-terminal.md,90903,Terminal's selection is wrong visually after resizing terminal,Eun,Cho
+Bug,integrated-terminal.md,91204,Terminal not scrolling down,Eun,Cho
+Bug,userinterface.md,91453,Search editor doesn't play nice with provided links?,Eun,Cho
+Bug,themes.md,89680,Taskbar Icon not showing after Windows Update,Eun,Cho
+Bug,markdown.md,89930,Markdown preview jumps a bit on every keystroke,Eun,Cho
+Bug,emmet.md,89821,Emmet match tag not work with comments inside tags and Typescript inferred types,Eun,Cho
+Bug,themes.md,90486,Editors show generic icon until they are loaded,Eun,Cho
+Bug,ssh.md,89431,TreeError logged when choosing 'Change Label' or 'Set Local Port',Eun,Cho
+Bug,settings.md,89247,Settings bad layout after toggling v/h editor layout,Eun,Cho
+Bug,accessibility.md,89570,Screen reader does not read documentation link,Eun,Cho
+Bug,themes.md,88974,The match tag's highlighting doesn't work properly,Eun,Cho
+Bug,settings.md,88703,Setting format error not reported in Settings UI,Eun,Cho
+Bug,integrated-terminal.md,88529,Terminal.open was called on an element that was not attached to the DOM,Eun,Cho
+Bug,emmet.md,88509,Emmet: ?plus? modifier,Eun,Cho
+Bug,html.md,88072,[html] mirror cursor: pasting a full line will copy the full line twice,Eun,Cho
+Bug,userinterface.md,87446,"Editor limit: running ""Save As"" will close one editor when limit reached",Eun,Cho
+Bug,codebasics.md,86769,Clicking on List Widget triggers opening twice,Eun,Cho
+Bug,accessibility.md,86713,symbol text can not display fully when it too long,Eun,Cho
+Bug,versioncontrol.md,86392,Open File' missing from img diff,Eun,Cho
+Bug,markdown.md,86332,Markdown word not highlighting when using underscore to mark italic,Eun,Cho
+Bug,themes.md,86299,[themes] IconTheme doesn't work with spaces in names,Eun,Cho
+Bug,userinterface.md,86192,Extension View's publisher have greyscale rendering,Eun,Cho
+Bug,integrated-terminal.md,86142,Terminal minimum contrast ratio not met for dom renderer b,Eun,Cho
+Bug,settings-sync.md,86083,Sync: Have an option to copy the Sign In link,Eun,Cho
+Bug,userinterface.md,86028,New folder/file collapsed,Eun,Cho
+Bug,userinterface.md,86026,Firefox: custom dropdown renders not needed inner focus box,Eun,Cho
+Bug,userinterface.md,85124,Menu can be lost,Eun,Cho
+Bug,markdown.md,85015,markdown extension does not open relative links in remote env,Eun,Cho
+Bug,markdown.md,88416,In markdown hover hr overlaps following codeblock,Eun,Cho
+Bug,debugging.md,85441,Variable bebug hovers don't work after optional chaining,Eun,Cho
+Bug,windows.md,88626,Closing VS Code with pending update reopens vs code after update,Eun,Cho
+Bug,keybindings.md,82592,Web: Webview is stealing keybindings,Eun,Cho
+Bug,markdown.md,80656,Markdown: Find widget arrows look disabled,Eun,Cho
+Bug,accessibility.md,79339,Accessibility: tabbing in an opened combobox sends the cursor to the first item in the document instead of next,Eun,Cho
+Bug,accessibility.md,71952,Accessibility of settings is poor,Eun,Cho
+Bug,settings.md,58923,Settings: Utilize Button for all 'Edit settings.json' link,Eun,Cho
+Bug,settings.md,79911,Custom data settings: User level setting,Eun,Cho
+Bug,typescript.md,47386,Task: Typescript errors disappear after document closed,Eun,Cho
+Bug,windows.md,52855,VS Code was lost on shutdown with pending update,Eun,Cho
+Bug,debugging.md,66801,Input variables only work with one configuration in a compound launch config,Eun,Cho
+Bug,userinterface.md,49211,"Process Explorer: ""CPU %"" column french name is too long: ""% PROCESSEUR""",Eun,Cho
+Bug,integrated-terminal.md,21125,Terminal link detection issues,Eun,Cho
+Bug,windows.md,43949,VS Code will not update (stuck on preparing to install page),Eun,Cho
+bug,debugging.md,91955,Debug start view: content order reversed,Yang,Cho
+bug,accessibility.md,91603,Accessibility: Enter on Extension Item doesn't focus the Extension Editor,Yang,Cho
+bug,javascript.md,34,Javascript - regular expressions are not colored - Javascript mode instantiated twice,Yang,Cho
+bug,keybindings.md,464,not working key-binding with JIS Keyboard,Yang,Cho
+bug,typescript.md,1052,Incorrect error in TypeScript code,Yang,Cho
+bug,accessibility.md,91602,Accessibility: View title bar is not accessible with Orca,Yang,Cho
+bug,javascript.md,1590,JSDoc Comment seen as code error in JavaScript,Yang,Cho
+bug,debugging.md,91975,Command Palette still shows View: Show Debug,Yang,Cho
+bug,codebasics.md,2023,De-indenting does not update visible workspace position to show cursor,Yang,Cho
+bug,themes.md,1850,Text highlighted with double click intermittently can't be edited,Yang,Cho
+bug,debugging.md,2215,Debug: Breakpoints not center aligned (Windows),Yang,Cho
+bug,debugging.md,2216,Debug: Hover shows up empty for complex objects with no children,Yang,Cho
+bug,typescript.md,2225,TypeScript mode created to eagerly which results in unnecessary plugin activation,Yang,Cho
+bug,debugging.md,91899,Height in debug console broken,Yang,Cho
+bug,debugging.md,2467,debug console shouldn't show up on every debug launch,Yang,Cho
+bug,json.md,2468,[json] Intellisense Provides Strange Suggestions In Property Value,Yang,Cho
+bug,debugging.md,91924,Bad layout in debug console with long console message location,Yang,Cho
+bug,keybindings.md,2988,Improperly serialized keybindings,Yang,Cho
+bug,python.md,1467,[python] syntax highlighting breaks on function annotations,Yang,Cho
+bug,editingevolved.md,3261,[folding] Please do not call setHiddenAreas on each model change!,Yang,Cho
+bug,themes.md,3284,Show Debug Console icon is broken in High Contrast theme,Yang,Cho
+bug,themes.md,3311,QuickOpen: icon overlaps with 'recently opened',Yang,Cho
+bug,keybindings.md,3386,Restart and Stop actions have no keybindings,Yang,Cho
+bug,debugging.md,3517,Error message for mistype environment variable is confusing,Yang,Cho
+bug,csharp.md,1659,[css] @namespace is not syntax highlighted,Yang,Cho
+bug,debugging.md,3483,Breakpoint actions should only be enabled when there are breakpoints to reapply/deactivate,Yang,Cho
+bug,php.md,3978,[php] PHP globals hovers on html tag,Yang,Cho
+bug,css.md,2573,[sass] syntax error inside @media using child or sibling selectors,Yang,Cho
+bug,debugging.md,4188,console.log from debug session,Yang,Cho
+bug,debugging.md,91466,Debug start view: No completion or documentation for valid `view` values,Yang,Cho
+bug,codebasics.md,4176,Column selection does not cover folded text,Yang,Cho
+bug,themes.md,6690,Changing viewlets too quickly does not change view,Yang,Cho
+bug,markdown.md,8259,Markdown: coloring wrong after fenced code block,Yang,Cho
+bug,editingevolved.md,3403,[folding] Fold action should work on all cursors,Yang,Cho
+bug,themes.md,8390,Syntax highlighting example does not highlight syntax,Yang,Cho
+bug,userinterface.md,8995,contextmenu,Yang,Cho
+bug,codebasics.md,12820,"Find and Replace: ""Find in selection"" includes current line of multi-line selection",Yang,Cho
+bug,themes.md,14002,Split editor icon,Yang,Cho
+bug,codebasics.md,4905,Column-Select is biased to the right - this is inconsistent with traditional shift-select behaviour,Yang,Cho
+bug,keybindings.md,24022,Keybinding conflict with Tasks,Yang,Cho
+bug,keybindings.md,28099,Keybindings editor gets focus when making changes in keybindings.json,Yang,Cho
+bug,debugging.md,91471,Debug start view: rendering order not guaranteed,Yang,Cho
+bug,userinterface.md,25354,Context menu triggered when tree has focus selects an item,Yang,Cho
+bug,codebasics.md,29400,multi-cursor toggle modifier action has a confusing name,Yang,Cho
+bug,debugging.md,35898,Debug status bar item lacks mouse over feedback,Yang,Cho
+bug,editingevolved.md,3211,[folding] Fold All has no effect,Yang,Cho
+bug,codebasics.md,43238,Large number of Multi-Cursor hangs on brackets,Yang,Cho
+bug,debugging.md,43648,Debugging not working in 1.20,Yang,Cho
+Feature-request,userinterface.md,68943,Alt+Click on Explorer file panel header should collapse all folders,Lee,Heo
+Feature-request,userinterface.md,18109,Add expand all / collapse all support for file explorer folders.,Lee,Heo
+Feature-request,userinterface.md,9456,Explorer: allow to expand a sub-tree fully via Alt-click,Lee,Heo
+Feature-request,codebasics.md,65219,"populate the ""go to line"" dialog with the current line number",Park,Heo
+Feature-request,codebasics.md,52429,Line numbers not read out while reading the code in the editor,Park,Heo
+Bug,accessibility.md,52190,"[Accessibility]A11y_VSCode_ViewOutput_ScreenReader: Jaws does not announce ""cannot edit in read only editor"" when we type something in editor.",Park,Heo
+Bug,accessibility.md,52270,[Accessibility]A11y_VSCode_ViewIntegratedTerminal_ScreenReader: Jaws does not read the information that displays in the editor.,Park,Heo
+Bug,accessibility.md,52007,[Accessibility]A11y_VSCode_ViewProblems_ScreenReader: NVDA does not read the selected text when we switch to Editor.,Park,Heo
+Bug,accessibility.md,52176,[Accessibility]A11y_VSCode_ConfigureDefaultBuildTask_ScreenReader:Jaws is not reading the placeholder text.,Park,Heo
+Bug,accessibility.md,52195,"[Accessibility]A11y_VSCode_ViewOutput_ScreenReader: Jaws does not read the ""role"" of the combobox and instruction to open it.",Park,Heo
+Feature-request,userinterface.md,55780,Cursor color to distinguish between solitary cursors and groups of cursors,Lee,Heo
+Feature-request,codebasics.md,6995,Scroll/Reveal when there are multiple cursors,Lee,Heo
+Feature-request,codebasics.md,11809,Move line up/down should support multiple cursors,Lee,Heo
+Feature-request,codebasics.md,67841,Show number of matching occurrences,Lee,Heo
+Bug,settings-sync.md,65347,"Option so ""match whole word"" becomes effectively ""match whole name"" (exact match)",Lee,Heo
+Bug,codebasics.md,59961,"""Select all occurrences of find match"" selects all in file even when ""find in selection"" is enabled?",Lee,Heo
+Feature-request,codebasics.md,28186,Column Selection by Middle Mouse Button (Sublime Style),Cho,Heo
+Feature-request,codebasics.md,27916,Alt-selection doesnt work,Cho,Heo
+Feature-request,codebasics.md,5402,Improved column selection (Alt+select),Cho,Heo
+Bug,codebasics.md,11830,Column mode selection behavior is inconsistent with user expectations,Cho,Heo
+Feature-request,keyboard-shortcuts.md,3130,Allow customization of mouse shortcuts,Cho,Heo
+Feature-request,keyboard-shortcuts.md,11956,Modify shortcuts of multiple-line edit,Cho,Heo
+Feature-request,keyboard-shortcuts.md,57113,Ctrl+click to select code,Cho,Heo
+Bug,codebasics.md,3091,Multiple cursors binding,Cho,Heo
+Bug,keybindings.md,6879,How to rebind alt+click ??,Cho,Heo
+Bug,codebasics.md,6769,multi-cursor editing stops working on ubuntu,Cho,Heo
+Feature-request,codebasics.md,6472,[folding] Shift-Click to Unfold All Nested,Cho,Heo
+Feature-request,codebasics.md,67678,Auto-indent on closing brace,Lee,Heo
+Bug,codebasics.md,40235,Closing Brace auto-indent doesn't work properly,Lee,Heo
+Feature-request,codebasics.md,65334,Support multiline search for file local search,Lee,Heo
+Feature-request,codebasics.md,15727,Better UI for Multiline Search & Replace in a single file,Lee,Heo
+Feature-request,codebasics.md,40523,[Feature Request] Improve search usability by merging the global and local search widgets?,Lee,Heo
+Feature-request,codebasics.md,64466,Arrow navigating search history + multiline search input,Lee,Heo
+Feature-request,codebasics.md,41728,Right clicking column selection cancels selection,Park,Heo
+Feature-request,codebasics.md,22235,Make column selection work on the model not the view model,Park,Heo
+Feature-request,debugging.md,64445,Feature request: Aggregated debug console,Lee,Heo
+Bug,debugging.md,61273,Debug Console doesn't update output when hidden,Lee,Heo
+Bug,debugging.md,60034,Test: multiple debug consoles?,Lee,Heo
+Feature-request,debugging.md,71515,Call Stack should be able to render from both sides,Park,Heo
+Bug,debugging.md,68474,"Debugger call stack sometimes is missing frames with no ""Load More Stack Frames"" button",Park,Heo
+Bug,debugging.md,67791,Call Stack appears broken,Park,Heo
+Feature-request,debugging.md,71310,Automatic log expressions for Logpoints (Print debugging),Park,Heo
+Feature-request,debugging.md,67897,Logpoint intellisense is not complete,Park,Heo
+Feature-request,json.md,61122,launch.json autocompletion in configurations.compounds.configurations doesn't update until the file is saved,Park,Heo
+Bug,intellisense.md,59821,Slow code navigation and autocomplete,Park,Heo
+Feature-request,debugging.md,60057,Allow extensions to provide contributed/detected launch configurations,Park,Heo
+Feature-request,debugging.md,69752,Do not show single-thread in Call Stack during multi-session debugging,Park,Heo
+Bug,debugging.md,68277,Call Stack window doesn't scroll to the active thread when a breakpoint is hit,Park,Heo
+Bug,debugging.md,69606,Call stack: ensure thread status is displayed when label is long,Park,Heo
+Feature-request,debugging.md,68276,"Call Stack ""Paused On Breakpoint"" UI not visible for long thread names",Park,Heo
+Feature-request,debugging.md,69504,Debug console evaluation moves editor focus to current (to be executed next) line,Park,Heo
+Feature-request,emmet.md,69041,Emmet expansion not working for jsx tags inside other jsx tag prop,Park,Heo
+Bug,themes.md,65921,JSX tag highlighting broken,Park,Heo
+Feature-request,emmet.md,66107,Emmet expansion with React components,Park,Heo
+Feature-request,emmet.md,53499,Improve custom emmet snippets editing experience,Park,Heo
+Bug,emmet.md,50997,"Emmet for VSCode is ""slow""",Park,Heo
+Feature-request,emmet.md,40096,Wrap with abbreviation history,Park,Heo
+Bug,emmet.md,53349,Emmet not working,Park,Heo
+Feature-request,emmet.md,46006,Remember last abbreviations used in wrap with abbreviation.,Park,Heo
+Feature-request,emmet.md,33121,Feature request - need more icons in snippets list (for Emmet custom snippets etc.),Park,Heo
+Feature-request,emmet.md,32346,Emmet snippets -> to the TOP of snippets list,Park,Heo
+Feature-request,css.md,71002,Why doesn't work emmet media query? Specifically @m and @media?,Park,Heo
+Feature-request,css.md,61125,[css] Autocomplete for media queries,Park,Heo
+Feature-request,css.md,62333,Add @media and @supports to CSS breadcrumbs,Park,Heo
+Feature-request,userinterface.md,69958,Workspace-level enabled extensions,Park,Heo
+Feature-request,userinterface.md,68527,Explore Extensions Management UX,Park,Heo
+Bug,settings.md,71622,Link in the editor with the `vscode:` URI scheme is parsed as `file://vscode:...`,Park,Heo
+Feature-request,settings.md,58641,Open settings editor from link with URI handler,Park,Heo
+Feature-request,extension-gallery.md,67603,Extension should show up in the installed extensions list as soon as it's installed,Park,Heo
+Feature-request,extension-gallery.md,66931,Improve UX for Post extension install/uninstall/enable/disable,Park,Heo
+Feature-request,extension-gallery.md,64671,Extension Pack: Enabled/Disabled list: Show depending extensions as subitems,Park,Heo
+Bug,extension-gallery.md,64044,Disabling members of an extension pack.,Park,Heo
+Bug,extension-gallery.md,61430,Extension Pack dependencies are not shown at all,Park,Heo
+Feature-request,extension-gallery.md,48381,Feature Request: Recommended VSIX Extensions,Park,Heo
+Bug,extension-gallery.md,48367,Recommended Extensions - No suggestions,Park,Heo
+Feature-request,extension-gallery.md,13456,Better UX for recommended extensions,Park,Heo
+Bug,extension-gallery.md,46407,Show recommendations gives error message,Park,Heo
+Feature-request,extension-gallery.md,70000,Extension contributes settings don't take effect until vscode restarted now,Park,Heo
+Bug,css.md,68554,Unable to load html/css custom data contribution,Park,Heo
+Feature-request,html.md,69457,html' snippet is annoying and easily inserts by accident when typing any html,Park,Heo
+Feature-request,html.md,57469,"[html] Support SCSS in HTML with <style type=""text/scss"">",Park,Heo
+Feature-request,html.md,63955,HTML attribute/attribute-value completion documentation,Park,Heo
+Feature-request,html.md,62976,Web Components support in HTML files,Park,Heo
+Feature-request,html.md,2784,[html] Add support for custom tag providers for HTML,Park,Heo
+Feature-request,html.md,58315,[html] Automatically delete HTML closing tag when converting to self-closing tag,Park,Heo
+Bug,html.md,45367,closing tag in html,Park,Heo
+Feature-request,html.md,57968,use language server for onEnterRules,Park,Heo
+Feature-request,html.md,45402,[html] For auto close tag after finish type the code quick press 'tab' to move the cursor to the end of the close tag,Park,Heo
+Bug,html.md,38391,Closing HTML tag not highlighting in PHP files.,Park,Heo
+Feature-request,html.md,12787,[html] closing </script> tag is not proposed,Park,Heo
+Bug,html.md,44324,Auto Close tags in html is so annoying,Park,Heo
+Feature-request,html.md,7351,[html] Closing markup tags should auto-format/indent,Park,Heo
+Feature-request,html.md,57520,[html] fold attributes,Park,Heo
+Feature-request,html.md,53382,Select to Bracket for HTML tags,Park,Heo
+Feature-request,html.md,53163,HTML snippets being suggested in attributes,Park,Heo
+Feature-request,html.md,52729,HTML Tags,Park,Heo
+Feature-request,settings.md,64488,Need a better grammar support for Rust lang,Lee,Heo
+Feature-request,settings.md,49932,Better syntax highlighting for Rust,Lee,Heo
+Feature-request,settings.md,45628,Some ideas about rust-lang on VSCode,Lee,Heo
+Feature-request,settings.md,64609,automatically place a semicolon after writing a parenthesis instead of inside,Lee,Heo
+Feature-request,settings.md,44002,Parenthesis inside of another parenthesis (unnecessary deletion)?,Lee,Heo
+Feature-request,settings.md,35799,cant add parenthesis when cursor precedes an existing parenthesis,Lee,Heo
+Feature-request,settings.md,37315,Adding close paren inside parent pair overwrites close (right) paren,Lee,Heo
+Feature-request,keybindings.md,28042,Add support for more sequential keys for keybinding,Cho,Heo
+Feature-request,keybindings.md,6966,enable keychords of 3 steps,Cho,Heo
+Feature-request,keybindings.md,65826,Modifying ChordKeybinding to support multiple chords,Cho,Heo
+Feature-request,keybindings.md,68863,Modifying ResolvedKeybindingItem to support multiple chords,Cho,Heo
+Feature-request,keyboard-shortcuts.md,37549,b?po keyboard layout: cut / copy / paste shortcuts,Park,Heo
+Feature-request,keybindings.md,3671,"Add support for ""e.key"" keybindings in extension's `contributes.keybindings`",Park,Heo
+Feature-request,keybindings.md,14478,Add support for contextmenu key,Park,Heo
+Feature-request,keyboard-shortcuts.md,31074,Keyboard shortcut chords with bare shift,Park,Heo
+Feature-request,keyboard-shortcuts.md,68271,"Keyboard shortcut search results for ""focus terminal"" have odd ordering",Park,Heo
+Feature-request,settings.md,68372,Align Keybindings editor with Settings editor,Park,Heo
+Feature-request,markdown.md,66132,autoclosing markdown preview when closing md file,Park,Heo
+Feature-request,markdown.md,32818,Drag markdown preview to New Window,Park,Heo
+Feature-request,markdown.md,54776,Option to automatically open markdown in preview,Park,Heo
+Bug,markdown.md,39195,Can't scroll a markdown preview using touch,Park,Kwon
+Bug,markdown.md,50975,Cannot split editor from markdown preview,Park,Kwon
+Feature-request,markdown.md,59483,More Robust Markdown Preview,Park,Kwon
+Bug,markdown.md,56910,Markdown: possible to open the same preview in one editor group,Park,Kwon
+Feature-request,markdown.md,19339,Markdown Preview: Links to markdown files in the workspace should also open in the preview,Park,Kwon
+Feature-request,markdown.md,54675,Opening new files open in Preview pane,Park,Kwon
+Bug,markdown.md,42583,Markdown Open preview action is not multi-select aware,Park,Kwon
+Feature-request,markdown.md,57979,Improve detection of current Markdown heading,Park,Kwon
+Feature-request,markdown.md,53992,"Outline view + Markdown: Do not display the ""#""s",Park,Kwon
+Feature-request,markdown.md,65837,[Request Change to Feature] Absolute path for Markdown Preview CSS,Park,Kwon
+Feature-request,markdown.md,61898,Preview Mode History,Park,Kwon
+Feature-request,settings.md,26339,Add support for local history,Park,Kwon
+Feature-request,debugging.md,59585,Request Console History in Debug Mode,Park,Kwon
+Feature-request,settings-sync.md,53453,User profile,Lee,Kwon
+Feature-request,settings-sync.md,60755,sync my global setting and installed extension with cloud account,Lee,Kwon
+Feature-request,settings-sync.md,56850,Sync VSCode Profile to cloud / login,Lee,Kwon
+Feature-request,settings-sync.md,49179,Sync VSCode settings and extensions on the cloud,Lee,Kwon
+Feature-request,settings-sync.md,59780,Save and sync extensions to the cloud,Lee,Kwon
+Feature-request,settings.md,70589,Settings UI is overwhelming for extensions with lots of settings,Park,Kwon
+Feature-request,settings.md,68184,Custom comments in Settings UI,Park,Kwon
+Feature-request,settings.md,67908,Settings UI: Improve `Edit in settings.json` experience,Park,Kwon
+Feature-request,settings.md,65844,configurationDefaults should be removed or migrated into the new settings editor,Park,Kwon
+Feature-request,,68133,"Highlight matches in Settings GUI search -> ""Kill terminal"" as last voice of context menu",Park,Kwon
+Feature-request,settings.md,64877,Display current value of a property in settings.json,Park,Kwon
+Feature-request,settings.md,58995,Settings UI - Not Showing Language Specific fields for TabSize/InsertSpaces,Park,Kwon
+Feature-request,tasks.md,70327,"tasks.json ""dependsOn"" property does not resolve variables/commands",Park,Kwon
+Feature-request,tasks.md,32879,Enforce Task dependencies,Park,Kwon
+Feature-request,tasks.md,70283,Support using background tasks in dependsOn,Park,Kwon
+Feature-request,settings.md,70118,default run task,Park,Kwon
+Feature-request,tasks.md,32239,Run the default build task from launch configuration,Park,Kwon
+Feature-request,multi-root-workspaces.md,35312,Improve Configure Default Build task in multi root setup,Park,Kwon
+Bug,tasks.md,37138,Tasks -> Configure Default Build Task does not preserve comments,Park,Kwon
+Feature-request,tasks.md,29444,Suggest primary build task,Park,Kwon
+Feature-request,tasks.md,47449,Improve `Run [Build] Tasks` command and dialog,Park,Kwon
+Feature-request,tasks.md,69785,A task description propery in tasks.json,Park,Kwon
+Feature-request,tasks.md,47172,"Show configured tasks in the ""Tasks"" menu",Park,Kwon
+Feature-request,tasks.md,47505,"Do not prompt the user to ""Select a task to show its output"" when there is only one task running",Park,Kwon
+Feature-request,tasks.md,28235,Provide Task Runner viewlet,Park,Kwon
+Feature-request,tasks.md,40508,Tasks: Configure Task opens menu with one item,Park,Kwon
+Feature-request,tasks.md,43305,Executing multiple tasks in a single task,Park,Kwon
+Feature-request,tasks.md,38969,Change debugging tab to be tasks tab,Park,Kwon
+Feature-request,tasks.md,41455,Assign default task to last task I've run,Park,Kwon
+Feature-request,tasks.md,1790,"Proposal: Add ""Run Task"" context menu to any "".js"" file containing a ""# task"" pragma comment",Park,Kwon
+Feature-request,tasks.md,71635,[Feature] Hide certain package.json scripts from npm scripts explorer,Park,Kwon
+Feature-request,tasks.md,49738,Stop script in NPM Script Explorer,Park,Kwon
+Bug,settings.md,69555,Run npm scripts in dbclick,Park,Kwon
+Feature-request,settings.md,48544,Newly created npm scripts are not picked up by the explorer,Park,Kwon
+Bug,tasks.md,65561,"click scripts on ""package.json"" can't run",Park,Kwon
+Feature-request,themes.md,28117,[theme] Icon for linked folders & files,Cho,Kwon
+Feature-request,themes.md,28877,[themes] Schedule color theme switching (or options in general),Cho,Kwon
+Feature-request,themes.md,12225,Change color based on daytim,Cho,Kwon
+Feature-request,themes.md,71616,[themes] Debounce color theme selection,Park,Kwon
+Feature-request,themes.md,25986,Separate workbench theme and syntax theme,Park,Kwon
+Bug,themes.md,67425,Color themes still show in Workbench: Color Theme options after disabling the extension that provides them,Park,Kwon
+Bug,themes.md,35585,Installed theme only available in one window,Park,Kwon
+Bug,themes.md,67283,Test: Dynamic enablement/disablement of themes,Park,Kwon
+Bug,themes.md,67426,Disabling the theme that contains the active theme does not change theme to default,Park,Kwon
+Feature-request,themes.md,69193,Changing modified tab circle color,Park,Kwon
+Feature-request,themes.md,67434,Dynamic themes: enable a color/icon theme after installation,Park,Kwon
+Feature-request,themes.md,65375,Editor tabs colors managers,Park,Kwon
+Feature-request,themes.md,62656,[themes] Color adjustments independent of themes,Park,Kwon
+Feature-request,themes.md,62104,Add labels/colors for folders,Park,Kwon
+Bug,keybindings.md,61136,When there are too many folders in the folder opening the folder will open the wrong folder.,Park,Kwon
+Feature-request,themes.md,54597,"[themes] Add a ""Recently Used"" section at the top of the color themes menu",Park,Kwon
+Feature-request,themes.md,48982,Allow to change the color of file icons,Park,Kwon
+Feature-request,themes.md,26974,Allow extensions to use theme colors,Park,Kwon
+Feature-request,themes.md,25633,[theming] when completing color keys in settings fill in current value,Park,Kwon
+Feature-request,themes.md,25433,Theme generator: colors for light theme should be used,Park,Kwon
+Feature-request,themes.md,17654,Custom coloring for picked color theme,Park,Kwon
+Feature-request,settings.md,68970,Find in Folder not working if the folder is excluded in setting,Lee,Kwon
+Bug,settings.md,68459,Files to exclude being ignored?,Lee,Kwon
+Bug,settings.md,20480,VS Code freezes when removing 'node_modules' folder from external terminal forcing to close?,Lee,Kwon
+Feature-request,settings.md,46718,search.exclude does not work for searching symbols across a workspace?,Lee,Kwon
+Bug,settings.md,66488,rimraf node_modules?,Lee,Kwon
+Bug,settings.md,40898,files.watcherExclude setting is not working in multi-root workspace?,Lee,Kwon
+Feature-request,userinterface.md,14909,Support a grid layout for editors,Cho,Kwon
+Feature-request,userinterface.md,28965,Allow to split editor vertically via context menu,Cho,Kwon
+Feature-request,userinterface.md,17738,Vertically split code editor and integrated terminal,Cho,Kwon
+Feature-request,userinterface.md,1749,Support to split editors horizontally,Cho,Kwon
+Feature-request,userinterface.md,2105,Max editor count should be configurable,Cho,Kwon
+Feature-request,settings.md,64862,Add option to disable intelligent multi-line paste,Lee,Kwon
+Bug,settings.md,62974,Multi cursor paste issue?,Lee,Kwon
+Bug,settings.md,46440,Pasting a multi-line selection pastes entire selection into every insertion point,Lee,Kwon
+Feature-request,settings.md,9285,User configurable menus.,Lee,Kwon
+Feature-request,settings.md,9827,Sub menus for Editor Context Menu.,Lee,Kwon
+Bug,settings.md,9,Commands in context menu,Lee,Kwon
+Bug,settings.md,11625,Sub menus by extensions in explorer context menus,Lee,Kwon
+Bug,settings.md,11682,Sub menus by extensions in explorer context menus item menus,Lee,Kwon
+Bug,settings.md,12321,Sub menus by extensions in explorer context menus item menus,Lee,Kwon
+Feature-request,userinterface.md,69455,Select project folders/subfolders/files in explorer view,Lee,Kwon
+Feature-request,userinterface.md,20643,Remember project folders & Support for opening multiple project folders in the same window,Lee,Kwon
+Feature-request,settings.md,13641,Make it easier to create new files/folders from the explorer when many files are present,Lee,Kwon
+Bug,settings.md,20394,Cannot add folder to root if only folders exist,Lee,Kwon
+Bug,settings.md,68199,Create new File / Folder adds input field in wrong tree path,Lee,Kwon
+Bug,settings.md,53626,Explorer - Context Menu File Duplicate & New File and Folder in the project root,Lee,Kwon
+Feature-request,settings.md,68059,Allow to navigate previous/next file preview,Lee,Kwon
+Feature-request,settings.md,54418,Allow to open editor as pinned and preserve current preview editor?,Lee,Kwon
+Feature-request,settings.md,8939,Show quick open results as preview while navigating through them,Lee,Kwon
+Feature-request,settings.md,64416,Allow only for some editors to open as preview (from SCM),Lee,Kwon
+Bug,markdown.md,64937,Markdown preview doesn't remember location,Lee,Kwon
+Feature-request,settings.md,2766,Automatically Activate Markdown Preview?,Lee,Kwon
+Feature-request,settings.md,54418,Allow to open editor as pinned and preserve current preview editor?,Lee,Kwon
+Feature-request,settings.md,63237,preview mode?,Lee,Kwon
+Feature-request,settings.md,60027,"Allow disabling ""Replace Preview""",Lee,Kwon
+Feature-request,markdown.md,60836,Open corresponding markdown file when click its link in preview mode,Lee,Kwon
+Feature-request,settings.md,55283,Setting a breakpoint in a file should take it out of preview mode?,Lee,Kwon
+Bug,settings.md,52375,Preview features on Double Click,Lee,Kwon
+Bug,settings.md,20819,When in preview mode of a Markdown file keep preview mode when browsing to a link (local at least),Lee,Kwon
+Feature-request,markdown.md,42730,Open Preview: support multi selection,Park,Kwon
+Feature-request,settings.md,70719,Don't preview files that I open directly,Park,Kwon
+Feature-request,settings.md,69968,Support multiple sets of editor groups,Park,Kwon
+Feature-request,settings.md,49026,Allow to open an editor into a specific editor group,Park,Kwon
+Bug,settings.md,26490,Settings and Keybindings editor do not retain filters when moved across editor groups,Park,Kwon
+Feature-request,userinterface.md,69097,File Comparison OS Shell Integration,Lee,Kwon
+Feature-request,settings.md,20958,Allow to swap left and right hand side in diff editor?,Lee,Kwon
+Bug,settings.md,10193,Unable to edit first file while comparing files,Lee,Kwon
+Feature-request,userinterface.md,68543,Compare file(s) between editor windows,Lee,Kwon
+Feature-request,userinterface.md,23547,Compare 2 files with multi selection?,Lee,Kwon
+Feature-request,userinterface.md,57687,Allow to compare 3 files?,Lee,Kwon
+Bug,settings.md,30088,Use?originalEditable?when comparing two files on disk,Lee,Kwon
+Bug,settings-sync.md,91395,Settings UI: add separator for sync setting,Park,Kwon
+Bug,settings.md,91205,Editor icon does not change when changing from plain text,Park,Kwon
+Bug,debugging.md,90965,debug session badge doesn't drop to zero after a debug session ends,Park,Kwon
+Bug,debugging.md,90940,Debug badge count doesn't reset when debugging ends,Park,Kwon
+Bug,keybindings.md,122141,Keybinding table row flashing background,Heo,
+Feature-request,keybindings.md,121673,Specify which extension provides a specific keyboard shortcut,Heo,
+Bug,keybindings.md,120180,Keyboard Shortcuts editor: using del-key to remove mouse-selected text when editing When-expression deletes whole shortcut,Heo,
+Feature-request,keybindings.md,104966,Can't input backslash.,Heo,
+Feature-request,keybindings.md,80181,"Add chords to ""show same keybindings""",Heo,
+Feature-request,keybindings.md,49655,"Add theme key for the ""alternating"" row color in keybindings editor/settings UI and change default",Heo,
+Feature-request,keybindings.md,78782,Keybindings: provide some guidance on when-clause support,Heo,
+Feature-request,keybindings.md,111854,Allow extensions to contribute a default when clause to be used when a user add a key binding for the command,Heo,
+Bug,keybindings.md,118134,Updating a keyboard shortcut requires a restart for the visual confirmation on macOS,Heo,
+Feature-request,keybindings.md,40389,Keybindings aren't respecting when clause when showing shortcut keys in menus,Heo,
+Feature-request,keybindings.md,114931,Keyboard Shortcuts editor: distinguish deleted versus unset keybindings,Heo,
+feature-request,themes.md,119047,use both English and UI language to search color theme names,Heo,
+feature-request,themes.md,120345,Make inactive tab title color look different from active tab when decorations are visible,Heo,
+feature-request,themes.md,112252,Theme color support for OUTPUT Panel foreground text,Heo,
+feature-request,themes.md,105247,[theme] allow variables in the color theme definition file,Heo,
+Bug,themes.md,105239,[themes] 'Generate Color Scheme From Current Settings' produces deprecated settings,Heo,
+feature-request,themes.md,103694,[themes] settings: support for multiple theme names in VSCode colorCustomization,Heo,
+feature-request,themes.md,101556,[themes] 'Generate Color Theme From Current Settings' omits semantic token settings,Heo,
+feature-request,themes.md,91231,[themes] Support ${preferredTheme} as theme setting,Heo,
+feature-request,themes.md,62637,inspect tool for workbench colors,Heo,
+feature-request,accessibility.md,106441,Toolbars should only occupy one tab stop,Heo,
+Bug,accessibility.md,107791,Settings editor: File -> Exclude field tabbing issue,Heo,
+Bug,accessibility.md,95428,Word wrap should not be disabled when accessibility is turned on,Heo,
+Feature-request,accessibility.md,90842,Screen readers not announcing encountered break points,Heo,
+Feature-request,accessibility.md,43262,support code folding with screen reader support enabled,Heo,
+Bug,accessibility.md,121844,Random focus shifting,Heo,
+Bug,accessibility.md,120718,VoiceOver does not read last character in code completion suggestions,Heo,
+Bug,accessibility.md,90730,Buttons can disappear upon switch to and from another program,Heo,
+Bug,accessibility.md,66237,Keyboard navigation in settings editor is broken,Heo,
+feature-request,accessibility.md,40976,Dictation support for visual studio code,Heo,
+feature-request,accessibility.md,116454,Search view focus should be improved,Heo,
+Bug,accessibility.md,121851,Process explorer difficult / impossible to use via screen reader,Cho,
+Bug,accessibility.md,121844,Random focus shifting,Cho,
+Bug,html.md,116840,handle HTML-escaped characters in links,Cho,
+Bug,accessibility.md,117756,When opening and closing the context menu focus position is sometimes lost.,Cho,

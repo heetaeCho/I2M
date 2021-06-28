@@ -75,8 +75,8 @@ class EmbeddingLayer(Embedders):
         return emWords
 
 class W2V(Embedders):
-    embedder = KeyedVectors.load_word2vec_format('./EmbeddingModel/Word2Vec.bin', binary=True)
     def __init__(self, project, embeddingSize):
+        self.w2v = KeyedVectors.load_word2vec_format('./EmbeddingModel/Word2Vec.bin', binary=True)
         self.embeddingSize = embeddingSize
         try:
             self.embedder = torch.load('./EmbeddingModel/{}-EmbeddingLayer.pt'.format(project))
@@ -93,18 +93,19 @@ class W2V(Embedders):
                     word = line[i]
                     with torch.no_grad():
                         try:
-                            res = torch.tensor(W2V.embedder[word], dtype=torch.float).view(1, -1)
+                            res = torch.from_numpy(self.w2v[word]).view(1, -1)
                         except KeyError:
                             res = self.embedder(torch.tensor(super().wordSet.index(word))).view(1, -1)
-                    if i == 0:
+                    if temp is None:
                         temp = res
                     else:
-                        temp = torch.cat((temp, res))
+                        temp = torch.cat((temp, res), axis=0)
                 except IndexError:
                     continue
+            if temp is None:
+                return None
             if len(temp) > 3:
-                for i in range(maxLen-len(temp)):
-                    temp = torch.cat((temp, torch.zeros(1, self.embeddingSize)), axis=0)
+                temp = torch.cat((temp, torch.zeros(maxLen-len(temp), self.embeddingSize)), axis=0)
                 if emWords is None:
                     emWords = temp.view(1, -1, self.embeddingSize)
                 else:
@@ -112,8 +113,8 @@ class W2V(Embedders):
         return emWords
 
 class GloVe(Embedders):
-    embedder = convertModel()
     def __init__(self, project, embeddingSize):
+        self.gv = convertModel()
         self.embeddingSize = embeddingSize
         try:
             self.embedder = torch.load('./EmbeddingModel/{}-EmbeddingLayer.pt'.format(project))
@@ -130,18 +131,19 @@ class GloVe(Embedders):
                     word = line[i]
                     with torch.no_grad():
                         try:
-                            res = torch.tensor(GloVe.embedder[word], dtype=torch.float).view(1, -1)
+                            res = torch.from_numpy(self.gv[word]).view(1, -1)
                         except KeyError:
                             res = self.embedder(torch.tensor(super().wordSet.index(word))).view(1, -1)
-                    if i == 0:
+                    if temp is None:
                         temp = res
                     else:
-                        temp = torch.cat((temp, res))
+                        temp = torch.cat((temp, res), axis=0)
                 except IndexError:
                     continue
+            if temp is None:
+                return None
             if len(temp) > 3:
-                for i in range(maxLen-len(temp)):
-                    temp = torch.cat((temp, torch.zeros(1, self.embeddingSize)), axis=0)
+                temp = torch.cat((temp, torch.zeros(maxLen-len(temp), self.embeddingSize)), axis=0)
                 if emWords is None:
                     emWords = temp.view(1, -1, self.embeddingSize)
                 else:
@@ -149,8 +151,8 @@ class GloVe(Embedders):
         return emWords
 
 class FastText(Embedders):
-    embedder = FT.load_fasttext_format('./EmbeddingModel/fastText.bin')
     def __init__(self, project, embeddingSize):
+        self.ft = FT.load_fasttext_format('./EmbeddingModel/fastText.bin')
         self.embeddingSize = embeddingSize
         try:
             self.embedder = torch.load('./EmbeddingModel/{}-EmbeddingLayer.pt'.format(project))
@@ -160,24 +162,25 @@ class FastText(Embedders):
 
     def embedding(self, lines, maxLen):
         emWords = None
-        for line in lines:
+        for idx, line in enumerate(lines):
             temp = None
             for i in range(maxLen):
                 try:
                     word = line[i]
                     try:
-                        res = torch.tensor(FastText.embedder[word], dtype=torch.float).view(1, -1)
+                        res = torch.from_numpy(self.ft.wv[word]).view(1, -1)
                     except KeyError:
                         res = self.embedder(torch.tensor(super().wordSet.index(word))).view(1, -1)
-                    if i == 0:
+                    if temp is None:
                         temp = res
                     else:
-                        temp = torch.cat((temp, res))
+                        temp = torch.cat((temp, res), axis=0)
                 except IndexError:
                     continue
+            if temp is None:
+                return None
             if len(temp) > 3:
-                for i in range(maxLen-len(temp)):
-                    temp = torch.cat((temp, torch.zeros(1, self.embeddingSize)), axis=0)
+                temp = torch.cat((temp, torch.zeros(maxLen-len(temp), self.embeddingSize)), axis=0)
                 if emWords is None:
                     emWords = temp.view(1, -1, self.embeddingSize)
                 else:

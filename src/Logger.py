@@ -6,5 +6,5 @@ class Logger:
         self.logger.write(data)
         self.logger.flush()
     
-    def __del__(self):
-        self.logger.close()
+    def seek(self, idx):
+        self.logger.seek(0)

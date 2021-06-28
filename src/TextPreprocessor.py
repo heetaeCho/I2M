@@ -1,4 +1,5 @@
 import nltk
+import re
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
@@ -36,19 +37,28 @@ class TextPreprocessor:
             title, _, body = data
             title = [self._run(title.lower())]
             processedBody = []
-            for line in body.split('\n'):
-                tokens = self._run(line.lower())
-                if tokens and len(tokens) >= 3:
-                    processedBody.append(tokens)
+            if body is not None:
+                for line in body.split('\n'):
+                    tokens = self._run(line.lower())
+                    if tokens and len(tokens) >= 3:
+                        processedBody.append(tokens)
             return title, _, processedBody
 
     def _run(self, line):
+        # line = self._clean_text(line)
         tokens = self._tokenize(line)
         tokens = self._stopwordsRemoval(tokens)
         tokens = self._posTag(tokens)
         tokens = self._tagFilter(tokens)
         tokens = self._lemmatize(tokens)
         return tokens
+
+    def _clean_text(self, text):
+        text = text.replace('.', ' ').strip()
+        text = text.replace("·", " ").strip()
+        pattern = '[^ 0-9|a-zA-Z]+'
+        text = re.sub(pattern=pattern, repl=' ', string=text)
+        return text
 
     def _tokenize(self, sentence):
         try:
@@ -73,6 +83,15 @@ class TextPreprocessor:
         return tagger(tokens, tagset='universal')
 
     def _tagFilter(self, tagged):
+        # filtered = []
+        # for word, pos in tagged:
+        #     if pos == '.' or pos == 'NUM':
+        #         continue
+        #     elif (word == '|') or (word == '>') or (word == '<') or ("'" in word) or ("/" in word):
+        #         continue
+        #     else:
+        #         filtered.append(word)
+        # return filtered
         filtered = []
         for word, pos in tagged:
             if pos == '.' or pos == 'Num':
@@ -86,6 +105,8 @@ class TextPreprocessor:
     def _lemmatize(self, tokens):
         lemedTokens = []
         for token in tokens:
+            # if token != 'vs':
+            #     token = self.lemmatizer.lemmatize(token)
             lemedTokens.append(token)
             if token not in self.wordSet:
                 self.wordSet.add(token)

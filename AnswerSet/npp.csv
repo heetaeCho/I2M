@@ -1,0 +1,503 @@
+Labels,Document Files,Issue Number,Title,Contributor1,Contributor2
+Feature,Searching,6175,Feature Request,Yang,Lee
+Feature,user-defined-language-system,6173,EDIFACT and X12 lexers are missing from NP++,Yang,Lee
+Feature,plugins,5744,Add new plugins API messages for getting/releasing Scintilla indicator number,Yang,Lee
+Feature,Auto-completion,5296,Enable.disable auto-complete based on specific file/file type,Yang,Lee
+Feature,Preferences,5034,Highlight trailing white-space,Yang,Lee
+Feature,Preferences,4937,Secondary Bertical Edge,Yang,Lee
+Feature,Preferences,3522,Add Bulgarian MIK code table under cyrillic character sets,Yang,Lee
+Feature,Preferences,3292,syntax highlight for Maxima CAS,Yang,Lee
+Feature,Preferences,2105,Add Encoding-Character sets-Chinese-GB18030(Extended Chinese),Yang,Lee
+Feature,sessions,7749,"Add ""Fold All"" tollbar command in Folder As Workspace",Yang,Lee
+Feature,sessions,7736,Add feature to select/show current editing file in Folder As Workspace,Yang,Lee
+Feature,plugins,5802,Allow extra plugin DLL files to be loaded automatically,Yang,Lee
+Feature,sessions,5597,Copy file name too under folder As Workspace,Yang,Lee
+Feature,sessions,5574,"Context menu ""Folder as Workspace""",Yang,Lee
+Feature,Preferences,5533,"Open File should remember the ""Files of type:"" field between executions",Yang,Lee
+Feature,Searching,5322,Select the next occurrence-shortcut,Yang,Lee
+Feature,Searching,5399,Added multicursor improbements,Yang,Lee
+Feature,plugins,5311,Support rename for unnamed tabs,Yang,Lee
+Feature,plugins,3994,Temporarily Name Unsaved Tabs,Yang,Lee
+Feature,plugins,5233,alphabetize Plugins in Plugins Admin,Yang,Lee
+Feature,Preferences,5124,add support for GB18030,Yang,Lee
+Feature,Preferences,4872,Remember read-only status of opened files,Yang,Lee
+Feature,Preferences,4409,Read-only Flag Cleared Upon Close&Reopen,Yang,Lee
+Feature,Preferences,3115,Possible Feature Idea-Paste to existing tab,Yang,Lee
+Feature,Editing,2901,Needs more columns,Yang,Lee
+Feature,Editing,2162,copy on select feature in notepad++,Yang,Lee
+Feature,other-resources,2033,Move Tab Forward/Backward,Yang,Lee
+Feature,other-resources,1864,Implement user commands for moving the current file tab,Yang,Lee
+Feature,Editing,2025,Sort as integers doesn't work correctly for lines with two integers,Yang,Lee
+Feature,plugins,1976,Copy result of find onto other tab,Yang,Lee
+Feature,Searching,1975,For replace function should be a checkbox to allow replace in readonly files,Yang,Lee
+Feature,Preferences,1974,string hight light also visible in scrollbar,Yang,Lee
+Feature,other-resources,1801,dealing with many open documents,Yang,Lee
+Feature,Preferences,1786,Give Notepad++ Default File Associations,Yang,Lee
+Feature,programing-languages,1652,Add support for python GUI and lisp,Yang,Lee
+Feature,command-prompt,1459,Dynamically share Notepad++ Configuration Between Multiple Instances '-multilnst',Yang,Lee
+Feature,plugin-communication,817,Support for backgrund saving of file,Yang,Lee
+Feature,Preferences,737,Ability to measure selection,Yang,Lee
+Feature,Preferences,731,Make anit-aliasing optional-regalrdless of the Cleartype System settings,Yang,Lee
+Feature,Searching,715,Highlight the current function based on Cursor position,Yang,Lee
+Feature,Searching,705,Allow the use of arrow keys while in multi-caret mode,Yang,Lee
+Feature,Preferences,623,Locking Files,Yang,Lee
+Feature,command-prompt,621,Open one instance per virtual desktop,Yang,Lee
+Feature,Searching,593,Prevent the cursor from jumping into next line when marking whole line via line numbers,Yang,Lee
+Feature,Preferences,573,Customizable toolbar,Yang,Lee
+Feature,plugins,545,Make buildin easter eggs optional (as plugin),Yang,Lee
+Feature,Searching,526,Incremental Search: add search direction option with All|Up|Down,Yang,Lee
+Feature,Preferences,521,Scroll Tab Bar with mouse wheel,Yang,Lee
+Feature,Preferences,519,Simultaneously edit tag pairs in HTML and XML,Yang,Lee
+Feature,command-prompt,518,Command line argument to read in a Workspace file.,Yang,Lee
+Feature,Preferences,504,skip to last tab quickly,Yang,Lee
+Feature,Searching,495,Add an option to remove all special characters from your selection,Yang,Lee
+Feature,Preferences,482,"soft line wrapping on ""Vertical Edge""",Yang,Lee
+Feature,Searching,452,Saved Find & Replace strings,Yang,Lee
+Feature,Preferences,446,Use Windows file type icons on the tabs,Yang,Lee
+Feature,Upgrading,422,Remember the last session state across updates,Yang,Lee
+Feature,Editing,406,Double-click splitter to resize both panes to equal size,Yang,Lee
+Feature,programing-languages,361,Using cmake for building notepad++,Yang,Lee
+Feature,Preferences,342,Export settings to an xml file,Yang,Lee
+Feature,Preferences,324,Batch Convert Encoding,Yang,Lee
+Feature,Searching,276,Ignore comments' checkbox in the 'Find' dialog,Yang,Lee
+Feature,Preferences,247,"""pin"" certain recently edited files so that they always stay in the list",Yang,Lee
+Feature,Preferences,209,Allows user defined extension to associate workspace files,Yang,Lee
+Feature,Preferences,169,Associate file extension with workspace files,Yang,Lee
+Feature,plugins,162,Release a pure 64bit binary for windows,Yang,Lee
+Feature,getting-started,159,Installer should drop privs when executing the installed binary,Yang,Lee
+Bug,user-defined-language-system,7930,Fix UDL folding breaking with delimiters,Yang,Lee
+Bug,getting-started,6165,"Nessus reports vulnerability ""Microsoft Windows Unquoted Service Path Enumeration""",Yang,Lee
+Bug,sessions,5664,File is erased on save when there is no free space left on disk,Yang,Lee
+Bug,Editing,5538,remove consecutive duplicate lines in 7.6.6 removes all lines but one w/ this file. 1million line limit & EOL affects function as well,Yang,Lee
+Bug,macros,5453,Fixed detection of shorcut key conflicts when filtering,Yang,Lee
+Bug,Preferences,5419,Search-Results: NPP does not switch to new unsaved files,Yang,Lee
+Bug,Preferences,5294,Notepad++ bug with document map scrollbar on multiple windows desktops,Yang,Lee
+Bug,plugins,5030,User plugins dont stay loaded in V7.6,Yang,Lee
+Bug,Preferences,3836,"Fix ""Encode in ..."" Menu",Yang,Lee
+Bug,Searching,3813,[BUG v756] Replace dialog scary with keyboard input!,Yang,Lee
+Bug,Searching,3640,Backward-direction checkbox enabled with Reg Exp search mode (at N++ startup),Yang,Lee
+Bug,Preferences,2812,Different MD5 and SHA-256 sums in ANSI file,Yang,Lee
+Bug,Preferences,7754,incremental search bar: don't clear 'highlight all' option on closing,Yang,Lee
+Bug,Auto-completion,7742,Fix auto-insert bug,Yang,Lee
+Bug,macros,7730,Fix too small buffer issue during add text macro playback,Yang,Lee
+Bug,other-resources,6202,tab fix,Yang,Lee
+Bug,other-resources,4339,Inconsistent crash when dragging tabs,Yang,Lee
+Bug,config-files,6111,Allow Rename (file) command to change file's drive,Yang,Lee
+Bug,plugin-communication,5949,Fix the crash due to NPPM_DESTROYSCINTILLAHANDLE message,Yang,Lee
+Bug,Editing,5893,Correctly sort absurdly large numbers,Yang,Lee
+Bug,Preferences,5882,Fix Document Peeker constantly changing focus,Yang,Lee
+Bug,Preferences,5868,Create file confirmation modal has incorrect file name,Yang,Lee
+Bug,config-files,5845,-nosession' must not overwrite config.xml,Yang,Lee
+Bug,Preferences,5773,Continuation of PR #5591 (workarround to MS ReadDirectoryChanges bug),Yang,Lee
+Bug,Preferences,5591,Fixed File Monitoring Reload issue,Yang,Lee
+Bug,Preferences,5586,ISSUE: RELOAD dialog appears when MONITORing a file,Yang,Lee
+Bug,Preferences,5672,"In the menu ""File"" localization disappears ""Recent Files"" and ""Restore Recent Closed File""",Yang,Lee
+Bug,Preferences,5557,"Localize ""Restore recent close file"" too",Yang,Lee
+Bug,Preferences,1476,Restore Recent Closed File translation not picked up,Yang,Lee
+Bug,Searching,5665,Fixed issue: Unhiding top marker removes all other markers,Yang,Lee
+Bug,Preferences,5595,Re-loading the same text file over and over results in huge memory taken up,Yang,Lee
+Bug,plugins,5279,Removing an non-plugin-admin-managed plugin causes whole plugins folder to disappear,Yang,Lee
+Bug,plugins,5576,Plugins Admin removes itself and all other plugins,Yang,Lee
+Bug,plugins,5577,No translation for Plugins menu,Yang,Lee
+Bug,Editing,5261,N++ crashes when sorting lines with numbers longer than 20 digits,Yang,Lee
+Bug,Preferences,5549,Adjusted a few Swedish shortcuts in the Find dialog to avoid clashes.¡¦,Yang,Lee
+Bug,Preferences,5479,doc switcher right click column header (ex:name) causes crash,Yang,Lee
+Bug,Preferences,5450,Drag tab switches document sometimes,Yang,Lee
+Bug,Preferences,5441,Fixed multi cursor bugs,Yang,Lee
+Bug,Preferences,5438,Regression: Fixed crash,Yang,Lee
+Bug,Preferences,5375,Auto-updater is run even when corresponding option is disabled,Yang,Lee
+Bug,Preferences,5374,shortcut mapper conflict doesn't display right when filtered,Yang,Lee
+Bug,macros,5340,[Potential crash cause]: Fixed macro playback junk char issue,Yang,Lee
+Bug,macros,5339,Junk character on macro playback,Yang,Lee
+Bug,Preferences,5314,Crash Fixed: Regression,Yang,Lee
+Bug,Preferences,5312,Bug Fix for Tab context menu,Yang,Lee
+Bug,Preferences,5295,Minor 7.6.3 bug: File open filtering not working properly,Yang,Lee
+Bug,binary-translation,5236,japanese translation of ¡°find in file¡± window tabs broken,Yang,Lee
+Bug,Preferences,5202,Auto Detect UTF-8 Encoding for French is broken in Notepad++ 7.6.x (detects vietnamese windows-1258),Yang,Lee
+Bug,binary-translation,5084,Update brazilian_portuguese.xml,Yang,Lee
+Bug,binary-translation,5083,Update portuguese.xml,Yang,Lee
+Bug,binary-translation,5082,Update spanish.xml,Yang,Lee
+Bug,binary-translation,5081,Update occitan.xml,Yang,Lee
+Bug,Preferences,5041,[BUG]file open bug,Yang,Lee
+Bug,plugins,5013,Plugin Admin gup.exe crash,Yang,Lee
+Bug,Preferences,4749,Page header and footer preferences do not set properly,Yang,Lee
+Bug,Preferences,4655,Notepad++ is corrupting files and opening them with null values.,Yang,Lee
+Bug,Searching,4633,`Main menu > View > Collapse Level > N` works only for the first level for Python scripts,Yang,Lee
+Bug,plugin-communication,4487,NPPM_DESTROYSCINTILLAHANDLE may lead to crash npp,Yang,Lee
+Bug,Preferences,3631,Language list shows disabled languages,Yang,Lee
+Bug,Editing,3391,Crash on sort by column when selection beyond eol,Yang,Lee
+Bug,Searching,3384,Double FileTab problem (Bug),Yang,Lee
+Bug,user-defined-language-system,3372,Fix folding in user-defined languages for non-windows line endings,Yang,Lee
+Bug,config-files,3246,Enable save button after underlying file is changed externally,Yang,Lee
+Bug,Editing,3186,multi-row tab isn't selected on right-click,Yang,Lee
+Bug,Preferences,2928,Moving text with keyboard shortcurts introduces garbage,Yang,Lee
+Bug,user-defined-language-system,2873,UDL folding issues with CR or LF only,Yang,Lee
+Bug,Editing,2820,NPP crash during column mode number insertion,Yang,Lee
+Bug,Preferences,2746,"""Don't check at launch time"" does not work",Yang,Lee
+Bug,Preferences,2646,Styler for user-defined highlighting crashes program when given arbitrary string,Yang,Lee
+Bug,getting-started,2526,v7.2 x64 bit installer tries to install in $PROGRAMFILES,Yang,Lee
+Bug,Preferences,2508,Notepad crashing while making new folder,Yang,Lee
+Bug,macros,2310,Crash while recording a Macro in Notepad++ v7 (x64),Yang,Lee
+Bug,Searching,2061,a bug about monitoring(tail -f),Yang,Lee
+Bug,Auto-completion,2050,N++ automatically closes XML Processing Instruction tag,Yang,Lee
+Bug,Preferences,2010,Wrong mouse cursor over title bar  menu and document tabs,Yang,Lee
+Bug,plugins,1980,Wrong plugin is reported during plugin crash. The FIRST plugin in the plugin folder is blamed,Yang,Lee
+Bug,Preferences,1978,rename will not move a file to a new drive,Yang,Lee
+Bug,Preferences,1874,Opening a blank file should use same encoding as for a new document,Yang,Lee
+Bug,Preferences,1736,Notepad++ v6.9.1 crash after update destroying opened file,Yang,Lee
+Bug,Preferences,1470,Opening a document in notepad++ via command line will discard unsaved changes.,Yang,Lee
+Bug,Editing,1361,Column Editor,Yang,Lee
+Bug,Editing,1237,"Column Mode & Column Editor""Update Notepad++"" requires certificate support (InitializeSecurityContext failed)",Yang,Lee
+Bug,Searching,1198,"Hide ""Find in Files progress..."" dialog box",Yang,Lee
+Bug,Searching,1172,"Notepad++ crashes when moving the ""Find In Files progress"" window while the search finishes",Yang,Lee
+Bug,Preferences,1018,Prevent automatic reload of files before shutdown,Yang,Lee
+Bug,Searching,992,Saving find/replace macro isn't possible,Yang,Lee
+Bug,Auto-completion,957,Auto-insert for XML comment incorrect,Yang,Lee
+Bug,Searching,954,Fix #953 Find all files crash in 64-bit since 6.7.5,Yang,Lee
+Bug,Searching,953,Find all files crash in 64-bit since 6.7.5,Yang,Lee
+Bug,Preferences,915,Save All Button is still enabled,Yang,Lee
+Bug,Preferences,850,Save All' button doesn't become greyed out when it should,Yang,Lee
+Bug,Preferences,529,"""Save"" not available after editing a file",Yang,Lee
+Bug,macros,830,unable to save a macro,Yang,Lee
+Bug,Preferences,795,Possible fix for #725 - Cannot open files that contain ASCII NUL(0x00) correctly,Yang,Lee
+Bug,Preferences,792,Possible fix for #215 - changing timezone causes all files to appear changed,Yang,Lee
+Bug,Preferences,215,changing timezone causes all files to appear changed,Yang,Lee
+Bug,Preferences,752,Language not set when creating new file,Yang,Lee
+Bug,Preferences,749,After splitting URL  non-URL part remains underlined,Yang,Lee
+Bug,Preferences,747,language syntax highlighting lost after compare files,Yang,Lee
+Bug,Preferences,740,Special characters not shown in list of recent files,Yang,Lee
+Bug,config-files,734,Copy or Paste through Context Menu causes N++ window to change size,Yang,Lee
+Bug,plugins,727,Explorer.dll prevents Notepad++ from shuting down,Yang,Lee
+Bug,Editing,725,Cannot open files that contain ASCII NUL(0x00) correctly,Yang,Lee
+Bug,Searching,698,Multiline replace,Yang,Lee
+Bug,Preferences,696,Manually selected language not persistant when moving file to a different window,Yang,Lee
+Bug,Preferences,692,Toolbar: properly refresh when switching over small/big icons,Yang,Lee
+Bug,Preferences,673,Preferences: the main toolbar is not properly refreshed when switching over small/big icons,Yang,Lee
+Bug,Preferences,689,Reload marks file as unsaved,Yang,Lee
+Bug,Searching,683,Regular expression selects all text  although it shouldn't,Yang,Lee
+Bug,Searching,682,Dragging search progress window during a Find in Files causes NP++ to freeze,Yang,Lee
+Bug,Searching,675,"Character U+21B2 (""?"")",Yang,Lee
+Bug,Preferences,674,"Preferences: the dialog loses focus when selecting ""Show Document List panel""",Yang,Lee
+Bug,Preferences,672,Mouse wheel just don't work in the preferences dialog,Yang,Lee
+Bug,Preferences,671,Font: Strange symbols in Windows 10,Yang,Lee
+Bug,Preferences,670,Compare plugin forgets word wrap,Yang,Lee
+Bug,Preferences,658,Cannot access files on virtual drives,Yang,Lee
+Bug,Preferences,652,Saving settings to OneDrive on Windows 10,Yang,Lee
+Bug,macros,649,When calling Macro (ALT+letter) or (CTRL+ALT+letter) it adds some characters,Yang,Lee
+Bug,Preferences,647,"Smart Highlighter and ""Other View""",Yang,Lee
+Bug,Upgrading,646,autoupdate broken,Yang,Lee
+Bug,Preferences,644,Project Panel missing in 6.8.1,Yang,Lee
+Bug,Preferences,634,"Source Code Pro font installed with Notepad++ does not have bold ""&"" character",Yang,Lee
+Bug,Preferences,547,Ampersands are not displayed with new Font (Source Code Pro),Yang,Lee
+Bug,Preferences,630,Active tab selection,Yang,Lee
+Bug,function-list,609,Fix for function-list issue #457,Yang,Lee
+Bug,function-list,457,"Notepad++ does not include a function from a C file in the ""function-list"" window",Yang,Lee
+Bug,other-resources,607,CTRL + mouse wheel menu not working on Windows 10,Yang,Lee
+Bug,Preferences,601,Snapshot file not cloned on restart,Yang,Lee
+Bug,binary-translation,598,notepad++ It is not compatible with Arabic texts,Yang,Lee
+Bug,config-files,589,plugin shortcut configuration lost with option -noPlugin,Yang,Lee
+Bug,Preferences,580,HTML Tag (CTRL+Shift+T) not working,Yang,Lee
+Bug,Preferences,571,Look of Ctrl+Tab window,Yang,Lee
+Bug,binary-translation,561,v:6.8: Error in menu using Norwegian language,Yang,Lee
+Bug,Preferences,558,Use-after-free in doOpen (from opening recent file),Yang,Lee
+Bug,Editing,548,Split screen mode  window does not maintain postion,Yang,Lee
+Bug,Preferences,539,The status bar does not adjust the individual segments to the (scaled) string size on HiDPI systems,Yang,Lee
+Bug,Searching,534,v6.8: Backward RegEx Search does not work for UTF-8 Characters in a [Normal] Text File,Yang,Lee
+Bug,Searching,533,v6.8: Search for CommaCRLFCRLF finds nothing in a WinDOS UTF-8 [Normal] Text File,Yang,Lee
+Bug,Preferences,532,Fortran syntax highlighting only works on fixed-form code,Yang,Lee
+Bug,Preferences,527,Global override style does not override line number margin font,Yang,Lee
+Bug,Preferences,522,Request for pull of bug fix #520 and subsequent pull of feature #521,Yang,Lee
+Bug,Preferences,520,Delete/modify Shortcut/Macro menu with 0 items results in crash,Yang,Lee
+Bug,Preferences,517,Line wrap : doesn't work,Yang,Lee
+Bug,Preferences,498,Comments in HTML and XML are incorrectly auto closed,Yang,Lee
+Bug,Upgrading,494,Misspelling in Dialog,Yang,San
+Bug,config-files,492,Fix Context menu not shown regression bug [fixes issue #383],Yang,San
+Bug,config-files,383,Context menu does not work after find in files,Yang,San
+Bug,Searching,491,Double clicking on search results failing in some cases,Yang,San
+Bug,Preferences,474,Some mathmatical characters arent always displayed,Yang,San
+Bug,macros,454,Added missing macro commands (closes #374),Yang,San
+Bug,macros,374,Macro recording for Line Operations -> Remove Empty Lines doesn't work.,Yang,San
+Bug,Auto-completion,443,"""Auto-indent"" option annoyances",Yang,San
+Bug,Preferences,432,non-English characters not appearing correctly,Yang,San
+Bug,Preferences,431,wrong character set after saving txt file,Yang,San
+Bug,Preferences,425,Some ANSI extended characters not counted in selection counter,Yang,San
+Bug,Preferences,420,Editor jitters with extra digit in line numbers,Yang,San
+Bug,Preferences,398,Error on saving and reopening file,Yang,San
+Bug,Auto-completion,275,Auto-insert doesn't insert,Yang,San
+Enhancement,Searching,5547,Find All in... feature request (formerly #1499),Chang,San
+Enhancement,Searching,7950,Sound after an unsuccessful search cannot be disabled,Chang,San
+Enhancement,Searching,7917,Make Count command respect Backward-direction and Wrap-around options,Chang,San
+Enhancement,Searching,7876,Feature Suggestion: Find window directional count.,Chang,San
+Enhancement,Searching,7898,Make Find window remember its position across multiple runs,Chang,San
+Enhancement,Searching,905,Find/replace dialog should remember its last position,Chang,San
+Enhancement,Searching,7537,Add disable In-Selection when multiple selections active for Count  Replace-All and Mark-all commands,Chang,San
+Enhancement,Searching,7532,"Count / ReplaceAll / MarkAll option ""In Selection"" should not be available with multiple selections",Chang,San
+Enhancement,Searching,6001,Make Combobox font monospace in Find dialog,Chang,San
+Enhancement,Searching,449,Legibility in the find/replace dialog,Chang,San
+Enhancement,Searching,5927,Improve GUI in Find dialog,Chang,San
+Enhancement,Searching,5260,"Add confirmation dialog for ""Replace All in All Opened Documents""",Chang,San
+Enhancement,Searching,738,Padding for tab captions in find-and-replace dialog,Chang,San
+Enhancement,Searching,722,Count only in selection,Chang,San
+Enhancement,Searching,685,Non-blocking find/replace actions,Chang,San
+Enhancement,Searching,565,Tell regular expression engine (either in find-and-replace or about dialog),Chang,San
+Enhancement,Searching,564,Named find-and-replace pairs,Chang,San
+Enhancement,Preferences,2454,"64 bit version is not registering itself in ""Open with"" menu",Chang,San
+Enhancement,auto-completion,584,Auto-insertion of apices too aggressive,Chang,San
+Enhancement,auto-completion,450,Auto-Insert matching pair only before whitespace character or end of line,Chang,San
+Enhancement,Preferences,5053,Improve Backup,Chang,San
+Enhancement,Preferences,4527,Save Monitoring (tail) state between sessions.,Chang,San
+Enhancement,Editing,465,Supressed reload dialog when Monitoring is enabled #3142,Chang,San
+Enhancement,Preferences,741,drag-to-scroll  horizontal-panes  etc,Chang,San
+Enhancement,Preferences,473,Application locks up when network folder unreachable,Chang,San
+Enhancement,Searching,506,Update settings on cloud in czech.xml,Chang,San
+Enhancement,Preferences,5418,Optional auto-reset of 'Find/Replace/Find in Files/Mark' settings,Chang,San
+Enhancement,Preferences,5232,NPP jumps to the beginning of a wrapped line after switching between tabs,Chang,San
+Enhancement,Preferences,2571,Feature Request - word wrap per tab,Chang,San
+Enhancement,Preferences,7781,Disable drag-and-drop text editing (NPP v6.3 and v6.6.9),Chang,San
+Enhancement,Preferences,5626,Fix scintilla restoring wrapped buffer issue,Chang,San
+Enhancement,Preferences,2034,"disable ""enhancement"": after file reload user can still undo.",Chang,San
+Enhancement,Preferences,1912,Added new Option: Enable scrolling beyond last line,Chang,San
+Enhancement,Preferences,1258,Update old themes to use the correct style IDs for Pascal,Chang,San
+Enhancement,Preferences,641,Support missing Lexers,Chang,San
+Enhancement,Preferences,587,C# syntax color  string literal formatted as VERBATIM style,Chang,San
+Enhancement,Preferences,586,Allows auto-inserted text to be an undoable action,Chang,San
+Enhancement,Preferences,572,Undo action for auto-inserted characters,Chang,San
+Enhancement,Preferences,469,Indentation depth of wrapped lines,Chang,San
+Enhancement,Function List,2622,how about add Rust language lexer?,Chang,San
+Enhancement,config-files,5276,Option to auto expand the function-list,Chang,San
+Enhancement,Preferences,4595,No more dummy in config file,Chang,San
+Enhancement,Preferences,6156,File association and registering as the default application,Chang,San
+Enhancement,Preferences,5903,Remove association check before enabling 'View Current File In' menu items,Chang,San
+Enhancement,Preferences,5000,`View current file in ...` for more file types,Chang,San
+Enhancement,Preferences,654,Fixed file association bugs and enhancement,Chang,San
+Enhancement,Preferences,637,File Association dialog still cuts text,Chang,San
+Enhancement,Preferences,535,Improve space usage in File Association dialog,Chang,San
+Enhancement,Searching,7626,Extensions list in File Associations dialog is too thin,Chang,San
+Enhancement,Searching,7618,"#7618 Simple exclude files in ""Find in Files"" filter using ""!""",Chang,San
+Enhancement,Searching,1497,Simple exclude files in Find in Files filter,Chang,San
+Enhancement,Preferences,3526,Find in files: reduce update rate of find in files progress bar,Chang,San
+Enhancement,Preferences,7640,Preferences->General->Document List Panel->Show should have toggle in View menu,Chang,San
+Enhancement,Preferences,7562,Increased size the field for localizations.,Chang,San
+Enhancement,Preferences,5981,[Fixed issue]: Open Explorer with Correct path in Folder as workspace,Chang,San
+Enhancement,Preferences,5056,[IMPROVE] Open folder in explorer in Folder as workspace improvement,Chang,San
+Enhancement,Preferences,4879,"Feature request: Add ""Save As"" button between ""Save"" and ""Save All"" buttons. Thanks.",Chang,San
+Enhancement,Preferences,1862,Impossible preview in browser of a non-saved HTML file,Chang,San
+Enhancement,Preferences,1566,"Use new style folder browser for ""Open Folder as Workspace""",Chang,San
+Enhancement,Preferences,1542,Folder as Workspace causes very slow startup,Chang,San
+Enhancement,binary-translation,1001,folder as workspace : file - open folder as workspace,Chang,San
+Enhancement,Preferences,956,Update bengali.xml,Chang,San
+Enhancement,Preferences,772,Show Notepad++.exe bitness in about box,Chang,San
+Enhancement,Preferences,771,Adjust toolbar height (fixes #771),Chang,San
+Enhancement,Preferences,687,Uneven padding above and below the toolbar buttons,Chang,San
+Enhancement,Preferences,667,"Plug-in icons only shown in ""Standard icons"" mode",Chang,San
+Enhancement,Preferences,633,Disable the unused gripper of toolbar,Chang,San
+Enhancement,Preferences,645,Disable the unused gripper of toolbar,Chang,San
+Enhancement,Preferences,629,Notepad++ has too few icons in its UI,Chang,San
+Enhancement,Preferences,618,UI scaling for high-resolution desktop displays,Chang,San
+Enhancement,command-prompt,5883,Enhancement: localization list sorted by name,Chang,San
+Enhancement,command-prompt,2030,Fix Notepad commandline style parsing,Chang,San
+Enhancement,command-prompt,2018,Added new Variable: NPP_ROOT_DIRECTORY,Chang,San
+Enhancement,command-prompt,2016,Recognize new file type when created from the command line,Chang,San
+Enhancement,command-prompt,923,Notepad++ ignores the file type of a new file when invoked from command line,Chang,San
+Enhancement,Searching,7664,Desired line is often hidden with -n argument,Chang,San
+Enhancement,Searching,7663,Make 'Purge for each search' respect 'In selection' for 'Mark All' op,Chang,San
+Enhancement,Searching,426,"""Purge for each search"" option for ""Mark All"" action should respect ""In selection"" option",Chang,San
+Enhancement,config-files,5065,SmartHighlighter: whole word limitation?,Chang,San
+Enhancement,config-files,2031,PHP: Support styling of complex variables in strings,Chang,San
+Enhancement,config-files,1848,Improved Single Line Comment,Chang,San
+Enhancement,function-list,5539,VHDL language colorizer,Chang,San
+Enhancement,function-list,5248,Make FunctionList sorting setting memorized between sessions,Chang,San
+Enhancement,function-list,5356,Add function count in FunctionList panel,Chang,San
+Enhancement,plugins,5853,Make FunctionList sorting setting memorized between sessions,Chang,San
+Enhancement,plugins,5652,Load plug-ins with LoadLibraryEx,Chang,San
+Enhancement,getting-started,1873,Plugin install via Plugin Admin silently fails if sourceforge.net is unreachable,Chang,San
+Enhancement,getting-started,1856,Make windows installer translateable,Chang,San
+Enhancement,getting-started,615,Installer doesn't have a UAC manifest,Chang,San
+Enhancement,getting-started,388,Windows installer - some text not translated,Chang,San
+Enhancement,config-files,477,Non-privileged installation?,Chang,San
+Enhancement,config-files,661,"shortcuts.xml: What's the meaning of ""Open in another instance""?",Chang,San
+Enhancement,binary-translation,5594,Add syntax highlighting for ECMAScript 2016 (and fix ES5 syntax highlighting too),Chang,San
+Enhancement,binary-translation,1487,add capabilty to translate file summary dialog info,Chang,San
+Enhancement,binary-translation,1475,There are string not settable from XML,Chang,San
+Enhancement,binary-translation,717,Add 3 missing translatable items to master XML for 6.8.8,Chang,San
+Enhancement,binary-translation,767,translation: Update Chinese (Simplified) translation,Chang,San
+Enhancement,binary-translation,759,Update turkish.xml,Chang,San
+Enhancement,binary-translation,758,Add 2 missing translatable items to original XML (for 6.8.2),Chang,San
+Enhancement,binary-translation,748,Hungarian translation update for Notepad++ 6.8.2,Chang,San
+Enhancement,binary-translation,742,Update albanian.xml,Chang,San
+Enhancement,binary-translation,728,Update of Ukrainian lang,Chang,San
+Enhancement,binary-translation,688,[UPDATE] Bulgarian language,Chang,San
+Enhancement,binary-translation,678,Update turkish.xml,Chang,San
+Enhancement,binary-translation,635,Update portuguese.xml,Chang,San
+Enhancement,binary-translation,626,Update german.xml for 6.8,Chang,San
+Enhancement,binary-translation,599,Make status bar translatable,Chang,San
+Enhancement,binary-translation,575,Update portuguese.xml,Chang,San
+Enhancement,binary-translation,566,Update bulgarian.xml,Chang,San
+Enhancement,binary-translation,550,Update of German language file,Chang,San
+Enhancement,binary-translation,541,Update dutch language again,Chang,Ryu
+Enhancement,binary-translation,537,Hungarian translation update for Notepad++ 6.8,Chang,Ryu
+Enhancement,binary-translation,499,Update dutch language,Chang,Ryu
+Enhancement,binary-translation,464,Update italian language 15.07.2015,Chang,Ryu
+Enhancement,binary-translation,433,Repair and update of Ukrainian locale after fix encoding,Chang,Ryu
+Enhancement,binary-translation,408,Update turkish.xml,Chang,Ryu
+Enhancement,auto-completion,625,Hungarian translation update for Notepad++ 6.7.9.2,Chang,Ryu
+Enhancement,Preferences,5583,manually activated autocomplete list not properly working,Chang,Ryu
+Enhancement,Preferences,2573,Option to MONITOR a file when RELOAD is detected,Chang,Ryu
+Enhancement,Preferences,1541,Doc Switcher: context menu option doesn't make sense in vertical...,Chang,Ryu
+Enhancement,Preferences,1450,folder as workspace : sort files,Chang,Ryu
+Enhancement,Preferences,5286,[Proposal] Prompt before opening file exceeding a given size,Chang,Ryu
+Enhancement,Preferences,1087,Only checking for filesystem changes when the tab is selected,Chang,Ryu
+Enhancement,Preferences,5141,Do not switch tab on file modification,Chang,Ryu
+Enhancement,sessions,5125,Reload triggered by File Status Auto-Detection purges Undo buffer,Chang,Ryu
+Enhancement,Preferences,944,Added workspace file sorting,Chang,Ryu
+Enhancement,Preferences,743,Doc Switcher: option to remove blue diskette icon,Chang,Ryu
+Enhancement,Preferences,702,Disable Clickable Link Setting does NOT disable links in current document.,Chang,Ryu
+Enhancement,Preferences,664,Better document map,Chang,Ryu
+Enhancement,Preferences,631,File Status Auto-Detect,Chang,Ryu
+Enhancement,Preferences,5900,"Save titles bar location for ""Doc Switcher""",Chang,Ryu
+Enhancement,other-resources,719,Encoding Menu : add new options UCS-2 BE and UCS-2 LE,Chang,Ryu
+Enhancement,plugin-communication,4242,Scrolling with Ctrl+vertical arrow keys changes cursor position,Chang,Ryu
+Enhancement,plugin-communication,863,Plugins cannot know file status (RO or snapshot dirty) while Notepad++ start up (Fix #4201),Chang,Ryu
+Enhancement,binary-translation,779,#862 - Allow plugins to retrieve settings directory.,Chang,Ryu
+Enhancement,config-files,542,Update german.xml,Chang,Ryu
+Enhancement,plugins,5785,Add 11 missing translatable items to original XML,Chang,Ryu
+Enhancement,plugins,5680,plugin admin UI resizable,Chang,Ryu
+Enhancement,plugins,5708,Plugins Admin is resizable and maximizable,Chang,Ryu
+Enhancement,plugins,5742,plugin admin date,Chang,Ryu
+Enhancement,plugins,5681,Plugins Admin: add plugin release date,Chang,Ryu
+Enhancement,Preferences,636,plugins admin UI enhancement,Chang,Ryu
+Enhancement,Preferences,6272,plugins admin UI enhancement,Chang,Ryu
+Enhancement,Preferences,2996,Simple UX Improvement - Recent Files Vertical Alignment,Chang,Ryu
+Enhancement,Preferences,582,Display MRU list properly on seconday display,Chang,Ryu
+Enhancement,macros,7516,Recent Files: Prompt if file has been deleted,Chang,Ryu
+Enhancement,macros,6258,Make end-of-line conversion operations macroable,Chang,Ryu
+Enhancement,macros,5972,The options from menu 'Edit' -> 'EOL Conversion' are not macros recordable,Chang,Ryu
+Enhancement,macros,1948,Fix issue 1948 to make inverse bookmarking macroable,Chang,Ryu
+Enhancement,macros,5500,Marking issues in recorded macro,Chang,Ryu
+Enhancement,macros,5463,Enable Scintilla Virtual Space Option change from macro,Chang,Ryu
+Enhancement,Preferences,468,Can't send some type of Scintilla message with macro,Chang,Ryu
+Enhancement,Preferences,466,User defined commands: using DuckDuckGo as default search engine,Chang,Ryu
+Enhancement,Preferences,407,Custom search engine,Chang,Ryu
+Enhancement,Preferences,5610,Don't want Google Search in context menu,Chang,Ryu
+Enhancement,Preferences,7948,[Feature Request] Improve usability in Shortcut mapper: Make the columns resizable,Chang,Ryu
+Enhancement,Preferences,1898,"Fix for Issue# 7895 - Keyboard shortcut for ""Open Containing Folder in Explorer"" is partially broken",Chang,Ryu
+Enhancement,Preferences,2029,No Python code folding past level 1,Chang,Ryu
+Enhancement,Preferences,1954,Added conflict detection to Shortcut Mapper,Chang,Ryu
+Enhancement,Searching,1845,Detect duplicate keyboard shortcut,Chang,Ryu
+Enhancement,Preferences,2821,Incremental Search Next/Previous keyboard shortcuts,Chang,Ryu
+Enhancement,Preferences,4782,Feature request : Add date & time stamps hotkey without need to use external plugins,Chang,Ryu
+Enhancement,Preferences,5821,Color picker could be made to remember custom colors,Chang,Ryu
+Enhancement,Preferences,1991,Minor fix for issue #5815  only use SC_IV_LOOKFORWARD for Python like folding.,Chang,Ryu
+Enhancement,Preferences,897,Please add syntax highlighting for XML entities,Chang,Ryu
+Enhancement,Preferences,1983,Add style option for XML entity,Chang,Ryu
+Enhancement,Preferences,1585,.hh files are not recognized as C++,Chang,Ryu
+Enhancement,Preferences,1471,Recognize .frm .bas .cls as Visal Basic language,Chang,Ryu
+Enhancement,Preferences,1433,Delphi project file (.dpr) syntax not autodetected,Chang,Ryu
+Enhancement,Preferences,721,Treat .ino files as C++,Chang,Ryu
+Enhancement,Preferences,676,Font size settings with up-down-controls,Chang,Ryu
+Enhancement,Preferences,639,"Revert to a system monospace font instead of ""Source Code Pro""",Chang,Ryu
+Enhancement,Preferences,5291,Possibility to filter Monospaced Fonts in global settings dialog,Chang,Ryu
+Enhancement,programing-languages,1949,"Feature request: Variable transparency for ""Find Results"" active / current line for people with low vision. Thanks.",Chang,Ryu
+Enhancement,Preferences,746,Fix Cppcheck static analysis warnings,Chang,Ryu
+Enhancement,Preferences,744,Syntax highlighting for nexted Scala comments,Chang,Ryu
+Enhancement,Preferences,711,Wrong highlighting of cyrillic characters in SQL,Chang,Ryu
+Enhancement,programing-languages,704,Syntax highlighting and content suggestion for CSS should support Flexible Box Layout,Chang,Ryu
+Enhancement,programing-languages,703,SQL colorization changed in error by code.,Chang,Ryu
+Enhancement,programing-languages,700,Default configuration of Notepad++ breaks Python files by adding tabs instead of spaces,Chang,Ryu
+Enhancement,programing-languages,660,langs.model.xml: Additions to PHP highlight,Chang,Ryu
+Enhancement,programing-languages,651,"highlighting disabled after R"" (literal string) sequence in c++",Chang,Ryu
+Enhancement,Preferences,642,Could notepad++ support dart language?,Chang,Ryu
+Enhancement,programing-languages,611,Implement ANTLR syntax highlight,Chang,Ryu
+Enhancement,programing-languages,555,Feature Request: Detect shell scripts for files without extensions  and select the 'Shell' language for syntax highlighting,Chang,Ryu
+Enhancement,programing-languages,549,PHP Keywords,Chang,Ryu
+Enhancement,Preferences,488,Enable Notepad++ support both SCLEX_FORTRAN and SCLEX_F77,Chang,Ryu
+Enhancement,programing-languages,484,langs.model.xml: Additions to PHP highlight,Chang,Ryu
+Enhancement,programing-languages,459,C language has incorrect comments,Chang,Ryu
+Enhancement,programing-languages,161,PHP function stripos() not recognized,Chang,Ryu
+Enhancement,Preferences,4795,JavaScript syntax highlighting inside HTML breaks on $ followed by number,Chang,Ryu
+Enhancement,Preferences,7553,Close All needs verification pop up,Chang,Ryu
+Enhancement,user-defined-language-system,677,"Improve: ""Close all but This"" functionality",Chang,Ryu
+Enhancement,user-defined-language-system,6128,UDL support for number-containing keywords inside delimiters,Chang,Ryu
+Enhancement,user-defined-language-system,5458,BaanC Add keyword lists and respective langs & styler xml tags.,Chang,Ryu
+Enhancement,user-defined-language-system,612,Fixed issue and allow some more characters in UDL name,Chang,Ryu
+Enhancement,user-defined-language-system,7540,User-Defined Language  review comment line,Chang,Ryu
+Enhancement,user-defined-language-system,5404,Resolve #5404 - Add a Languages submenu item to open UDL folder.,Chang,Ryu
+Enhancement,Upgrading,5012,[Request]: Open UDL Language(s) Folder...,Chang,Ryu
+Enhancement,config-files,7738,notepad ++ update window icon missing,Chang,Ryu
+Enhancement,config-files,7737,"Add ""commandLineInterpreter"" setting in config.xml",Chang,Ryu
+Enhancement,config-files,665,User-configurable command line interpreter,Chang,Ryu
+Enhancement,Preferences,5434,Store / Recall Layout View for dockables,Chang,Ryu
+Enhancement,Preferences,4942,PR to discuss about zoom value on status bar,Chang,Ryu
+Enhancement,config-files,7980,Read-Only flag (user read only) is not synced,Chang,Ryu
+Enhancement,plugins,2120,Add support for auto-indenting Perl and Rust.,Chang,Ryu
+Enhancement,Upgrading,1624,Add user and password on Proxy Settings,Chang,Ryu
+Enhancement,Upgrading,1380,"Usability Improvement via ""Express Update""",Chang,Ryu
+Enhancement,programing-languages,1027,Support for Proxy PAC,Chang,Ryu
+Enhancement,function-list,739,Improve the language detection at the beginning of a file,Chang,Ryu
+Enhancement,function-list,733,function-list panel fixes,Chang,Ryu
+Enhancement,Preferences,726,function-list issues,Chang,Ryu
+Enhancement,Upgrading,714,Fine-tune behavior of Ctrl+Backspace,Chang,Ryu
+Enhancement,getting-started,656,Multiple Notepad++ update boxes,Chang,Ryu
+Enhancement,Preferences,610,Setup starts notepad++ as administrator,Chang,Ryu
+Enhancement,Preferences,568,Icons in tabs don't scale up on high pixel density screens,Chang,Ryu
+Enhancement,Preferences,562,Icon size problems,Chang,Ryu
+Enhancement,Preferences,448,Font size of UI elements,Chang,Ryu
+Enhancement,Preferences,428,Add left margin to typing area,Chang,Ryu
+Enhancement,auto-completion,390,Preferences,Chang,Ryu
+Enhancement,getting-started,385,Change autocomplete dialog to accommodate Italian,Chang,Ryu
+Feature,plugins,8916,Notepad++ cannot be built with GCC/MinGW,San,Ryu
+Feature,getting-started,9346,Add plugin interface for renaming an unsaved tab,San,Ryu
+Feature,preferences,9291,Feature Request: Remember installation location,San,Ryu
+Feature,Searching,9821,Add an option to disable all print margins,San,Ryu
+Feature,Themes,9587,Copy Pathnames from Search Results window,San,Ryu
+Feature,Searching,8125,Dark Mode begins!,San,Ryu
+Feature,sessions,9165,Make project files searchable by file list (not by directory).,San,Ryu
+Feature,sessions,9166,Save 'Folder as workspace' in session,San,Ryu
+Feature,Function List,8665,Change order of items in 'Folder as workspace',San,Ryu
+Feature,Function List,8886,Function List tab stops,San,Ryu
+Feature,sessions,3028,Function List Escape treeview to Notepad++ edit window,San,Ryu
+Feature,sessions,8319,"[Feature] [Context menu] Open directory as new ""Folder as workspace"" (as Project)",San,Ryu
+Feature,plugin-communication,5736,[Feature Request] More obvious way to do bookmark manipulation,San,Ryu
+Enhancement,Function List,98,[Feature Request] Websocket support,San,Ryu
+Bug,Function List,9019,default FunctionList sorting,San,Ryu
+Bug,Searching,8170,Function List bash parser parse wrongly if file's EOL is UNIX,San,Ryu
+Bug,Searching,8160,"Find-in-Files recorded in macro with empty ""Filters"" box can't match any files",San,Ryu
+Bug,Searching,8045,"Deletion of a last ""child"" line in ""Find result"" should also delete ancestors",San,Ryu
+Bug,Function List,9804,"Find-in-Files recorded in macro with empty ""Filters"" box can't match any files",San,Ryu
+Bug,preferences,9751,Function List button tool tips are mixed up,San,Ryu
+Bug,preferences,9767,Style Token not applied consistently within words,San,Ryu
+Bug,Searching,9766,"""Default Directory"" preference no longer works since the 7.95 release",San,Ryu
+Bug,Searching,9757,Search option 'whole word' does no longer work,San,Ryu
+Bug,Editing,9682,Copy command for Search Results should be unavailable when no text is selected,San,Ryu
+Bug,preferences,9569,Sorting with column-key doesn't work following a tab character,San,Ryu
+Bug,Searching,9527,Folder picker dialog isn't shown for invalid initial directory,San,Ryu
+Bug,Plugin communication,9377,Opening files from UNC path using File Dialog fails - NPP 7.9.3,San,Ryu
+Bug,Searching,9199,Incompatible plugin is not deleted when asked for in the warning message,San,Ryu
+Bug,Preferences,7910,Find in Files - when Directory path has leading or trailing spaces the search does not work,San,Ryu
+Enhancement,Searching,9824,Smart Highlighting issue in a cloned document when scrolling up/down the original document,Ryu,San
+Enhancement,config-files,9409,Add keyboard accelerators to Search-results context menu,Ryu,San
+Enhancement,Searching,9284,Some settings still not portable,Ryu,San
+Enhancement,Searching,9255,[FR] Clipboard History should allow returning an entry's data to the clipboard,Ryu,San
+Enhancement,Plugin communication,8797,[FR] Clipboard History text data should widen/shrink as panel widens/shrinks,Ryu,San
+Enhancement,editing,8456,"""Go To..."" window doesn't update when left open",Ryu,San
+Enhancement,Searching,8450,"Enhancement: to (open) Windows dialog -- add sortable ""file changed"" column",Ryu,San
+Enhancement,Searching,8446,Find and replace in selection with Alt key,Ryu,San
+Enhancement,preferences,8424,Move focus to editor on left-clicking a tab,Ryu,San
+Enhancement,Searching,8235,Add Scroll Line Amount Option,Ryu,San
+Enhancement,Searching,9366,Add capability for a second 'Find result' window,Ryu,San
+Enhancement,plugins,9266,[Feature Request] Clear Directories In Find In Files,Ryu,San
+Enhancement,Searching,9224,PluginAdmin doesn't show Unicode texts,Ryu,San
+bug,Searching,9254,"Ability to localize ""Line"" preceding each line number on Search Results",Ryu,San
+bug,macros,9230,Clipboard History text insertion does not respect current N++ tab line-ending type,Ryu,San
+bug,Plugin communication,8679,Ampersand doesn't show up in Macro Name,Ryu,San
+bug,preferences,8520,CURRENT_LINE and CURRENT_COLUMN should be one-based not zero-based,Ryu,San
+bug,Function List,8221,NPP RTL: wrong path in tabs tooltip,Ryu,San
+bug,Searching,9334,Function list display corruption multiple monitors ,Ryu,San
+bug,preferences,9797,Unable to copy line data from search results in N++ 7.9.2,Ryu,San
+bug,preferences,9597,Fix UTF iterators end too early,Ryu,San
+bug,plugin-communication,9338,Notepad++ has problems with display of chars in UTF8 and UTF16-LE,Ryu,San
+feature,preferences,9292,NPPM_SETLINENUMBERWIDTHMODE bug,Ryu,San
+feature,Searching,9653,Add option to disable minimal margin,Ryu,San
+feature,Searching,9534,Add ability to avoid accumulating multiple search results ,Ryu,San
+feature,sessions,9261,Add function for searching files in project panels.,Ryu,San
+feature,Searching,9286,Issue 9166 change order of items in workspace folder,Ryu,San

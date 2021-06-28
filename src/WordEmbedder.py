@@ -10,13 +10,17 @@ class WordEmbedder:
         self.maxLen = maxLen
     
     def embedding(self, data):
+        import time
         embedder = Embedders()
         Embedders.wordSet = self.wordSet
-        WordEmbedder.embedder = embedder.getEmbedder(self.project, self.embeddingType, self.embeddingSize)
-        
-        embedded = WordEmbedder.embedder.embedding(data, self.maxLen)
-        if embedded is None:
-            return None
+
+        if WordEmbedder.embedder is None:
+            print('start to load embedding model')
+            start = time.time()
+            WordEmbedder.embedder = embedder.getEmbedder(self.project, self.embeddingType, self.embeddingSize)
+            end = time.time()
+            print('complete to load embedding model, {}s'.format(end-start))
+            embedded = WordEmbedder.embedder.embedding(data, self.maxLen)
         else:
-            embeddedData = embedded
-            return embeddedData
+            embedded = WordEmbedder.embedder.embedding(data, self.maxLen)
+        return embedded

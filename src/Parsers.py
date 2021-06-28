@@ -1,6 +1,7 @@
+import marko
 import re
 from bs4 import BeautifulSoup
-from lxml.html.clean import Cleaner
+import bs4
 
 class Parsers:
     def __init__(self):
@@ -22,16 +23,20 @@ class komodoParser:
     def __init__(self):
         pass
 
+    def _getArticle(self, soup):
+        soup = soup.select('article.article')
+        soup.footer.extract()
+        soup.aside.extrace()
+        return soup.contents[1]
+
     def parse(self, text):
-        cleaner = Cleaner(style=True, scripts=True)
-        text = cleaner.clean_html(text)
         context = []
-        lines = text.split('\n')
-        sub_pattern = r'\<[^)]*\>'  # ex) '<이게 뭐든>'
-        for line in lines:
-            line = re.sub(pattern=sub_pattern, repl='', string=line)
-            if len(line.strip()) > 0:
-                context.append(line)
+        soup = BeautifulSoup(text, 'html.parser')
+
+        for child in soup.contents:
+            if type(child) != bs4.element.Tag:
+                continue
+            context.append(child.text.strip())
         return '\n'.join(context)
 
 class mdParser:
@@ -40,22 +45,15 @@ class mdParser:
 
     def parse(self, text):
         context = []
-        lines = text.split('\n')
         if self.project == 'vscode':
-            lines = lines[9:]
+            text = text[7:]
+        html = marko.convert(text)
+        soup = BeautifulSoup(marko.convert(text), 'html.parser')
 
-        sub_pattern1 = r'\([^)]*\)'  # ex) '(이게 뭐든)'
-        sub_pattern2 = r'\<[^)]*\>'  # ex) '<이게 뭐든>'
-        # url_pattern = r'(http|ftp|https)://(?:[-\w.]|(?:%[\da-fA-F]{2}))+'  # ex) 'https://www.google.com'
-        for line in lines:
-            line = line.strip()
-            if line.startswith('!') or len(line) < 1:
+        for child in soup.contents:
+            if type(child) != bs4.element.Tag:
                 continue
-            line = re.sub(pattern=sub_pattern1, repl='', string=line)
-            line = re.sub(pattern=sub_pattern2, repl='', string=line)
-            line = line.replace('[', '').replace(']', '').replace('*', '').replace('|', '')
-            if len(line) > 0:
-                context.append(line)
+            context.append(child.text.strip())
         return '\n'.join(context)
 
 class issueParser:
@@ -65,7 +63,7 @@ class issueParser:
     def parse(self, text):
         title_block = 'title'
         labels_block = 'a.sidebar-labels-style,box-shadow-nonewidth-full,d-block,IssueLabel,v-align-text-top'
-        context_block = 'div.edit-comment-hide > task-lists > table > tbody > tr > td.d-block.comment-body.markdown-body.js-comment-body'
+        context_block = 'div.edit-comment-hide > task-lists > table > tbody > tr > td'
 
         soup = BeautifulSoup(text, 'html.parser')
 

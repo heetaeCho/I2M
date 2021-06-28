@@ -1,0 +1,499 @@
+Labels,Document Files,Issue Number,Title,Contributor1,Contributor2
+enhancement,editor.html,994,Screenshot outdated on repo,Park,Yang
+enhancement,debugperl.html,987,no perl auto_complete,Park,Yang
+Bug,documentation-browser.html,985,History: Browser preview / markdown preview are added to file open history when closed,Eun,Park
+enhancement,debugphp.html,980,Autocomplete for php/laravel not working for typed method parameters,Park,Yang
+enhancement,debugpython.html,978,"Add FAQ Entry (to Troubleshooting) in Docs about ""Python"" vs. ""Python 3""",Yang,
+enhancement,search.html,975,new find / replace pane tab order  hotkeys,Park,Yang
+enhancement,debugphp.html,974,Feature Request: Autocomplete and Calltips for HTML inside PHP variables,Park,Yang
+Bug,codeintel.html,970,Komodo 9 Codeinteligence UpperLetters bug dont fixed,Eun,Park
+enhancement,editor.html,954,Drag and Drop in editor  add preference to turn it off,Park,Yang
+Bug,run.html,948,Run Inline: Doesn't support abbreviated PHP tags,Eun,Park
+enhancement,keybind.html,947,wish: spell checking  add word to ignored words with key binding,Park,Yang
+Bug,files.html,945,Preview should auto-update and scroll.,Eun,Park
+Bug,linter-reference.html,944,HTML5 Syntax Checking doesn't work on some html5 elements,Eun,Park
+Bug,editor.html,94,Toolbar buttons toggle/save/persist inconsistently,Eun,Park
+enhancement,codeintel.html,928,Fuzzy matching in code-intel (autocomplete),Park,Yang
+enhancement,prefs.html,917,Prefs: Servers: hostname field validation and input cleaning,Yang,
+enhancement,debugperl.html,914,Variable highlighting in double quoted strings of Perl scripts (KOMODO IDE 9.3),Park,Yang
+enhancement,project.html,913,Project: renaming project tries to close all project files,Yang,
+Bug,editor.html,905,Feature request: Filter places based on RCS properties,Eun,Park
+enhancement,editor.html,904,Selected Text Char wrapping: Keep selected text selected,Park,Yang
+enhancement,commando.html,897,Tools > Addons: to open in Commando > Package top level scope,Yang,
+enhancement,commando.html,896,Commando packages: incorrect context menu,Yang,
+Bug,editor.html,883,Hard to control search panels with tab key,Eun,Park
+Bug,run.html,882,PHP run-inline tries to load xdebug and fails,Eun,Park
+enhancement,macros.html,880,Make codeintel work with all string lengths,Park,Yang
+enhancement,prefs.html,869,Multiple Selection - remove Previous Occurrence,Park,Yang
+Bug,editor.html,868,Add Unity Menubar support ,Eun,Park
+enhancement,debugphp.html,863,Double-click on PHP variable selects more than one,Park,Yang
+enhancement,prefs.html,857,icons in vertical tabs looks a bit messy,Park,Yang
+Bug,files.html,841,OpenFiles: Sort tabs cannot be toggled,Eun,Park
+Bug,commando.html,834,Commando: Non-recursive searches no longer work ,Eun,Park
+enhancement,linter-reference.html,827,KomodoIDE 9.3 spellcheck words in literal strings; shouldn't do that,Park,Yang
+Bug,macros.html,820,Elastic tabstops width,Eun,Park
+enhancement,linter-reference.html,82,Add syntax checking warnings/errors to Notify,Park,Yang
+enhancement,editor.html,811,Disable Auto-Abbreviations in all but regular editing mode,Park,Yang
+Bug,editor.html,80,Go To Anything menu item check state is backwards,Eun,Park
+enhancement,linter-reference.html,797,Update default JS syntax checker to JSHINT with es6 support enabled,Park,Yang
+enhancement,search.html,795,Include/Exclude field for in-project find dialog,Park,Yang
+Bug,files.html,792,Tabs don't allow to distinguish between same file names ,Eun,Park
+enhancement,prefs.html,788,Prefs > Show all options is basically hidden away,Park,Yang
+enhancement,commando.html,786,Commando: Shell-scope: export or save command to Toolbox.,Yang,
+enhancement,project.html,783,CSS codeintel should read any CSS files in the project ,Park,Yang
+enhancement,debugphp.html,769,Auto-complete for variables contains functions in PHP,Yang,
+Bug,custtbi.html,762,Images of New Toolbar Buttons Difficult to See,Eun,Park
+enhancement,debugnode.html,747,Support debugging for latest NodeJS version,Park,Yang
+enhancement,prefs.html,746,Enhancement Highlight object keys as strings,Park,Yang
+enhancement,prefs.html,743,Enhancement: ES6 string template highlighting,Park,Yang
+enhancement,debugnode.html,742,Enhancement: JSCS integration?,Park,Yang
+Bug,debugger.html,738,Display Warning When Trying to Locally Debug Remote Files (It Tries to Open Them Instead and Errors),Eun,Park
+enhancement,prefs.html,737,Feature request: less  scss and sass variables autocompletion,Park,Yang
+enhancement,prefs.html,732,Some HTML tags highlight issue,Park,Yang
+enhancement,publish.html,731,Indicate when automatic push to place is ready (publishing),Park,Yang
+enhancement,editor.html,727,Add editor context menu for bookmarks,Park,Yang
+enhancement,editor.html,715,Folding region code CSS,Park,Yang
+enhancement,prefs.html,697,Markdown Preview: unreachable resource in markdown triggers alert,Park,Yang
+enhancement,editor.html,690,Komodo IDE  version 9.3.0 on Ubuntu 14.04 Column Selection Broke,Park,Yang
+enhancement,extensions.html,688,Update Komodo API Catalog,Park,Yang
+enhancement,places.html,686,"Komodo shouldn't show the path for the ""New Tab"" tab",Park,Yang
+enhancement,commando.html,675,Remove links to old addon dialog,Park,Yang
+enhancement,debugchrome.html,674,9.3 Auto multi-caret for XML tags,Park,Yang
+Bug,commando.html,667,Commando: Relative paths don't seem to work. ,Eun,Park
+enhancement,debugnode.html,664,Komodo still randomly opens JS or NodeJS files,Park,Yang
+enhancement,debugchrome.html,662,html4 auto completion doesn't always work,Park,Yang
+enhancement,editor.html,656,Hide autocompletions when input matches completion,Park,Yang
+enhancement,editor.html,649,Auto-wrap with delimiters should only trigger on plain text selections,Park,Yang
+enhancement,run.html,630,Don't auto-scroll command output if the user scrolled up,Park,Yang
+enhancement,prefs.html,628,Skins: After installing and restarting Komodo should start with new skin.,Park,Yang
+enhancement,prefs.html,618,Color picker no longer works in 9.3 (master),Park,Yang
+enhancement,run.html,613,Transpose: extend/change cmd_lineTranspose[Up | Down] to transpose current selection,Park,Yang
+enhancement,editor.html,610,Column Select + Transpose line does not actually transpose text,Park,Yang
+enhancement,prefs.html,607,separate the autocomplete and calltip config,Park,Yang
+enhancement,debugnode.html,603,Latest jshint (2.9.0) with Komodo Edit (version 9.2.0  build 15966) fails,Park,Yang
+Bug,codeintel.html,598,"""Create Komodo Language"" does not properly generate code-intel stub?",Eun,Park
+enhancement,keybind.html,588,Add Support for Iterating Through Misspelled Words,Park,Yang
+Bug,linter-reference.html,576,Spellchecker: doesn't update state when word is changed,Eun,Park
+enhancement,linter-reference.html,574,Show syntax error indicators in minimap,Park,Yang
+enhancement,starting.html,545,Komodo IDE 9.2 gets very sluggish after a while,Park,Yang
+enhancement,templates.html,539,Improve Unified Menu UX,Park,Yang
+enhancement,editor.html,534,Copied text lost after Komodo is closed (Linux),Park,Yang
+enhancement,debugnode.html,531,jshint (and presumably jslint) custom interpreter expecs a JS file,Park,Yang
+enhancement,codeintel.html,528,CodeIntel isn't aware of the return type of Kernel#gets in Ruby,Park,Yang
+enhancement,debugruby.html,527,"Ruby ""online definition"" is forwarding to an obsolete URL",Park,Yang
+enhancement,prefs.html,518,Make Advanced Options Easier To Discover,Park,Yang
+enhancement,files.html,512,"Add ""Close files by type"" feature for Open Files pane",Park,Yang
+enhancement,codeintel.html,51,Support 'require_relative' in codeintel,Yang,
+Bug,editor.html,506,Toolbox items disappear after running a toolbox command ,Eun,Park
+enhancement,files.html,499,"Can't cancel ""close your project's files?"" prompt when closing Komodo",Park,Yang
+enhancement,prefs.html,498,"Disable ""Enable autocomplete fill-up characters"" by default",Park,Yang
+Bug,editor.html,491,komodo edit undo disabled,Eun,Park
+enhancement,debugphp.html,488,no contrast between less and php file icons,Park,Yang
+Bug,editor.html,485,"Add structured edit (""paredit"") for Lisps ",Eun,Park
+Bug,editor.html,479,Support .jshintrc config file. ,Eun,Park
+Bug,starting.html,473,Other windows clicked out of view?,Eun,Park
+enhancement,search.html,467,Find/Replace should not care about whether it recognizes an extension,Park,Yang
+Bug,linter-reference.html,449,Perl code intelligence does not recognize logical defined or operator in sub ,Eun,Park
+enhancement,debugphp.html,447,Allow HTML5 for language PHP,Park,Yang
+enhancement,codeintel.html,444,Spastic Code intel Throbber,Park,Yang
+enhancement,files.html,439,Saving opened files¡¯ changes in buffer #Enhancement,Park,Yang
+Bug,editor.html,438,Fetch CSS files in HTML files to provide auto-complete for classes and ids,Eun,Park
+Bug,regex.html,42,RX Toolkit / regex os x editor text invisible,Eun,Park
+enhancement,commando.html,413,Commando: Request for toggle functionality (show/hide Commando),Park,Yang
+enhancement,editor.html,412,"Commando ignores ""Focus On Editor"" command",Yang,
+Bug,files.html,409,"Closing without saving dirty project files causes two ""save your files"" prompts ",Eun,Park
+Bug,macros.html,407,Renaming an open macro allows the macro to be open in two unsync'ed editors ,Eun,Park
+enhancement,shortcuts.html,400,New type of fold indicator controls,Park,Yang
+enhancement,prefs.html,398,dark window theme problem: checkboxes in grid view appear black ,Park,Yang
+enhancement,prefs.html,396,"Brace highlighting causes neighbor character's style to ""flicker""",Park,Yang
+bug,prefs.html,3871,JSX highlighter incorrectly matches brace when {{double curly braces are present},Park,
+enhancement,linter-reference.html,3859,Enhancement: Update Python syntax checking with flake8,Yang,
+enhancement,package-manager-integration.html,3854,Packages manager is missing option to disable addon,Park,
+enhancement,editor.html,3853,ko/ui/radiogroup doesn't accept lists of strings like a menu can,Park,
+enhancement,project.html,385,remember folding setting for a file,Park,Yang
+bug,keybind.html,3842,Commenting out block selections breaks arrow key behavior ,Park,
+enhancement,prefs.html,3820,Preferences | Environment - prepend instead of override,Park,
+enhancement,files.html,3819,Folding in text files,Park,Yang
+enhancement,prefs.html,380,"""Find"" dialog's ""pattern not found"" message is mostly invisible with dark window theme",Park,Yang
+enhancement,editor.html,3769,Buffers are cached forever in driver.py,Park,
+enhancement,places.html,373,Select Server dropdown in Places SideBar,Park,Yang
+bug,snippets.html,3694,Print Statement : snippet shortcuts don't work,Park,
+Bug,debugger.html,3670,Debuger Initialization error with tcl project on Linux Mint 18.3 Sylvia ,Eun,Park
+bug,commando.html,3663,indexer.py stage_request can continually delay memory cleanup,Park,
+bug,codeintel.html,3649,PHP Imports cause CPU spikes (with workaround),Park,
+bug,prefs.html,3648,Drop Down Options Not Working,Park,
+Bug,editor.html,3647,Feature Request: Make all Text at the Minimap Visible at all Times,Eun,Park
+bug,editor.html,3646,KomodoEdit Fails to Build from Source on openSUSE Linux,Park,
+bug,codeintel.html,3627,Komodo IDE codeintel breaks on multiline f-strings ,Park,
+Bug,editor.html,3625,Komodo IDE - Unit-testing widget  click edit/pencil button blows away custom command field,Eun,Park
+Bug,unittest.html,3623,Use interpolation string instead of hardcoded binary names in default unit testing commands ,Eun,Park
+bug,commando.html,3609,"Commando: Files keyboard shortcut fails (the second time) when ""Preserve Previous Search Query"" is checked.",Park,
+bug,files.html,3607,Configuring eslint for JSX files fills input for Javascript,Park,
+Bug,editor.html,3606,Symbol browser not detecting variables,Eun,Park
+Bug,prefs.html,3604,go to definition hyperlink pref needs to be removed,Eun,Park
+bug,editor.html,3601,Autocompletion is failing very often,Park,
+bug,codeintel.html,3591,CodeIntel for CSS doesn't respect project excludes,Park,
+Bug,commando.html,3588,"""Show parsed output as a list"" in Command settings not working",Eun,Park
+Bug,search.html,3583,toolbox rx fail on replace,Eun,Park
+bug,codeintel.html,3582,CodeIntel for Perl does not scan .pm files (Perl module files),Park,
+Bug,editor.html,3580,Dialogs are still failing to load content,Park,Park
+Bug,linter-reference.html,3574,Replace pep8 with pycodestyle,Eun,Park
+bug,files.html,3573,x close character too close to filename in OpenFiles,Park,
+bug,editor.html,3569,Komodo IDE 11.1 abbreviations not honouring indentations,Park,
+bug,codeintel.html,3568,Codeintel go to definition finds nothing,Park,
+bug,codeintel.html,3567,11.1 Symbol Browser/CodeIntel broken in new window,Park,
+bug,files.html,3565,Can not create a new file on an SFTP server :(,Park,
+Bug,editor.html,3564,11.1 Symbol Browser dead,Park,Park
+Bug,debugperl.html,3562,go to definition does not work for some Perl variables,Eun,Park
+bug,prefs.html,3558,Cannot get jquery completions,Park,
+enhancement,editor.html,3551,Display wrapping for comments at 80 columns instead of the right window border,Park,
+Bug,editor.html,3549,getNextScope is returning non-scope symbols,Eun,Park
+Bug,refactoring.html,3548,Refactoring is very unreliable?,Eun,Park
+enhancement,files.html,3545,"""Show in Filemanager"" fails.",Yang,
+bug,search.html,3543,Find References does not work on PHP variables,Park,
+Bug,refactoring.html,3541,Refactoring: Rename variable isn't working,Eun,Park
+bug,codeintel.html,3540,Investigate Optimizing languages that override AbstractMemberCompletionContext.getCompletions,Park,
+bug,starting.html,3535,I can't reconnect with the server when I use OpenSSH Key file for authentication,Park,
+Bug,linter-reference.html,3534,Spell checks strings even if disabled,Eun,Park
+enhancement,search.html,3532,No Feedback for Replace All,Park,Yang
+enhancement,files.html,3531,Right-click on file Tab > Show in Explorer,Park,Yang
+Bug,codeintel.html,3529,Code Intel Crashes repeatedly then finally dies permanently,Eun,Park
+bug,refactoring.html,3528,Refactoring is very unreliable,Park,
+Bug,publish.html,3515,Publishing Allow reload of dialog after sync,Eun,Park
+Bug,publish.html,3513,Publishing no longer works,Eun,Park
+enhancement,debugger.html,351,Allow rewind of debugger statements to rerun previous lines,Yang,
+enhancement,codeintel.html,3500,Symbol browser: Apply filter that was last use in view,Park,
+Bug,debugpython.html,3496,python3 debugger does some weird HTML encoding,Eun,Park
+Bug,editor.html,3483,Provide snap package,Eun,Park
+enhancement,files.html,348,Preserve dirty/unsaved files when restarting Komodo,Park,Yang
+enhancement,editor.html,3476,Please allow disable of Drag and Drop editing ,Park,Yang
+enhancement,debugger.html,3474,Komodo 10 can't debug with byebug 10.0.0,Park,Yang
+Bug,editor.html,3472,Perl auto-completion and code intel does not work when loading the FindBin module and importing $Bin and/or $Script.,Eun,Park
+enhancement,debugnode.html,3460,Add support for Nodejs 8 and higher,Park,Yang
+Bug,editor.html,3458,Less variable auto completion broken in K11,Eun,Park
+Bug,templates.html,3455,New file from template allow for creating new template's from commando,Eun,Park
+enhancement,linter-reference.html,3452,New syntax for pseudo elements broken in K11,Park,Yang
+Bug,editor.html,3428,Komodo Edit: Dialog box gets wider and wider ,Eun,Park
+enhancement,linter-reference.html,3421,Update JS Linting to use ESLint which includes linting for JSX,Park,Yang
+Bug,komodo-packages.html,3392,Update pytest parser to support 3.3 ,Eun,Park
+Bug,editor.html,3377,LESS / CSS selector autocompletion not working.,Eun,Park
+Bug,editor.html,3375,Code Completion fails in Komodo IDE 11,Eun,Park
+enhancement,keybind.html,336,Remove restart after applying keybindings dialog,Park,Yang
+enhancement,files.html,3350,Handling of errors re-opening files at Komodo startup could be more helpful,Park,Yang
+enhancement,debugphp.html,335,Support Arrays/Objects for CodeIntel in PHP,Yang,
+enhancement,unittest.html,3345,Unit-testing extension change request related to pytest parsing,Park,Yang
+Bug,editor.html,3342,"Komodo IDE 11.0.1: Refactoring variablesname doesn't work -> Exception... ""[JavaScript Error: ""legacy is not defined",Eun,Park
+Bug,editor.html,3336,ESLint support.,Eun,Park
+Bug,starting.html,3330,profiler window is not being launched,Eun,Park
+Bug,documentation-browser.html,332,Auto spellcheck support for markdown files Support ,Eun,Park
+Bug,prefs.html,3307,Elastic Tabstops slows down Komodo significantly when used on large files,Eun,Park
+Bug,extensions.html,3305,Import additional cix catalog conditionally,Eun,Park
+enhancement,debugphp.html,330,"Add support for ""use()"" in PHP function definitions",Park,Yang
+Bug,editor.html,3294,Markdown preview add option to change color scheme,Eun,Park
+Bug,refactoring.html,3288,Refactoring not working in certain contexts,Eun,Park
+Bug,custtbi.html,3287,IDE11 SOME toolbar customizations don't stick ,Eun,Park
+enhancement,prefs.html,3282,Preferences search add highlight matching prefrences,Park,Yang
+enhancement,prefs.html,3271,Centralize or align exe pref path loading,Park,Yang
+enhancement,search.html,3270,Allow movement in codebrowser using keyboard,Yang,
+Bug,editor.html,3267,Track Changes won't work with koappinfo.py,Eun,Park
+Bug,editor.html,3255,Track Changes requires two clicks on OSX,Eun,Park
+enhancement,search.html,325,Change location of feedback block on Find dialog,Park,Yang
+Bug,linter-reference.html,3247,JSX Syntax Checking Doesn't Work,Eun,Park
+Bug,editor.html,3208,Symbol browser show contrast between symbols in comments,Eun,Park
+Bug,unittest.html,319,Fix Perl Unit test integration,Eun,Park
+enhancement,prefs.html,3188,No Colour Schemes for Status Bar ,Park,Yang
+Bug,debugger.html,3187,Match variable does not work when variable selected,Eun,Park
+Bug,editor.html,3176,Komodo crashes when using custom color scheme in startup wizard,Eun,Park
+enhancement,templates.html,3171,New File from Template vertical scrollbar overlaps horizontal lines,Park,Yang
+enhancement,editor.html,3167,Makefile should force tabs (spaces aren't supported in make),Park,Yang
+Bug,commando.html,3151,Clear Cache not working in commando,Eun,Park
+enhancement,debugphp.html,315,Enhancement request: Improve PHP syntax highlighting,Yang,
+Bug,editor.html,3147,Track changes dialog won't close,Eun,Park
+Bug,intshell.html,3143,Interactive shell very often will open but not full initialize,Eun,Park
+enhancement,macros.html,3140,Toolbox entry for Slashdot should be removed or replaced,Park,Yang
+enhancement,commando.html,3137,Commando: Komodo package manager can't actually manage package other than addons.,Park,Yang
+enhancement,commando.html,3136,Commando: implement pagination in commando,Park,Yang
+Bug,editor.html,3135,Clipboard manager paste doesnt relocate caret ,Eun,Park
+enhancement,commando.html,3133,"COmmando: Setting `Max results` too low removes certain ""everything scope"" items",Park,Yang
+enhancement,prefs.html,313,OSX KomodoIDE requires firewall approval on startup because codesign verification fails,Park,Yang
+enhancement,codeintel.html,3120,Code completion is not working for some of the python functions,Park,Yang
+enhancement,debugchrome.html,3095,When autocompleting html attributes instert =,Park,Yang
+Bug,debugperl.html,309,Fix perl debugger bits skipping files with DB in name,Eun,Park
+enhancement,project.html,3062,Project Wizards Open Project buttons should have `O` as access key,Park,Yang
+enhancement,commando.html,306,Commando: remove current dir when displaying a shortcut,Yang,
+Bug,editor.html,3052,No symbols are shown with legacy parser,Eun,Park
+Bug,prefs.html,3045,CodeIntel prefs prompt for restart on all pref changes,Eun,Park
+Bug,editor.html,3039,Completions don't consider import directories,Eun,Park
+Bug,debugperl.html,3035,Perl debugging: watched/local variables do not appear/update immediately,Eun,Park
+enhancement,files.html,3023,Can't see folder open indicators (`>` & `v`) in places and Toolbox,Park,Yang
+enhancement,debugphp.html,302,Update PHPUnit Compatibility,Park,Yang
+enhancement,editor.html,301,Facilitate adding/removing bookmarks,Park,Yang
+Bug,codeintel.html,3009,Code intel is not picking up installed modules for Python ,Eun,Park
+Bug,debugger.html,3007,"Add ""Remove/Disable all Print Debugging statements"" feature",Eun,Park
+enhancement,regex.html,3006,Regex Window Buttons at the top of window should be toggle checkboxes,Park,Yang
+Bug,codeintel.html,3003,PHP CodeIntel - dollar signs aren't part of the variable name,Eun,Park
+enhancement,prefs.html,3001,Support XUL CodeIntel,Park,Yang
+Bug,editor.html,2994,"Toolbox: Don't trigger ""open in komodo"" dialog if dragging and dropping an existing tool ",Eun,Park
+enhancement,codeintel.html,2985,Unable to insert variable/function by clicking on the suggestions,Park,Yang
+enhancement,commando.html,2977,commando selection changes when results are updated,Park,Yang
+Bug,files.html,2972,Komodo not respecting timeout period for remomte file ops,Eun,Park
+enhancement,editor.html,2968,Cannot rotate the preview split,Yang,
+enhancement,debugger.html,2967,Print debugging symbol flickers when toggled,Park,Yang
+enhancement,snippets.html,2966,Print debugging needs its own tool,Park,Yang
+enhancement,codeintel.html,2964,Codeintel shouldnt scan your home folder ,Park,Yang
+enhancement,editor.html,2957,can't Copy/Paste folders in places,Park,Yang
+enhancement,custtbi.html,2951,Start Debugger needs screenshot of tool bar,Park,Yang
+Bug,prefs.html,2946,Pref window is not closing on clicking OK,Eun,Park
+enhancement,scc.html,2940,Support history in commit messages,Park,Yang
+enhancement,templates.html,2926,Confusing menu label for Folder Templates,Park,Yang
+Bug,files.html,2914,Komodo throws exception when creating a new file with the same name as an existing file,Eun,Park
+Bug,editor.html,2906,Language is not detected for new files,Eun,Park
+enhancement,templates.html,2880,Select multiple framworks for one project?,Yang,
+Bug,editor.html,2876,Allow for editing framework options trough project preferences,Eun,Park
+enhancement,debugperl.html,2866,Update Perl Debugger,Park,Yang
+Bug,editor.html,2859,Unable to disable 'print statements' in the editor by renaming toolbox,Eun,Park
+enhancement,custtbi.html,2857,Add a menu item for 'print statements',Park,Yang
+Bug,macros.html,2856,"Add ""Import Sample Tools Again"" to toolbox",Eun,Park
+Bug,editor.html,2844,Sync scrolling in the editor and the preview windows,Eun,Park
+Bug,editor.html,2798,"Implement ""highlight words""",Eun,Park
+Bug,editor.html,2797,Highlight variable groupbox is not there?,Eun,Park
+enhancement,prefs.html,2793,Not able to close the Preview without using the button menu,Park,Yang
+enhancement,linter-reference.html,2792,Preview: no syntax highlighting for Markdown files,Park,Yang
+Bug,editor.html,2791,Markdown preview button is still there,Eun,Park
+Bug,linter-reference.html,2783,Syntax Checking messages are showing up in Notifications pane,Eun,Park
+Bug,debugger.html,2782,Perl lvalue subs break in the Komodo IDE debugger,Eun,Park
+Bug,editor.html,278,Auto-including for classes ,Eun,Park
+enhancement,prefs.html,2774,Figure out what to do with HTML Doctypes/namespaces,Park,Yang
+Bug,commando.html,2768,Commando results aren't sorted properly,Eun,Park
+Bug,editor.html,2766,Code Completion fails in Komodo IDE 11,Eun,Park
+enhancement,templates.html,2759,Create Template Toolbox files for major languages.,Park,Yang
+Bug,hyperlinks.html,2753,Color picker doesnt work,Eun,Park
+Bug,macros.html,2741,Toolbox: Toolbox tools are not being imported properly,Eun,Park
+Bug,documentation-browser.html,2727,Symbol Browser: Locate Scope not working,Eun,Park
+enhancement,places.html,2721,Allow horizontal scrolling in side panes,Park,Yang
+enhancement,editor.html,2714,Editor: Tab-aware paste doesn't paste over selected text.,Park,Yang
+Bug,templates.html,2712,There are no File templates,Eun,Park
+Bug,starting.html,2709,Windows: Can't install Komodo 11 side-by-side K 10,Eun,Park
+enhancement,codeintel.html,2705,"CodeIntel: Need to forward user-specified directories as ""importPaths""",Park,Yang
+Bug,debugruby.html,2681,Incorrect break behaviour during remote debugging of ruby script,Eun,Park
+enhancement,search.html,2678,Find by filename in remote files?,Park,Yang
+enhancement,prefs.html,2673,Implement better indent width detection,Park,Yang
+Bug,debugger.html,2669,Debug Option Not Activating Correctly,Eun,Park
+Bug,editor.html,2658,The First Start Wizard window is broken on the master branch ,Eun,Park
+enhancement,prefs.html,264,Indentation guides,Park,Yang
+Bug,debugnode.html,2635,Projects default to Node.JS as the debugger language. ,Eun,Park
+Bug,debugger.html,2633,Debugger trying to set breakpoints when opening interactive shell,Eun,Park
+enhancement,commando.html,2629,The live preview toolbar slightly exceeds the height of the statusbar,Park,Yang
+Bug,intshell.html,2619,Error is thrown while switching to python interactive shell,Eun,Park
+enhancement,debugger.html,256,Removing breakpoint indicator,Park,Yang
+enhancement,files.html,2550,Open Files pane sync to open file,Park,Yang
+Bug,editor.html,2544,Can't use collaboration feature,Eun,Park
+enhancement,prefs.html,2525,Save Projects Passively,Park,Yang
+Bug,commando.html,2519,Options 'Copy' or 'Move' are not working in Commando ,Eun,Park
+Bug,profiling.html,2497,Shadow on Windows around CodeProfiler window ,Eun,Park
+Bug,regex.html,2491,Help is broken for 'Ruby on Rails' Tutorial and 'Regular expression',Eun,Park
+Bug,debugger.html,2480,Encoding error when debugging Python on Windows #,Eun,Park
+enhancement,search.html,2474,Open the Find Dialog button is missing a tooltip,Park,Yang
+enhancement,prefs.html,2470,Allow to set the onUpdateUI timeout value,Park,Yang
+Bug,editor.html,2467,Minimap doesn't move when scrolling via wheel in editor,Eun,Park
+Bug,editor.html,2465,Toolbox: Userscript error reporting needs to be better,Eun,Park
+enhancement,snippets.html,2433,"Toolbox HTML anchor tags in wrong case and space missing in ""w/Dialog"" ",Park,Yang
+Bug,editor.html,2427,"Color Scheme Editor doesn't display foreground / backgorund settings when it loads with ""Editor"" selected ",Eun,Park
+Bug,debugger.html,2426,Tcl debugger outputs `appLaunch.tcl` stack information on exceptions ,Eun,Park
+Bug,templates.html,2420,Javascript template literals don't work in embedded javascript?,Eun,Park
+Bug,search.html,242,Refactoring: Rename Class Member: Replace With field is missing,Eun,Park
+Bug,editor.html,2412,Komodo can't parse ActiveGo version output,Eun,Park
+enhancement,run.html,2403,cmd to open file in browser IMMEDIATELY,Park,Yang
+enhancement,commando.html,2401,open folder in Place from commando,Park,Yang
+enhancement,debugphp.html,2398,PHP Code Folding for alternate syntax not working,Park,Yang
+Bug,pdk.html,2397,Komodo should inform the user if required SCM is not installed ,Eun,Park
+enhancement,editor.html,2395,Auto edit delimiters should cancel sooner,Park,Yang
+enhancement,prefs.html,2391,expand indicator in prefs is hard to see ,Park,Yang
+Bug,editor.html,2382,Unable to add Remote Folders,Eun,Park
+enhancement,unittest.html,2364,unit testing - komodo becomes less responsive as number of tests increases,Park,Yang
+enhancement,intshell.html,2346,Can't see Selected Text with Default scheme,Park,Yang
+Bug,regex.html,2338,JS Regex Editor doesn't support `/m` flag properly,Eun,Park
+Bug,run.html,2323,Feature Request : Built-in Terminal ,Eun,Park
+enhancement,package-manager-integration.html,2318,Packages missing version number/about section,Park,Yang
+enhancement,files.html,231,"""Save as"" in split view",Park,Yang
+enhancement,commando.html,2308,"Indicate ""Go to Anything"" action",Park,Yang
+enhancement,codeintel.html,2299,Use type hints info in codeintel for python3 ,Park,Yang
+enhancement,debugnode.html,2284,Update Node dbgp (if necessary) for Node 6,Park,Yang
+Bug,debugger.html,2263,Python debugger messes with class properties ,Eun,Park
+Bug,debugger.html,2243,"Chrome Debugging on Windows Fails With File ""unavailable for debugging"" ",Eun,Park
+Bug,codeintel.html,2241,PHP Codeintel Cannot Handle Variable Assignment in Single-Line 'if' Conditional,Eun,Park
+enhancement,search.html,2237,"Remove ""Find in Files"" tool sample",Park,Yang
+Bug,editor.html,2212,Unexpected Color Scheme Change,Eun,Park
+enhancement,prefs.html,,Prefs > Environmental: Enable copy/edit of System vars in all scopes,Park,Yang
+Bug,editor.html,2164,SCC: Open file context: Menu items are disabled,Eun,Park
+Bug,editor.html,2144,PHP autocomplete directory have to get scanned every time I launch Komodo,Eun,Park
+Bug,custtbi.html,2131,Macro toolbar items hide when the panel toggle toolbar items are hidden,Eun,Park
+enhancement,project.html,2130,Scan projects when they are first opened,Park,Yang
+enhancement,search.html,2127,Create indent safe paste function,Park,Yang
+Bug,documentation-browser.html,2111,Missing icon for browser preview and image,Eun,Park
+Bug,editor.html,2110,Add Stylus support,Eun,Park
+enhancement,files.html,211,Not clear what tab is active in split view ,Park,Yang
+enhancement,debugpython.html,21,Python module with __init__ ,Yang,
+Bug,files.html,2089,Not opening file from top text entry,Eun,Park
+Bug,editor.html,2080,Jumpy Minimap scrolling,Eun,Park
+Bug,shortcuts.html,206,"Shortcut for ""Make Lowercase"" does something else in Komodo 9.0.1",Eun,Park
+enhancement,documentation-browser.html,203,Improve Doc popups for functions,Park,Yang
+Bug,refactoring.html,2017,refactoring: extracted function and placed it between func definition and implementation block ,Eun,Park
+Bug,run.html,2006,Start Komodo from terminal and create project in current dir ,Eun,Park
+Bug,debugphp.html,1992,Update xdebug bits to include PHP7,Eun,Park
+Bug,komodo-packages.html,1986,Provide Debian packages,Eun,Park
+enhancement,commando.html,197,Commando not respecting Exclude paths in Places Pref scope,Yang,
+Bug,files.html,1959,Implement async remote files,Eun,Park
+Bug,prefs.html,1955,Komodo freezes if it loses temporarily network connection while remote dir is opened via sftp,Eun,Park
+Bug,editor.html,1953,"Dynamic toolbar - ""Init"" mechanic",Eun,Park
+enhancement,codeintel.html,195,Exlcude/include functionality for code intel ,Park,Yang
+Bug,linter-reference.html,1944,Syntax checking indicates error on 'info class instances' command,Eun,Park
+Bug,editor.html,193,Context Menu opens on other monitor ,Eun,Park
+enhancement,run.html,1918,About Komodo dialog should include Beta/alpha information,Park,Yang
+Bug,custtbi.html,1911,Menu and Toolbar toolbox items have icon that overlap they're dropdown arrow,Eun,Park
+enhancement,files.html,191,"""Open Files"" panel not updated after File > Save As..",Park,Yang
+enhancement,search.html,1906,non-alpha-numeric chars break callbacks and callouts,Park,Yang
+enhancement,debugger.html,1897,Edit breakpoints from breakpoint margin,Park,Yang
+Bug,editor.html,1896,Komodo Edit 10 Autocomplete not show options' list ,Eun,Park
+Bug,intshell.html,1887,Create interactive buffer scrollbar,Eun,Park
+Bug,unittest.html,1878,Perl unit testing doesn't support TAP::Harness and Test::More and doesn't perform multiple tests. ,Eun,Park
+enhancement,codeintel.html,1877,Go to definition for SCSS/Less/SASS variables,Park,Yang
+Bug,hyperlinks.html,1876,Hyperlink works once again after closing the color picker,Eun,Park
+enhancement,search.html,187,Regression in Replace,Park,Yang
+Bug,starting.html,1868,support multiple callouts in tutorial callouts,Eun,Park
+enhancement,prefs.html,1859,Auto-complete for keyframes indetifiers in CSS/SCSS,Park,Yang
+Bug,publish.html,1848,Publishing Dialog seems to hang when pushing large projects ,Eun,Park
+enhancement,commando.html,1842,Clear Cache for Sections does not work ,Yang,
+Bug,editor.html,1840,Arbitrary Folding blocks: highlight > Fold,Eun,Park
+enhancement,workspace.html,1839,Show side toolbar checkbox does not exist when click RMB on the UI,Yang,
+Bug,extensions.html,1837,Change extension for selected file(s),Eun,Park
+enhancement,publish.html,1829,Publishing Dialog check sync process shouldn't check files of deleted folder,Park,Yang
+Bug,macros.html,1817,"""Close all"" missing",Eun,Park
+enhancement,files.html,1813,Create project in current path (based on opened path in Places),Park,Yang
+enhancement,prefs.html,181,Track Changes window should use settings from color scheme,Park,Yang
+Bug,templates.html,1809,JavaScript Template Literals: remaning code loses highlighting,Eun,Park
+enhancement,editor.html,1790,Continue multiline comment (SQL SCSS),Park,Yang
+enhancement,run.html,1780,"Create command ""Multi-caret around selection""",Park,Yang
+Bug,templates.html,1778,Jinja2 template support,Eun,Park
+enhancement,prefs.html,1772,Prefs > File Associations UI/UX upgrades Umbrella Ticket,Park,Yang
+enhancement,prefs.html,1771,Allow search for file extension in Prefs > File Associations,Park,Yang
+Bug,editor.html,1769,Workspace error when shutting down Komodo,Eun,Park
+enhancement,prefs.html,1765,Show whitespaces  linenumbers and indent guides in the scheme preview,Park,Yang
+enhancement,templates.html,1755,Drag and drop kpf files on Komodo should import toolbox items,Park,Yang
+Bug,documentation-browser.html,1752,View in Browser - in a Komodo Tab' lets disappear left Toolbar ,Eun,Park
+Bug,files.html,1747,Can't change file encoding using the file status bar,Eun,Park
+enhancement,keybind.html,1723,Shift+Backspace does not do backspace,Park,Yang
+Bug,prefs.html,1715,"prefs: remove ""Track Changes"" color scheme preferences from Edit ",Eun,Park
+enhancement,regex.html,1704,Ruby: highlight `%<modifier>{}` properly,Park,Yang
+enhancement,prefs.html,1688,Add tooltip to spelling errors,Park,Yang
+enhancement,prefs.html,1684,Add preference for xdebug timeout,Park,Yang
+enhancement,files.html,168,"""Open Files"" panel loses close ""x"" with long filenames",Yang,
+enhancement,shortcuts.html,1665,default keyboard shortcuts should respect platform standards,Park,Yang
+Bug,starting.html,1651,Don't ask to recover workspace when first starting KX,Eun,Park
+enhancement,linter-reference.html,1648,Syntax checker dynamic button and number appear even if it's not configured for the file,Park,Yang
+Bug,files.html,1647,Less Linter fails on certain files ,Eun,Park
+Bug,linter-reference.html,1646,Django syntax checking doesn't work ,Eun,Park
+enhancement,commando.html,1640,Commando: Ability to use relative paths from _both_ project and current file ,Park,Yang
+enhancement,codeintel.html,1629,Investigate adding ctags support,Park,Yang
+enhancement,prefs.html,161,Scale pixels based on platform settings,Park,Yang
+Bug,macros.html,1605,Toolbox Icons Are Not Re-sized As Needed,Eun,Park
+Bug,linter-reference.html,1593,Spellcheck somtimes inserting at wrong place instead of replacing it,Eun,Park
+enhancement,prefs.html,157,It takes longer than usual to apply color schemes,Park,Yang
+enhancement,intshell.html,1568,Interactive shell is editable,Park,Yang
+Bug,editor.html,1563,"toolbar button for ""Jump to next syntax checking result"" problem ",Eun,Park
+Bug,editor.html,155,Error when rename only changes case on Windows,Eun,Park
+Bug,intshell.html,1537,Interactive Shell: OSX: Input appears below window edge under output ,Eun,Park
+Bug,editor.html,1529,Minimap gets squashed on OSX ,Eun,Park
+enhancement,workspace.html,1519,Persistent storage of widget layout ,Park,Yang
+Bug,files.html,1514,Go to Definition does not work with double-sigil deref in Perl,Eun,Park
+Bug,prefs.html,1508,"Create ""Preferences"" scope",Eun,Park
+Bug,publish.html,1495,Publishing icons overlap in Places,Eun,Park
+enhancement,prefs.html,1494,Foreground for state ok state/ info/ etc/ not configurable,Park,Yang
+enhancement,prefs.html,1490,Color Scheme Editor: make Interface items more understandable or create a help page for it,Park,Yang
+Bug,editor.html,1485,"Show Editor tabs is always ""checked""",Eun,Park
+Bug,places.html,1482,Side Toolbar doesn't stay hidden after restart,Eun,Park
+enhancement,unittest.html,1480,RSpec for Ruby Unit Tests,Park,Yang
+enhancement,publish.html,148,Publishing: Enable one-way synchronization,Park,Yang
+enhancement,debugruby.html,1454,Prevent byebug from dumping files to our projects,Park,Yang
+Bug,debugruby.html,1453,Ruby fails with CLI app debugging,Eun,Park
+Bug,editor.html,145,Highlight text where equals with selected text ?,Eun,Park
+Bug,macros.html,1449,Add handlebars support ,Eun,Park
+Bug,linter-reference.html,1448,Add syntax checking for Angular,Eun,Park
+Bug,editor.html,1429,Rails tools are broken,Eun,Park
+enhancement,debugphp.html,1427,Odd indentation in PHP upon hitting Enter at certain times,Park,Yang
+enhancement,debugphp.html,1422,Detect phpunit.phar better,Park,Yang
+Bug,prefs.html,1407,Prefs: Environment: New variable dialog is too short OSX ,Eun,Park
+Bug,commando.html,1405,Cordova: Run Command: Seems to run in stripped down environment,Eun,Park
+Bug,run.html,1402,Cordova: Run Android actually Runs ios ,Eun,Park
+enhancement,linter-reference.html,140,Django syntax checking doesn't support Python 3 natively (requires workaround),Park,Yang
+Bug,debugger.html,1399,Ruby debugger does not respect the order of puts and gets ,Eun,Park
+Bug,prefs.html,1397,Preferences window prevents Komodo from Closing,Eun,Park
+Bug,intshell.html,1396,Ruby Interactive Shell don't show output,Eun,Park
+enhancement,debugruby.html,1389,Ruby catalog needs updating (2.3.0),Park,Yang
+Bug,editor.html,1378,Markdown preview: can't move to other split,Eun,Park
+Bug,prefs.html,1376,[10.0] crash when changing style preferences then can't launch,Eun,Park
+Bug,documentation-browser.html,137,Automatically spellcheck in comments,Eun,Park
+Bug,scc.html,1358,scc History dialog too small for content,Eun,Park
+enhancement,snippets.html,1343,Komodo IDE v10 not installed with v10 samples in Toolbox,Park,Yang
+enhancement,snippets.html,1302,Snippet vars should be optional,Yang,
+enhancement,debugperl.html,1286,Perl Debugger: Locals view jumps around with a couple dozen variables,Park,Yang
+Bug,regex.html,1284,RxToolkit: Selecting Ruby Causes Mayhem ,Eun,Park
+Bug,regex.html,1283,RxToolkit: Cannot use JavaScript,Eun,Park
+enhancement,debugphp.html,1282,PHP phpdoc array type,Park,Yang
+enhancement,codeintel.html,1272,CodeIntel: Pre-scan project structure and exclude problematic directories,Park,Yang
+Bug,debugger.html,1264,Debugger: Start/Find/Hide Default Interactive Shell command (F12) is confusing,Eun,Park
+Bug,prefs.html,1257,New UI: Prefs > Environment Does Not Show Environment Variables,Eun,Park
+Bug,editor.html,1249,No auto-completion for PHPUnit,Eun,Park
+Bug,codeintel.html,1241,CodeIntel incomplete  inability to use section scope,Eun,Park
+Bug,editor.html,1235,Color Scheme Editor: Changing something in default schemes produces a buggy prompt dialogue ,Eun,Park
+Bug,debugphp.html,1233,PHP Remote debugging: many reports of Komodo crashing while debugging,Eun,Park
+enhancement,debugchrome.html,1226,Chrome debugging: Allow specifying a url as the script,Park,Yang
+enhancement,debugchrome.html,1225,Chrome debugging: Allow debugging from html-like languages,Park,Yang
+Bug,debugchrome.html,1224,chrome remote debugger opens wrong pref window,Eun,Park
+enhancement,snippets.html,1219,Select Previous (part of) Word skips linebreak,Park,Yang
+Bug,scc.html,1214,SCC Revert doesn't reload file,Eun,Park
+Bug,starting.html,1213,Cannot Start Komodo 10 With a Clean Profile,Eun,Park
+Bug,editor.html,1189,"Create iterative ""block selection"" mechanic",Eun,Park
+Bug,linter-reference.html,1177,Cannot disable syntax checking for individual file.,Eun,Park
+enhancement,search.html,1176,Allow blow selection when folding is off,Park,Yang
+Bug,debugpython.html,1175,relative imports/includes fail when linting,Eun,Park
+Bug,sections_list.html,1171,Section list wrongfully thinks it's inside functions,Eun,Park
+enhancement,codeintel.html,1170,Always enable the HTML5 catalog,Park,Yang
+enhancement,commando.html,116,"Add Commando support for ""existing folders"" in projects",Park,Yang
+enhancement,search.html,1158,Select block on classes is slow,Park,Yang
+Bug,editor.html,1157,Show trackchanges and syntax issues in Minimap,Eun,Park
+Bug,editor.html,1156,Show bookmarks in minimap,Eun,Park
+enhancement,prefs.html,1149,New UI: Opening Color Scheme Asks for Saving Preferences Superfluously,Park,Yang
+enhancement,debugger.html,1141,Hide autocompletions when terminated by non-alphanumeric characters,Park,Yang
+enhancement,prefs.html,1131,Add pref to make multi-caret word insensitive,Park,Yang
+enhancement,commando.html,1120,Sections scope does not show class name,Park,Yang
+Bug,editor.html,1116,Auto multi caret when deleting delimiters,Eun,Park
+Bug,editor.html,1115,Auto multi caret when selecting delimiters,Eun,Park
+Bug,editor.html,1110,Quick Bookmark bad behavior,Eun,Park
+enhancement,files.html,1109,Open Files: Close all files should use cmd_closeAll,Yang,
+enhancement,templates.html,1105,Support ES6 Template Literals,Park,Yang
+Bug,files.html,1101,Support project level file associations,Eun,Park
+Bug,publish.html,1096,Shortcut for publishing synchronize,Eun,Park
+enhancement,prefs.html,1090,Add support for css pointer events,Park,Yang
+enhancement,linter-reference.html,1086,Default to jshint,Park,Yang
+Bug,debugperl.html,1084,Code Outline doesn't properly support Perl private functions,Eun,Park
+enhancement,intshell.html,1081,Disable multi caret with ctrl+click,Park,Yang
+enhancement,toolbox.html,1078,Cannot delete 'Rails Tools' from toolbox,Park,Yang
+enhancement,prefs.html,1062,"Add all ""CSS Legal Color Values"" to komodo",Park,Yang
+enhancement,debugger.html,1052,Folding code defined by regions,Park,Yang
+enhancement,debugphp.html,1050,PHP7: show return type if available in calltips,Yang,
+enhancement,debugphp.html,1049,PHP7: preg_replace_callback_array function not in auto-complete db? ,Park,Yang
+enhancement,keybind.html,1039,TrackChanges keybindings,Yang,Yang
+enhancement,debugger.html,1028,New debugger output window not in floating pane,Yang,
+enhancement,debugger.html,1023,String wrapping with delimiter chars fails when delim chars are in the string,Park,Yang
+Bug,debugger.html,102,Debugger - have to execute the Start command twice,Eun,Park
+enhancement,files.html,1019,html dual tag editing should disable after space,Park,Yang
+Bug,commando.html,2405,Toolbox property dialogs and debug dialog are not draggable,Cho,
+Bug,toolbox.html,2347,Can't create Commando Shortcut,Cho,
+Bug,search.html,2270,Search: unfriendly error when searching in the current document without having an opened one,Cho,
+Bug,codeintel.html,2262,Codeintel: Cannot Handle Same Package Prefix in Multiple Directories,Cho,
+enhancement,linter-reference.html,2602,Warn interpreter is need for syntax checker,Cho,
+enhancement,places.html,2615,Support double click titlebar to expand,Cho,
+enhancement,codeintel.html,2518,CodeIntel support for ES6 Classes,Cho,
+enhancement,keybind.html,1712,Implement more case switching commands in Vi key binding,Cho,
+enhancement,keybind.html,1711,Visual Block in VI keybindings not working as expected?,Cho,

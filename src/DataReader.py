@@ -13,10 +13,10 @@ class DataReader:
     def _readFile(self, i):
         if self.dataType == 'UserManual':
             _file = sorted(os.listdir(self.dataPath))[i]
-            return _file.split('.')[0], open(self.dataPath+'/{}'.format(_file), 'r', encoding='utf-8').read()
+            return _file, open(self.dataPath+'/{}'.format(_file), 'r', encoding='utf-8').read()
         else:
-            _file = sorted(os.listdir(self.dataPath))[i]
-            return _file.replace('.txt', ''), open(self.dataPath+'/{}'.format(_file), 'r', encoding='utf-8').read()
+            _file = [file for file in sorted(os.listdir(self.dataPath)) if file.endswith('.html')][i]
+            return _file.replace('.html', ''), open(self.dataPath+'/{}'.format(_file), 'r', encoding='utf-8').read()
 
     def _isURL(self):
         if self.dataPath.startswith('http'):
@@ -27,7 +27,7 @@ class DataReader:
         if self._isURL():
             raise ValueError('it works for only folder')
         else:
-            return len(os.listdir(self.dataPath))
+            return len([file for file in sorted(os.listdir(self.dataPath)) if os.path.isfile(self.dataPath+file)])
     
     def readData(self, i):
         if self._isURL():
