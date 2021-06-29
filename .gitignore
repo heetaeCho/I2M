@@ -8,7 +8,7 @@ venv/
 #Test
 *.ipynb
 prev_*/
-Result_*/
+Result*/
 Log/
 #Model
 EmbeddingModel/

@@ -31,6 +31,7 @@ class Trainer:
                     _last = True
                 x, y = samples
                 if self.modelType == 'rnn':
+                    print(x)
                     x = torch.flip(x, dims=[1])
                 y = y.view(-1)
                 self.model.fit(x, y, _last)

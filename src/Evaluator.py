@@ -21,7 +21,10 @@ class Evaluator:
         if self.project == 'komodo':
             self.docs = [manual.url.replace(' ', '-').lower() for manual in self.manuals]
         else:
-            self.docs = [manual.name.replace(' ', '-').lower() for manual in self.manuals]
+            if self.project == 'vscode':
+                self.docs = [manual.name.replace(' ', '-').lower().split('/')[-1] for manual in self.manuals]
+            else:
+                self.docs = [manual.name.replace(' ', '-').lower() for manual in self.manuals]
 
         ansPath = './AnswerSet/'
         df = pd.read_csv(ansPath+self.project+'.csv', encoding='cp949')

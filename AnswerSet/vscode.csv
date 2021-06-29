@@ -25,7 +25,7 @@ Feature-request,settings-sync.md,91011,Settings sync should support user tasks,P
 Feature-request,themes.md,90911,Adopt codicons for bundled extensions,Park,Cho
 Feature-request,userinterface.md,90936,"Hard to click ""Quick Fix"" button",Park,Cho
 Feature-request,userdefinedsnippets.md,90262,Allow empty string for snippet formating,Park,Cho
-Feature-request,extension-gallery.md,90110,Allow custom editors to hook into Edit menu actions such as copy undo redo ¡¦,Park,Cho
+Feature-request,extension-marketplace.md,90110,Allow custom editors to hook into Edit menu actions such as copy undo redo ¡¦,Park,Cho
 Feature-request,tasks.md,90125,Add a task instancePolicy to task runOptions.,Park,Cho
 Feature-request,tasks.md,90055,Variable substitution in task detail property,Park,Cho
 Feature-request,userinterface.md,89998,show status bar problems count for current file only,Park,Cho
@@ -44,7 +44,7 @@ Feature-request,userinterface.md,89048,Seeding Search view from Find Widget,Park
 Feature-request,themes.md,89044,Highlighting text should also highlight its counterpart in Watch dropdown,Park,Cho
 Feature-request,integrated-terminal.md,88942,"Integrated terminal not triggering zsh's ""alt"" bindkeys?",Park,Cho
 Feature-request,userinterface.md,88925,provider UI for launch.json and task.json,Park,Cho
-Feature-request,extension-gallery.md,88885,Readonly ranges/lines in the editors,Park,Cho
+Feature-request,extension-marketplace.md,88885,Readonly ranges/lines in the editors,Park,Cho
 Feature-request,javascript.md,88844,Disable editor.acceptSuggestionOnCommitCharacter by default,Park,Cho
 Feature-request,userinterface.md,88802,Improve UI view for arguments in settings,Park,Cho
 Feature-request,userinterface.md,88749,Consider adding a status bar for suggest widget,Park,Cho
@@ -312,16 +312,16 @@ Feature-request,userinterface.md,69958,Workspace-level enabled extensions,Park,H
 Feature-request,userinterface.md,68527,Explore Extensions Management UX,Park,Heo
 Bug,settings.md,71622,Link in the editor with the `vscode:` URI scheme is parsed as `file://vscode:...`,Park,Heo
 Feature-request,settings.md,58641,Open settings editor from link with URI handler,Park,Heo
-Feature-request,extension-gallery.md,67603,Extension should show up in the installed extensions list as soon as it's installed,Park,Heo
-Feature-request,extension-gallery.md,66931,Improve UX for Post extension install/uninstall/enable/disable,Park,Heo
-Feature-request,extension-gallery.md,64671,Extension Pack: Enabled/Disabled list: Show depending extensions as subitems,Park,Heo
-Bug,extension-gallery.md,64044,Disabling members of an extension pack.,Park,Heo
-Bug,extension-gallery.md,61430,Extension Pack dependencies are not shown at all,Park,Heo
-Feature-request,extension-gallery.md,48381,Feature Request: Recommended VSIX Extensions,Park,Heo
-Bug,extension-gallery.md,48367,Recommended Extensions - No suggestions,Park,Heo
-Feature-request,extension-gallery.md,13456,Better UX for recommended extensions,Park,Heo
-Bug,extension-gallery.md,46407,Show recommendations gives error message,Park,Heo
-Feature-request,extension-gallery.md,70000,Extension contributes settings don't take effect until vscode restarted now,Park,Heo
+Feature-request,extension-marketplace.md,67603,Extension should show up in the installed extensions list as soon as it's installed,Park,Heo
+Feature-request,extension-marketplace.md,66931,Improve UX for Post extension install/uninstall/enable/disable,Park,Heo
+Feature-request,extension-marketplace.md,64671,Extension Pack: Enabled/Disabled list: Show depending extensions as subitems,Park,Heo
+Bug,extension-marketplace.md,64044,Disabling members of an extension pack.,Park,Heo
+Bug,extension-marketplace.md,61430,Extension Pack dependencies are not shown at all,Park,Heo
+Feature-request,extension-marketplace.md,48381,Feature Request: Recommended VSIX Extensions,Park,Heo
+Bug,extension-marketplace.md,48367,Recommended Extensions - No suggestions,Park,Heo
+Feature-request,extension-marketplace.md,13456,Better UX for recommended extensions,Park,Heo
+Bug,extension-marketplace.md,46407,Show recommendations gives error message,Park,Heo
+Feature-request,extension-marketplace.md,70000,Extension contributes settings don't take effect until vscode restarted now,Park,Heo
 Bug,css.md,68554,Unable to load html/css custom data contribution,Park,Heo
 Feature-request,html.md,69457,html' snippet is annoying and easily inserts by accident when typing any html,Park,Heo
 Feature-request,html.md,57469,"[html] Support SCSS in HTML with <style type=""text/scss"">",Park,Heo

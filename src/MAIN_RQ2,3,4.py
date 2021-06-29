@@ -46,6 +46,8 @@ class MAIN:
         for embeddingType in embeddingTypes:
             WordEmbedder.embedder = None
             for project in projects:
+                if embeddingType == 'EmbeddingLayer': continue
+                if embeddingType == 'W2V' and project == 'npp': continue
                 if embeddingType == "EmbeddingLayer":
                     WordEmbedder.embedder = None
                 print('-------------------{}-{}------------------'.format(project, embeddingType))
@@ -58,7 +60,6 @@ class MAIN:
                     self._readData('{}{}/{}/'.format(dataPath, um, project), um)
                     self._readData('{}{}/{}/'.format(dataPath, ir, project), ir)
                     numClass = len(self.manuals)
-                    
                     self._parse(project, um)
                     self._parse(project, ir)
 
@@ -125,7 +126,7 @@ class MAIN:
             ref = soup.find('link').get('href')
             return ref.split('/')[-1].lower().replace('.html', '')
 
-        dataReader = DataReader(dataPath, dataType)
+        dataReader = DataReader(dataPath, dataType, self.project)
         numOfFiles = dataReader.getNumberOfFiles()
         for i in range(numOfFiles):
             _file, context = dataReader.readData(i)
@@ -187,6 +188,7 @@ class MAIN:
                 d.titleVectors = embedder.embedding(d.title)
                 # d.bodyVectors = embedder.embedding(d.body)
             print('embedding progress=> {}/{}'.format(idx+1, len(data)), end='\r')
+        print()
 
     def _train(self, project, classifierPath, modelType, epoch, numCell, batchSize, maxLen, numClass, embeddingType):
         trainer = Trainer(project, classifierPath, modelType, epoch, numCell, batchSize, maxLen, numClass, embeddingType)
