@@ -15,7 +15,7 @@ EmbeddingModel/
 Model*/
 #Data
 Data/
-Data_prev.zip
+Data_*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

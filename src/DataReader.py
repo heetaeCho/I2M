@@ -7,7 +7,7 @@ class DataReader:
         self.dataType = dataType
         self.project = project
         self.manual_files = []
-        self.filters = ['faq', 'license', 'video', 'overview', 'trouble', 'video']
+        # self.filters = ['faq', 'license', 'video', 'overview', 'trouble']
         if project == 'komodo':
             extention = '.html'
         else:
@@ -42,12 +42,12 @@ class DataReader:
         else:
             path = path+folder+'/'
         for elem in os.listdir(path):
-            isFilter = False
-            for filter in self.filters:
-                if filter in elem or filter in path:
-                    isFilter = True
-                    break
-            if isFilter: continue
+            # isFilter = False
+            # for filter in self.filters:
+            #     if filter in elem or filter in path:
+            #         isFilter = True
+            #         break
+            # if isFilter: continue
             if os.path.isdir(path+elem):
                 self._getManuals(path, elem, extention)
             elif elem.endswith(extention):

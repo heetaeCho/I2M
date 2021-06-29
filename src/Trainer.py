@@ -18,8 +18,14 @@ class Trainer:
         self.model = Model(modelType, numClass, numCell, maxLen)
 
     def fit(self, X, Y):
-        X = X.cuda()
-        Y = Y.cuda()
+        ## ???
+        # X = X.cuda()
+        # Y = Y.cuda()
+        # x = torch.flip(x, dims=[1]) <<
+        # RuntimeError: CUDA error: unspecified launch failure
+        # CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+        # For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+        ## ???
         dataset = TensorDataset(X, Y)
         loader = DataLoader(dataset, batch_size=self.batchSize, shuffle=False)
 
@@ -33,6 +39,8 @@ class Trainer:
                 if self.modelType == 'rnn':
                     x = torch.flip(x, dims=[1])
                 y = y.view(-1)
+                x = x.cuda()
+                y = y.cuda()
                 self.model.fit(x, y, _last)
             if e%50 == 0:
                 self.model.save('{}{}/{}-{}-{}.pt'.format(self.modelPath, self.project, self.modelType, self.embeddingType, e))

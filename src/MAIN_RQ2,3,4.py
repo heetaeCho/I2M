@@ -23,6 +23,7 @@ class MAIN:
         self.max_len = {}
         self.word_set = {}
         self.num_class = {}
+        self.intersaction_words = {}
         self.embedded_manuals = None
 
     def run(self, informationJson):
@@ -46,8 +47,6 @@ class MAIN:
         for embeddingType in embeddingTypes:
             WordEmbedder.embedder = None
             for project in projects:
-                if embeddingType == 'EmbeddingLayer': continue
-                if embeddingType == 'W2V' and project == 'npp': continue
                 if embeddingType == "EmbeddingLayer":
                     WordEmbedder.embedder = None
                 print('-------------------{}-{}------------------'.format(project, embeddingType))
@@ -67,11 +66,13 @@ class MAIN:
                     testWordSet, testMaxLen = self._preprocess(project, ir)
                     wordSet = trainWordSet
                     wordSet.extend(testWordSet)
+                    # print(len(self.manuals))
                     # print("total #words=> {}".format(len(wordSet)))
-                    # print("intersection #words=> {}".format(len(set(trainWordSet).intersection(set(testWordSet)))))
+                    # print("intersection #words=> {}".format(len))
                     # continue
                     maxLen = max(trainMaxLen, testMaxLen)
 
+                    self.intersaction_words[project] = len((set(trainWordSet).intersection(set(testWordSet))))
                     self.all_manuals[project] = self.manuals
                     self.all_issues[project] = self.issues
                     self.max_len[project] = maxLen
@@ -87,6 +88,7 @@ class MAIN:
                 logger.log('\n-------------------{}-------------------\n'.format(project))
                 logger.log('numClass => {}\n'.format(numClass))
                 logger.log('numWords => {}\n'.format(len(wordSet)))
+                logger.log('numIntersactionWords => {}\n'.format(self.intersaction_words[project]))
                 logger.log('maxSeqLen => {}\n'.format(maxLen))
 
                 for modelType in modelTypes:

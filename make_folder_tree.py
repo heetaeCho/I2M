@@ -1,8 +1,8 @@
 import os
 
 
-bases = ["model/", 'result/', "model_tt/", 'result_tt/', 'EmbeddingModel']
-##bases = ['result/']
+##bases = ["model/", 'result/', "model_tt/", 'result_tt/', 'EmbeddingModel', 'Log']
+bases = ['result/', 'model/']
 projects = ['npp/', 'komodo/', 'vscode/']
 data_types = ['title/', 'body/']
 models = ['cnn/' , 'rnn/']
@@ -10,7 +10,7 @@ embedding_types = ['e/', 'w/', 'g/','f/']
 
 for base in bases:
     os.mkdir(base)
-    if base == 'EmbeddingModel': continue
+    if base == 'EmbeddingModel' or base == 'Log': continue
     
     for project in projects:
         os.mkdir(base+project)
