@@ -17,9 +17,13 @@
  * torch==1.9.0+cu111 (Can find from https://pytorch.org/)
  * torchvision==0.10.0+cu101 (Can find from https://pytorch.org/)
  * torchaudio===0.9.0 (Can find from https://pytorch.org/)
- * scikit-learn==0.24.2
- * beautifulesoup4==4.9.3
  * The others can find in requirements.txt
+
+# Embedding Models
+
+* Word2Vec: https://code.google.com/archive/p/word2vec
+* GloVe: https://nlp.Stanford.edu/projects/glove
+* FastText: https://fasttext.cc/docs/en/crawl-vectors.html
 
 # Sequence
 

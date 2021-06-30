@@ -1,8 +1,8 @@
 import os
 
 
-##bases = ["model/", 'result/', "model_tt/", 'result_tt/', 'EmbeddingModel', 'Log']
-bases = ['result/', 'model/']
+bases = ["model/", 'result/', "model_tt/", 'result_tt/', 'EmbeddingModel', 'Log']
+# bases = ['result/', 'model/']
 projects = ['npp/', 'komodo/', 'vscode/']
 data_types = ['title/', 'body/']
 models = ['cnn/' , 'rnn/']
